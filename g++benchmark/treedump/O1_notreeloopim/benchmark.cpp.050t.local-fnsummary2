@@ -1,0 +1,917 @@
+
+;; Function std::basic_ios<char>::rdstate (_ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv, funcdef_no=2293, decl_uid=32199, cgraph_uid=1053, symbol_order=1070)
+
+
+Analyzing function body size: std::ios_base::iostate std::basic_ios<_CharT, _Traits>::rdstate() const [with _CharT = char; _Traits = std::char_traits<char>]
+
+IPA function summary for std::ios_base::iostate std::basic_ios<_CharT, _Traits>::rdstate() const [with _CharT = char; _Traits = std::char_traits<char>]/1070 inlinable
+  global time:     3.000000
+  self size:       4
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.000000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 256] changed) && (not inlined)
+    size:0.500000, time:0.000000,  nonconst if:(op0[ref offset: 256] changed)
+  calls:
+
+std::basic_ios<char>::rdstate (const struct basic_ios * const this)
+{
+  iostate _3;
+
+  <bb 2> [local count: 1073741825]:
+  _3 = this_2(D)->D.32317._M_streambuf_state;
+  return _3;
+
+}
+
+
+
+;; Function std::basic_ostream<char>::operator<< (_ZNSolsEd, funcdef_no=2148, decl_uid=33054, cgraph_uid=908, symbol_order=925)
+
+
+Analyzing function body size: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>]
+   fp_expression set
+
+IPA function summary for std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>]/925 inlinable fp_expression
+  global time:     15.000000
+  self size:       7
+  global size:     0
+  min size:       8
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::_M_insert(_ValueT) [with _ValueT = double; _CharT = char; _Traits = std::char_traits<char>]/1372 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13 callee size: 0 stack: 0
+
+std::basic_ostream<char>::operator<< (struct basic_ostream * const this, double __f)
+{
+  struct __ostream_type & _5;
+
+  <bb 2> [local count: 1073741825]:
+  _5 = std::basic_ostream<char>::_M_insert<double> (this_2(D), __f_3(D));
+  return _5;
+
+}
+
+
+
+;; Function std::basic_ostream<char>::operator<< (_ZNSolsEf, funcdef_no=2149, decl_uid=33057, cgraph_uid=909, symbol_order=926)
+
+
+Analyzing function body size: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>]
+   fp_expression set
+
+IPA function summary for std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>]/926 inlinable fp_expression
+  global time:     15.000000
+  self size:       7
+  global size:     0
+  min size:       8
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::_M_insert(_ValueT) [with _ValueT = double; _CharT = char; _Traits = std::char_traits<char>]/1372 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13 callee size: 0 stack: 0
+
+std::basic_ostream<char>::operator<< (struct basic_ostream * const this, float __f)
+{
+  double _1;
+  struct __ostream_type & _6;
+
+  <bb 2> [local count: 1073741825]:
+  _1 = (double) __f_2(D);
+  _6 = std::basic_ostream<char>::_M_insert<double> (this_4(D), _1);
+  return _6;
+
+}
+
+
+
+;; Function std::operator<< <std::char_traits<char> > (_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c, funcdef_no=2147, decl_uid=33238, cgraph_uid=907, symbol_order=924)
+
+
+Analyzing function body size: std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char) [with _Traits = std::char_traits<char>]
+
+IPA function summary for std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char) [with _Traits = std::char_traits<char>]/924 inlinable
+  global time:     16.000000
+  self size:       8
+  global size:     0
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 0 freq:1.00 size: 5 time: 14 callee size: 0 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+
+std::operator<< <std::char_traits<char> > (struct basic_ostream & __out, char __c)
+{
+  struct basic_ostream & _4;
+
+  <bb 2> [local count: 1073741825]:
+  _4 = std::__ostream_insert<char, std::char_traits<char> > (__out_2(D), &__c, 1);
+  return _4;
+
+}
+
+
+
+;; Function __static_initialization_and_destruction_0 (_Z41__static_initialization_and_destruction_0ii, funcdef_no=2396, decl_uid=48223, cgraph_uid=1156, symbol_order=1223)
+
+
+Analyzing function body size: void __static_initialization_and_destruction_0(int, int)
+
+IPA function summary for void __static_initialization_and_destruction_0(int, int)/1223 inlinable
+  global time:     6.331584
+  self size:       13
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:2.000000, time:2.000000,  executed if:(op0 == 1),  nonconst if:(op1 changed) && (op0 == 1)
+  calls:
+    int __cxa_atexit(void (*)(void*), void*, void*)/1390 function body not available
+      loop depth: 0 freq:0.07 size: 4 time: 13 callee size: 0 stack: 0 predicate: (op1 == 65535) && (op0 == 1)
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::ios_base::Init::Init()/1389 function body not available
+      loop depth: 0 freq:0.07 size: 2 time: 11 callee size: 0 stack: 0 predicate: (op1 == 65535) && (op0 == 1)
+       op0 is compile time invariant
+
+__static_initialization_and_destruction_0 (int __initialize_p, int __priority)
+{
+  <bb 2> [local count: 1073741825]:
+  if (__initialize_p_2(D) == 1)
+    goto <bb 3>; [34.00%]
+  else
+    goto <bb 5>; [66.00%]
+
+  <bb 3> [local count: 365072220]:
+  if (__priority_4(D) == 65535)
+    goto <bb 4>; [20.24%]
+  else
+    goto <bb 5>; [79.76%]
+
+  <bb 4> [local count: 73890617]:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+
+  <bb 5> [local count: 1073741825]:
+  return;
+
+}
+
+
+
+;; Function std::char_traits<char>::length (_ZNSt11char_traitsIcE6lengthEPKc, funcdef_no=397, decl_uid=11285, cgraph_uid=73, symbol_order=74)
+
+
+Analyzing function body size: static std::size_t std::char_traits<char>::length(const char_type*)
+
+IPA function summary for static std::size_t std::char_traits<char>::length(const char_type*)/74 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    long unsigned int __builtin_strlen(const char*)/1375 function body not available
+      loop depth: 0 freq:1.00 size: 3 time: 12 callee size: 0 stack: 0
+
+std::char_traits<char>::length (const char_type * __s)
+{
+  size_t _3;
+
+  <bb 2> [local count: 1073741825]:
+  _3 = __builtin_strlen (__s_2(D));
+  return _3;
+
+}
+
+
+
+;; Function std::operator| (_ZStorSt12_Ios_IostateS_, funcdef_no=1147, decl_uid=26730, cgraph_uid=387, symbol_order=389)
+
+
+Analyzing function body size: constexpr std::_Ios_Iostate std::operator|(std::_Ios_Iostate, std::_Ios_Iostate)
+
+IPA function summary for constexpr std::_Ios_Iostate std::operator|(std::_Ios_Iostate, std::_Ios_Iostate)/389 inlinable
+  global time:     3.000000
+  self size:       4
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed || op1 changed)
+  calls:
+
+std::operator| (_Ios_Iostate __a, _Ios_Iostate __b)
+{
+  _Ios_Iostate _3;
+
+  <bb 2> [local count: 1073741825]:
+  _3 = __a_1(D) | __b_2(D);
+  return _3;
+
+}
+
+
+
+;; Function std::basic_ios<char>::setstate (_ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate, funcdef_no=2258, decl_uid=32204, cgraph_uid=1018, symbol_order=1035)
+
+
+Analyzing function body size: void std::basic_ios<_CharT, _Traits>::setstate(std::ios_base::iostate) [with _CharT = char; _Traits = std::char_traits<char>]
+
+IPA function summary for void std::basic_ios<_CharT, _Traits>::setstate(std::ios_base::iostate) [with _CharT = char; _Traits = std::char_traits<char>]/1035 inlinable
+  global time:     16.000000
+  self size:       8
+  global size:     0
+  min size:       26
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.000000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 256] changed) && (not inlined)
+    size:0.500000, time:0.000000,  nonconst if:(op0[ref offset: 256] changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0[ref offset: 256] changed || op1 changed)
+  calls:
+    void std::basic_ios<_CharT, _Traits>::clear(std::ios_base::iostate) [with _CharT = char; _Traits = std::char_traits<char>]/1374 function body not available
+      loop depth: 0 freq:1.00 size: 3 time: 12 callee size: 0 stack: 0
+
+std::basic_ios<char>::setstate (struct basic_ios * const this, iostate __state)
+{
+  _Ios_Iostate _3;
+  _Ios_Iostate _5;
+
+  <bb 2> [local count: 1073741825]:
+  _3 = MEM[(const struct basic_ios *)this_2(D)].D.32317._M_streambuf_state;
+  _5 = _3 | __state_4(D);
+  std::basic_ios<char>::clear (this_2(D), _5);
+  return;
+
+}
+
+
+
+;; Function std::operator<< <std::char_traits<char> > (_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc, funcdef_no=2146, decl_uid=33268, cgraph_uid=906, symbol_order=923)
+
+
+Analyzing function body size: std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*) [with _Traits = std::char_traits<char>]
+
+IPA function summary for std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*) [with _Traits = std::char_traits<char>]/923 inlinable
+  global time:     26.600000
+  self size:       20
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+    size:0.500000, time:0.000000,  executed if:(op1 == 0B) && (not inlined),  nonconst if:(op0[ref offset: 0] changed) && (op1 == 0B) && (not inlined)
+    size:0.500000, time:0.000000,  executed if:(op1 == 0B),  nonconst if:(op0[ref offset: 0] changed) && (op1 == 0B)
+    size:4.000000, time:4.000000,  executed if:(op1 == 0B)
+  calls:
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 0 freq:0.70 size: 4 time: 13 callee size: 0 stack: 0 predicate: (op1 != 0B)
+    long unsigned int __builtin_strlen(const char*)/1375 function body not available
+      loop depth: 0 freq:0.70 size: 3 time: 12 callee size: 0 stack: 0 predicate: (op1 != 0B)
+    void std::basic_ios<_CharT, _Traits>::clear(std::ios_base::iostate) [with _CharT = char; _Traits = std::char_traits<char>]/1374 function body not available
+      loop depth: 0 freq:0.30 size: 3 time: 12 callee size: 0 stack: 0 predicate: (op1 == 0B)
+
+std::operator<< <std::char_traits<char> > (struct basic_ostream & __out, const char * __s)
+{
+  int (*) () * _1;
+  long int _2;
+  sizetype _3;
+  struct basic_ios * _4;
+  long int _5;
+  _Ios_Iostate _10;
+  _Ios_Iostate _12;
+  long unsigned int _13;
+
+  <bb 2> [local count: 1073741825]:
+  if (__s_7(D) == 0B)
+    goto <bb 3>; [30.00%]
+  else
+    goto <bb 4>; [70.00%]
+
+  <bb 3> [local count: 322122547]:
+  _1 = __out_9(D)->_vptr.basic_ostream;
+  _2 = MEM[(long int *)_1 + -24B];
+  _3 = (sizetype) _2;
+  _4 = __out_9(D) + _3;
+  _10 = MEM[(const struct basic_ios *)_4].D.32317._M_streambuf_state;
+  _12 = _10 | 1;
+  std::basic_ios<char>::clear (_4, _12);
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 751619277]:
+  _13 = __builtin_strlen (__s_7(D));
+  _5 = (long int) _13;
+  std::__ostream_insert<char, std::char_traits<char> > (__out_9(D), __s_7(D), _5);
+
+  <bb 5> [local count: 1073741825]:
+  return __out_9(D);
+
+}
+
+
+
+;; Function mainbase (_Z8mainbasev, funcdef_no=1888, decl_uid=44493, cgraph_uid=648, symbol_order=665)
+
+
+Analyzing function body size: void mainbase()
+   fp_expression set
+
+IPA function summary for void mainbase()/665 inlinable fp_expression
+  global time:     360791.090576
+  self size:       140
+  global size:     0
+  min size:       190
+  self stack:      3
+  global stack:    3
+    size:94.000000, time:112.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::_M_insert(_ValueT) [with _ValueT = double; _CharT = char; _Traits = std::char_traits<char>]/1372 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op0 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::_M_insert(_ValueT) [with _ValueT = double; _CharT = char; _Traits = std::char_traits<char>]/1372 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op0 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]/1369 function body not available
+      loop depth: 2 freq:24.99 size: 4 time: 13 callee size: 0 stack: 0
+       op0 is compile time invariant
+    clock_t clock()/1367 function body not available
+      loop depth: 2 freq:24.99 size: 2 time: 11 callee size: 0 stack: 0
+    double ceil(double)/1368 function body not available
+      loop depth: 5 freq:14870.74 size: 3 time: 12 callee size: 0 stack: 0
+    clock_t clock()/1367 function body not available
+      loop depth: 2 freq:24.99 size: 2 time: 11 callee size: 0 stack: 0
+
+mainbase ()
+{
+  char __c;
+  char __c;
+  char __c;
+  float r;
+  double elapsed_secs;
+  clock_t end;
+  clock_t begin;
+  int p;
+  int q;
+  double b.0_1;
+  double k.1_2;
+  double a.2_3;
+  double _4;
+  double _5;
+  double _6;
+  double _7;
+  double _8;
+  double powcheck.12_9;
+  double _10;
+  double d.17_11;
+  double _12;
+  double _13;
+  double _14;
+  double _15;
+  double _16;
+  long int _17;
+  double _18;
+  int _19;
+  double _20;
+  double _21;
+  double _22;
+  float _23;
+  float totalscore.23_24;
+  double _25;
+  double _26;
+  double _27;
+  double _28;
+  float _29;
+  double _30;
+  double _31;
+  double _32;
+  int _33;
+  int _34;
+  int _35;
+  int _36;
+  float _37;
+  float _38;
+  struct basic_ostream & _85;
+  struct __ostream_type & _89;
+  double _90;
+  struct __ostream_type & _91;
+
+  <bb 2> [local count: 72205]:
+
+  <bb 3> [local count: 433143]:
+  # q_39 = PHI <1(2), q_87(38)>
+  # r_41 = PHI <r_55(D)(2), r_42(38)>
+  if (q_39 > 5)
+    goto <bb 39>; [16.67%]
+  else
+    goto <bb 41>; [83.33%]
+
+  <bb 41> [local count: 360938]:
+
+  <bb 4> [local count: 2165193]:
+  # p_40 = PHI <p_86(37), 1(41)>
+  # r_42 = PHI <r_47(37), r_41(41)>
+  if (p_40 > 5)
+    goto <bb 38>; [16.67%]
+  else
+    goto <bb 5>; [83.33%]
+
+  <bb 5> [local count: 1804255]:
+  begin_58 = clock ();
+  a = 1.0e+0;
+  b = 1.0e+0;
+  c = 1.0e+0;
+  d = 1.0e+0;
+  if (p_40 == 1)
+    goto <bb 6>; [22.47%]
+  else
+    goto <bb 7>; [77.53%]
+
+  <bb 6> [local count: 405416]:
+  k = 1.0e+2;
+  goto <bb 15>; [100.00%]
+
+  <bb 7> [local count: 1398839]:
+  if (p_40 == 2)
+    goto <bb 8>; [22.47%]
+  else
+    goto <bb 9>; [77.53%]
+
+  <bb 8> [local count: 314319]:
+  k = 2.5e+2;
+  goto <bb 15>; [100.00%]
+
+  <bb 9> [local count: 1084520]:
+  if (p_40 == 3)
+    goto <bb 10>; [22.47%]
+  else
+    goto <bb 11>; [77.53%]
+
+  <bb 10> [local count: 243692]:
+  k = 5.0e+2;
+  goto <bb 15>; [100.00%]
+
+  <bb 11> [local count: 840828]:
+  if (p_40 == 4)
+    goto <bb 12>; [22.47%]
+  else
+    goto <bb 13>; [77.53%]
+
+  <bb 12> [local count: 188934]:
+  k = 1.0e+3;
+  goto <bb 15>; [100.00%]
+
+  <bb 13> [local count: 651894]:
+  if (p_40 == 5)
+    goto <bb 14>; [22.47%]
+  else
+    goto <bb 15>; [77.53%]
+
+  <bb 14> [local count: 146481]:
+  k = 1.5e+3;
+
+  <bb 15> [local count: 1804255]:
+
+  <bb 16> [local count: 16402319]:
+  b.0_1 = b;
+  k.1_2 = k;
+  if (b.0_1 <= k.1_2)
+    goto <bb 42>; [89.00%]
+  else
+    goto <bb 27>; [11.00%]
+
+  <bb 42> [local count: 14598063]:
+
+  <bb 17> [local count: 132709664]:
+  a.2_3 = a;
+  if (k.1_2 >= a.2_3)
+    goto <bb 18>; [89.00%]
+  else
+    goto <bb 26>; [11.00%]
+
+  <bb 18> [local count: 118111601]:
+  _4 = a.2_3 * a.2_3;
+  x = _4;
+  _5 = b.0_1 * b.0_1;
+  y = _5;
+  _6 = _4 + _5;
+  c = _6;
+  powcheck = b.0_1;
+  goto <bb 40>; [100.00%]
+
+  <bb 19> [local count: 955630223]:
+
+  <bb 40> [local count: 1073741825]:
+  _7 = k.1_2 * 1.4199999999999999289457264239899814128875732421875e+0;
+  _8 = ceil (_7);
+  powcheck.12_9 = powcheck;
+  if (_8 >= powcheck.12_9)
+    goto <bb 20>; [89.00%]
+  else
+    goto <bb 25>; [11.00%]
+
+  <bb 20> [local count: 955630224]:
+  _10 = powcheck.12_9 * powcheck.12_9;
+  if (_6 == _10)
+    goto <bb 21>; [50.00%]
+  else
+    goto <bb 24>; [50.00%]
+
+  <bb 21> [local count: 477815112]:
+  d.17_11 = d;
+  if (_6 >= d.17_11)
+    goto <bb 22>; [50.00%]
+  else
+    goto <bb 23>; [50.00%]
+
+  <bb 22> [local count: 238907556]:
+  d = _6;
+
+  <bb 23> [local count: 477815112]:
+  _12 = k.1_2 * 2.0e+0;
+  _13 = _12 + 1.0e+0;
+  powcheck = _13;
+  goto <bb 19>; [100.00%]
+
+  <bb 24> [local count: 477815112]:
+  _14 = powcheck.12_9 + 1.0e+0;
+  powcheck = _14;
+  goto <bb 19>; [100.00%]
+
+  <bb 25> [local count: 118111601]:
+  _15 = a.2_3 + 1.0e+0;
+  a = _15;
+  goto <bb 17>; [100.00%]
+
+  <bb 26> [local count: 14598063]:
+  a = 1.0e+0;
+  _16 = b.0_1 + 1.0e+0;
+  b = _16;
+  goto <bb 16>; [100.00%]
+
+  <bb 27> [local count: 1804255]:
+  end_79 = clock ();
+  _17 = end_79 - begin_58;
+  _18 = (double) _17;
+  elapsed_secs_80 = _18 / 1.0e+6;
+  _19 = p_40 + -1;
+  if (p_40 == 1)
+    goto <bb 28>; [22.47%]
+  else
+    goto <bb 29>; [77.53%]
+
+  <bb 28> [local count: 405416]:
+
+  <bb 29> [local count: 1804255]:
+  # r_43 = PHI <r_42(27), 3.0000000260770320892333984375e-3(28)>
+  if (p_40 == 2)
+    goto <bb 30>; [22.47%]
+  else
+    goto <bb 31>; [77.53%]
+
+  <bb 30> [local count: 405416]:
+
+  <bb 31> [local count: 1804255]:
+  # r_44 = PHI <r_43(29), 3.50000001490116119384765625e-2(30)>
+  if (p_40 == 3)
+    goto <bb 32>; [22.47%]
+  else
+    goto <bb 33>; [77.53%]
+
+  <bb 32> [local count: 405416]:
+
+  <bb 33> [local count: 1804255]:
+  # r_45 = PHI <r_44(31), 2.730000019073486328125e-1(32)>
+  if (p_40 == 4)
+    goto <bb 34>; [22.47%]
+  else
+    goto <bb 35>; [77.53%]
+
+  <bb 34> [local count: 405416]:
+
+  <bb 35> [local count: 1804255]:
+  # r_46 = PHI <r_45(33), 2.224999904632568359375e+0(34)>
+  if (p_40 == 5)
+    goto <bb 36>; [22.47%]
+  else
+    goto <bb 37>; [77.53%]
+
+  <bb 36> [local count: 405416]:
+
+  <bb 37> [local count: 1804255]:
+  # r_47 = PHI <r_46(35), 7.535999774932861328125e+0(36)>
+  _20 = (double) r_47;
+  _21 = _20 / elapsed_secs_80;
+  _22 = _21 * 2.0e+2;
+  _23 = (float) _22;
+  score[_19] = _23;
+  totalscore.23_24 = totalscore;
+  _25 = (double) totalscore.23_24;
+  _26 = (double) _23;
+  _27 = _26 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _28 = _25 + _27;
+  _29 = (float) _28;
+  totalscore = _29;
+  _30 = stagetime[_19];
+  _31 = elapsed_secs_80 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _32 = _30 + _31;
+  stagetime[_19] = _32;
+  _33 = q_39 + -1;
+  _34 = _33 * 5;
+  _35 = _34 + p_40;
+  _36 = _35 * 4;
+  _85 = std::basic_ostream<char>::operator<< (&cout, _36);
+  std::__ostream_insert<char, std::char_traits<char> > (_85, " % complete!", 12);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_85, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Time taken for that stage:- ", 28);
+  _89 = std::basic_ostream<char>::_M_insert<double> (&cout, elapsed_secs_80);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_89, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Score obtained for that stage:- ", 32);
+  _37 = score[_19];
+  _38 = _37 * 5.0e+0;
+  _90 = (double) _38;
+  _91 = std::basic_ostream<char>::_M_insert<double> (&cout, _90);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_91, &__c, 1);
+  __c ={v} {CLOBBER};
+  p_86 = p_40 + 1;
+  goto <bb 4>; [100.00%]
+
+  <bb 38> [local count: 360938]:
+  q_87 = q_39 + 1;
+  goto <bb 3>; [100.00%]
+
+  <bb 39> [local count: 72205]:
+  return;
+
+}
+
+
+
+;; Function std::exception::exception (_ZNSt9exceptionC2ERKS_, funcdef_no=1891, decl_uid=3171, cgraph_uid=650, symbol_order=667)
+
+
+Analyzing function body size: constexpr std::exception::exception(const std::exception&)
+
+IPA function summary for constexpr std::exception::exception(const std::exception&)/667 inlinable
+  global time:     3.000000
+  self size:       4
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.500000, time:0.000000
+    size:3.500000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+std::exception::exception (struct exception * const this, const struct exception & D.3173)
+{
+  <bb 2> [local count: 1073741825]:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  this_2(D)->_vptr.exception = &MEM[(void *)&_ZTVSt9exception + 16B];
+  return;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1889, decl_uid=44612, cgraph_uid=652, symbol_order=669) (executed once)
+
+
+Analyzing function body size: int main(int, char**)
+   fp_expression set
+
+IPA function summary for int main(int, char**)/669 inlinable fp_expression
+  global time:     108.966000
+  self size:       70
+  global size:     0
+  min size:       0
+  self stack:      9
+  global stack:    9
+    size:0.000000, time:0.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:2.000000, time:2.000000,  executed if:(op0 == 3) && (not inlined)
+    size:21.000000, time:20.000000,  executed if:(op0 == 3)
+  calls:
+    void __cxa_end_catch()/1386 function body not available
+      loop depth: 0 freq:0.00 size: 1 time: 10 callee size: 0 stack: 0 predicate: (op0 == 3)
+    virtual std::exception::~exception()/1385 function body not available
+      loop depth: 0 freq:0.00 size: 2 time: 11 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op0 is compile time invariant
+    void __cxa_end_catch()/1386 function body not available
+      loop depth: 0 freq:0.00 size: 1 time: 10 callee size: 0 stack: 0 predicate: (op0 == 3)
+    virtual std::exception::~exception()/1385 function body not available
+      loop depth: 0 freq:0.00 size: 2 time: 11 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op0 is compile time invariant
+    std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*) [with _Traits = std::char_traits<char>]/923 function not considered for inlining
+      loop depth: 0 freq:0.00 size: 3 time: 12 callee size:10 stack: 0 predicate: (op0 == 3)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    void* __cxa_begin_catch(void*)/1383 function body not available
+      loop depth: 0 freq:0.00 size: 2 time: 11 callee size: 0 stack: 0 predicate: (op0 == 3)
+    void* __builtin_eh_pointer(int)/1381 function body not available
+      loop depth: 0 freq:0.00 size: 0 time:  0 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op0 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op1 is compile time invariant
+       op2 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::_M_insert(_ValueT) [with _ValueT = double; _CharT = char; _Traits = std::char_traits<char>]/1372 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op0 is compile time invariant
+    std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>]/1373 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+    int fclose(FILE*)/1380 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11 callee size: 0 stack: 0 predicate: (op0 == 3)
+    int fprintf(FILE*, const char*, ...)/1379 function body not available
+      loop depth: 0 freq:1.00 size: 5 time: 14 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op1 is compile time invariant
+    FILE* fopen(const char*, const char*)/1378 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13 callee size: 0 stack: 0 predicate: (op0 == 3)
+       op1 is compile time invariant
+    void mainbase()/665 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 1 time: 10 callee size:70 stack: 3 predicate: (op0 == 3)
+    void exit(int)/1377 function body not available
+      loop depth: 0 freq:0.00 size: 2 time: 11 callee size: 0 stack: 0 predicate: (op0 != 3)
+       op0 is compile time invariant
+    int __builtin_puts(const char*)/1376 function body not available
+      loop depth: 0 freq:0.00 size: 2 time: 11 callee size: 0 stack: 0 predicate: (op0 != 3)
+       op0 is compile time invariant
+
+main (int argc, char * * argv)
+{
+  char __c;
+  struct exception e;
+  char * _1;
+  float totalscore.24_2;
+  double _3;
+  char * _4;
+  void * _5;
+  float totalscore.25_6;
+  struct FILE * _16;
+  double _26;
+  struct __ostream_type & _27;
+
+  <bb 2> [local count: 1073741825]:
+  if (argc_9(D) != 3)
+    goto <bb 3>; [0.04%]
+  else
+    goto <bb 4>; [99.96%]
+
+  <bb 3> [local count: 429497]:
+  __builtin_puts (&"Arguments: filename optimisationflag"[0]);
+  exit (-1);
+
+  <bb 4> [local count: 1073312327]:
+  mainbase ();
+  _1 = MEM[(char * *)argv_14(D) + 8B];
+  _16 = fopen (_1, "a");
+
+  <bb 5> [local count: 1073312327]:
+  totalscore.24_2 = totalscore;
+  _3 = (double) totalscore.24_2;
+  _4 = MEM[(char * *)argv_14(D) + 16B];
+  fprintf (_16, "%s %lf\n", _4, _3);
+
+  <bb 6> [local count: 1073312327]:
+  fclose (_16);
+
+  <bb 7> [local count: 1073312327]:
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Your system has scored a total of ", 34);
+  totalscore.25_6 = totalscore;
+  _26 = (double) totalscore.25_6;
+  _27 = std::basic_ostream<char>::_M_insert<double> (&cout, _26);
+  std::__ostream_insert<char, std::char_traits<char> > (_27, " points!", 8);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_27, &__c, 1);
+  __c ={v} {CLOBBER};
+  return 0;
+
+  <bb 8> [count: 0]:
+<L4>:
+  eh_dispatch 1
+
+  <bb 9> [count: 0]:
+  resx 1
+
+  <bb 10> [count: 0]:
+<L5>:
+  MEM[(struct  &)&e] ={v} {CLOBBER};
+  e._vptr.exception = &MEM[(void *)&_ZTVSt9exception + 16B];
+  _5 = __builtin_eh_pointer (1);
+  __cxa_begin_catch (_5);
+  std::operator<< <std::char_traits<char> > (&cerr, "File error! \n");
+
+  <bb 11> [count: 0]:
+  std::exception::~exception (&e);
+  __cxa_end_catch ();
+  e ={v} {CLOBBER};
+  goto <bb 7>; [100.00%]
+
+  <bb 12> [count: 0]:
+<L6>:
+  std::exception::~exception (&e);
+  resx 5
+
+  <bb 13> [count: 0]:
+<L7>:
+  __cxa_end_catch ();
+  resx 3
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_check (_GLOBAL__sub_I_check, funcdef_no=2397, decl_uid=48231, cgraph_uid=1157, symbol_order=1366) (executed once)
+
+
+Analyzing function body size: (static initializers for benchmark.cpp)
+
+IPA function summary for (static initializers for benchmark.cpp)/1366 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    void __static_initialization_and_destruction_0(int, int)/1223 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12 callee size: 6 stack: 0
+       op0 is compile time invariant
+       op1 is compile time invariant
+
+_GLOBAL__sub_I_check ()
+{
+  <bb 2> [local count: 1073741825]:
+  __static_initialization_and_destruction_0 (1, 65535);
+  return;
+
+}
+
+

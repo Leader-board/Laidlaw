@@ -1,0 +1,302 @@
+OptimisationFactor                Numberlines
+-fno-aggressive-loop-optimizations  0
+-fno-asynchronous-unwind-tables  0
+              -fno-auto-inc-dec  0
+          -fno-branch-count-reg  0
+-fno-chkp-check-incomplete-type  0
+           -fno-chkp-check-read  0
+          -fno-chkp-check-write  0
+     -fno-chkp-instrument-calls  0
+        -fno-chkp-narrow-bounds  0
+             -fno-chkp-optimize  0
+         -fno-chkp-store-bounds  0
+    -fno-chkp-use-static-bounds  0
+-fno-chkp-use-static-const-bounds  0
+         -fno-chkp-use-wrappers  0
+ -fno-combine-stack-adjustments  0
+                    -fno-common  0
+              -fno-compare-elim  0
+           -fno-cprop-registers  24
+                 -fno-defer-pop  0
+-fno-delete-null-pointer-checks  63
+            -fno-dwarf2-cfi-asm  591
+            -fno-early-inlining  35
+-fno-eliminate-unused-debug-types  0
+                -fno-exceptions  102
+         -fno-forward-propagate  39
+    -fno-fp-int-builtin-inexact  0
+              -fno-function-cse  0
+                   -fno-gcse-lm  0
+                -fno-gnu-unique  0
+  -fno-guess-branch-probability  1062
+                     -fno-ident  1
+             -fno-if-conversion  269
+            -fno-if-conversion2  4
+                    -fno-inline  465
+            -fno-inline-atomics  0
+-fno-inline-functions-called-once  359
+               -fno-ipa-profile  0
+            -fno-ipa-pure-const  166
+             -fno-ipa-reference  0
+        -fno-ira-hoist-pressure  0
+      -fno-ira-share-save-slots  0
+     -fno-ira-share-spill-slots  32
+                    -fno-ivopts  860
+        -fno-keep-static-consts  0
+        -fno-leading-underscore  0
+              -fno-lifetime-dse  0
+      -fno-lto-odr-type-merging  0
+                -fno-math-errno  0
+           -fno-merge-constants  10
+       -fno-merge-debug-strings  0
+      -fno-move-loop-invariants  372
+        -fno-omit-frame-pointer  634
+                  -fno-peephole  0
+                       -fno-plt  37
+      -fno-prefetch-loop-arrays  0
+         -fno-reg-struct-return  0
+            -fno-reorder-blocks  599
+-fno-sched-critical-path-heuristic  0
+ -fno-sched-dep-count-heuristic  0
+     -fno-sched-group-heuristic  0
+          -fno-sched-interblock  0
+ -fno-sched-last-insn-heuristic  0
+      -fno-sched-rank-heuristic  0
+                -fno-sched-spec  0
+ -fno-sched-spec-insn-heuristic  0
+   -fno-sched-stalled-insns-dep  0
+           -fno-schedule-fusion  0
+    -fno-semantic-interposition  0
+               -fno-show-column  0
+               -fno-shrink-wrap  246
+      -fno-shrink-wrap-separate  0
+              -fno-signed-zeros  186
+     -fno-split-ivs-in-unroller  0
+          -fno-split-wide-types  0
+              -fno-ssa-backprop  0
+                -fno-ssa-phiopt  0
+                -fno-stdarg-opt  0
+ -fno-strict-volatile-bitfields  0
+             -fno-sync-libcalls  0
+          -fno-toplevel-reorder  1320
+             -fno-trapping-math  0
+              -fno-tree-bit-ccp  0
+     -fno-tree-builtin-call-dce  0
+                  -fno-tree-ccp  16
+                   -fno-tree-ch  669
+        -fno-tree-coalesce-vars  312
+            -fno-tree-copy-prop  4
+               -fno-tree-cselim  0
+                  -fno-tree-dce  181
+       -fno-tree-dominator-opts  634
+                  -fno-tree-dse  0
+             -fno-tree-forwprop  156
+                  -fno-tree-fre  212
+      -fno-tree-loop-if-convert  0
+              -fno-tree-loop-im  18
+         -fno-tree-loop-ivcanon  71
+        -fno-tree-loop-optimize  846
+              -fno-tree-phiprop  0
+                  -fno-tree-pta  0
+              -fno-tree-reassoc  126
+           -fno-tree-scev-cprop  0
+                 -fno-tree-sink  66
+                 -fno-tree-slsr  11
+                  -fno-tree-sra  16
+                  -fno-tree-ter  605
+            -fno-unit-at-a-time  1320
+             -fno-unwind-tables  0
+               -fno-verbose-asm  0
+   -fno-zero-initialized-in-bss  0
+           -mno-align-stringops  0
+-mno-avx256-split-unaligned-load  0
+-mno-avx256-split-unaligned-store  0
+            -mno-fancy-math-387  0
+                      -mno-fxsr  0
+                   -mno-ieee-fp  3
+                       -mno-mmx  0
+                      -mno-sse4  0
+                 -mno-push-args  0
+                  -mno-red-zone  25
+                      -mno-sse2  155
+                       -mno-stv  0
+       -mno-tls-direct-seg-refs  0
+dm282@pc5-001-l:~/Downloads/benchmarker/g++difflinpack $ g++ flagtests_exclude.cpp
+dm282@pc5-001-l:~/Downloads/benchmarker/g++difflinpack $ ./a.out O0
+OptimisationFactor                Numberlines
+-fno-aggressive-loop-optimizations  0
+-fno-asynchronous-unwind-tables  0
+              -fno-auto-inc-dec  0
+          -fno-branch-count-reg  0
+-fno-chkp-check-incomplete-type  0
+           -fno-chkp-check-read  0
+          -fno-chkp-check-write  0
+     -fno-chkp-instrument-calls  0
+        -fno-chkp-narrow-bounds  0
+             -fno-chkp-optimize  0
+         -fno-chkp-store-bounds  0
+    -fno-chkp-use-static-bounds  0
+-fno-chkp-use-static-const-bounds  0
+         -fno-chkp-use-wrappers  0
+ -fno-combine-stack-adjustments  0
+                    -fno-common  0
+              -fno-compare-elim  0
+           -fno-cprop-registers  24
+                 -fno-defer-pop  0
+-fno-delete-null-pointer-checks  63
+            -fno-dwarf2-cfi-asm  591
+            -fno-early-inlining  35
+-fno-eliminate-unused-debug-types  0
+                -fno-exceptions  102
+         -fno-forward-propagate  39
+    -fno-fp-int-builtin-inexact  0
+              -fno-function-cse  0
+                   -fno-gcse-lm  0
+               -fno-gnu-runtime  g++: error: unrecognized command line option ‘-fno-gnu-runtime’; did you mean ‘-fgnu-runtime’?
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+                -fno-gnu-unique  0
+  -fno-guess-branch-probability  1062
+                     -fno-ident  1
+             -fno-if-conversion  269
+            -fno-if-conversion2  4
+                    -fno-inline  465
+            -fno-inline-atomics  0
+-fno-inline-functions-called-once  359
+               -fno-ipa-profile  0
+            -fno-ipa-pure-const  166
+             -fno-ipa-reference  0
+        -fno-ira-hoist-pressure  0
+      -fno-ira-share-save-slots  0
+     -fno-ira-share-spill-slots  32
+                    -fno-ivopts  860
+        -fno-keep-static-consts  0
+        -fno-leading-underscore  0
+              -fno-lifetime-dse  0
+      -fno-lto-odr-type-merging  0
+                -fno-math-errno  0
+           -fno-merge-constants  10
+       -fno-merge-debug-strings  0
+      -fno-move-loop-invariants  372
+        -fno-omit-frame-pointer  634
+                  -fno-peephole  0
+                       -fno-plt  37
+      -fno-prefetch-loop-arrays  0
+         -fno-reg-struct-return  0
+            -fno-reorder-blocks  599
+-fno-sched-critical-path-heuristic  0
+ -fno-sched-dep-count-heuristic  0
+     -fno-sched-group-heuristic  0
+          -fno-sched-interblock  0
+ -fno-sched-last-insn-heuristic  0
+      -fno-sched-rank-heuristic  0
+                -fno-sched-spec  0
+ -fno-sched-spec-insn-heuristic  0
+   -fno-sched-stalled-insns-dep  0
+           -fno-schedule-fusion  0
+    -fno-semantic-interposition  0
+               -fno-show-column  0
+               -fno-shrink-wrap  246
+      -fno-shrink-wrap-separate  0
+              -fno-signed-zeros  186
+     -fno-split-ivs-in-unroller  0
+          -fno-split-wide-types  0
+              -fno-ssa-backprop  0
+                -fno-ssa-phiopt  0
+                -fno-stdarg-opt  0
+ -fno-strict-volatile-bitfields  0
+             -fno-sync-libcalls  0
+          -fno-toplevel-reorder  1320
+             -fno-trapping-math  0
+              -fno-tree-bit-ccp  0
+     -fno-tree-builtin-call-dce  0
+                  -fno-tree-ccp  16
+                   -fno-tree-ch  669
+        -fno-tree-coalesce-vars  312
+            -fno-tree-copy-prop  4
+               -fno-tree-cselim  0
+                  -fno-tree-dce  181
+       -fno-tree-dominator-opts  634
+                  -fno-tree-dse  0
+             -fno-tree-forwprop  156
+                  -fno-tree-fre  212
+      -fno-tree-loop-if-convert  0
+              -fno-tree-loop-im  18
+         -fno-tree-loop-ivcanon  71
+        -fno-tree-loop-optimize  846
+  -fno-tree-parallelize-loops=4  g++: error: unrecognized command line option ‘-fno-tree-parallelize-loops=4’; did you mean ‘-ftree-parallelize-loops=’?
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+              -fno-tree-phiprop  0
+                  -fno-tree-pta  0
+              -fno-tree-reassoc  126
+           -fno-tree-scev-cprop  0
+                 -fno-tree-sink  66
+                 -fno-tree-slsr  11
+                  -fno-tree-sra  16
+                  -fno-tree-ter  605
+            -fno-unit-at-a-time  1320
+             -fno-unwind-tables  0
+               -fno-verbose-asm  0
+   -fno-zero-initialized-in-bss  0
+        -mno-128bit-long-double  g++: error: unrecognized command line option ‘-mno-128bit-long-double’; did you mean ‘-m128bit-long-double’?
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+                        -mno-64  g++: error: unrecognized command line option ‘-mno-64’; did you mean ‘-gno-z’?
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+                     -mno-80387  In file included from /usr/include/c++/8/cstdlib:77,
+                 from linpackm.cpp:1:
+/usr/include/c++/8/bits/std_abs.h: In function ‘constexpr long double std::abs(long double)’:
+/usr/include/c++/8/bits/std_abs.h:78:22: error: x87 register return with x87 disabled
+   abs(long double __x)
+                      ^
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+           -mno-align-stringops  0
+-mno-avx256-split-unaligned-load  0
+-mno-avx256-split-unaligned-store  0
+            -mno-fancy-math-387  0
+             -mno-fp-ret-in-387  In file included from /usr/include/c++/8/cstdlib:77,
+                 from linpackm.cpp:1:
+/usr/include/c++/8/bits/std_abs.h: In function ‘constexpr long double std::abs(long double)’:
+/usr/include/c++/8/bits/std_abs.h:78:22: error: x87 register return with x87 disabled
+   abs(long double __x)
+                      ^
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+                      -mno-fxsr  0
+                     -mno-glibc  g++: error: unrecognized command line option ‘-mno-glibc’; did you mean ‘-mno-clwb’?
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+                   -mno-ieee-fp  3
+            -mno-long-double-80  g++: error: unrecognized command line option ‘-mno-long-double-80’; did you mean ‘-mlong-double-80’?
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+                       -mno-mmx  0
+                      -mno-sse4  0
+                 -mno-push-args  0
+                  -mno-red-zone  25
+                       -mno-sse  In file included from /usr/include/features.h:428,
+                 from /usr/include/c++/8/x86_64-redhat-linux/bits/os_defines.h:39,
+                 from /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h:2452,
+                 from /usr/include/c++/8/cstdlib:41,
+                 from linpackm.cpp:1:
+/usr/include/bits/stdlib-float.h: In function ‘double atof(const char*)’:
+/usr/include/bits/stdlib-float.h:25:1: error: SSE register return with SSE disabled
+ __NTH (atof (const char *__nptr))
+ ^~~~~
+diff: lin.s: No such file or directory
+0
+rm: cannot remove 'lin.s': No such file or directory
+                      -mno-sse2  155
+                       -mno-stv  0
+       -mno-tls-direct-seg-refs  0

@@ -1,0 +1,15 @@
+-fgcse-after-reload 1763.725586
+-finbenche-functions 1779.563232
+-fipa-cp-clone 1770.598511
+-floop-interchange 1777.309692
+-floop-unroll-and-jam 1778.154053
+-fpeel-loops 1769.489990
+-fpredictive-commoning 1777.684937
+-fsplit-paths 1776.348145
+-ftree-loop-distribute-patterns 1773.326904
+-ftree-loop-distribution 1773.948853
+-ftree-loop-vectorize 1796.050903
+-ftree-partial-pre 1711.796265
+-ftree-slp-vectorize 1774.499878
+-funswitch-loops 1781.718872
+-fvect-cost-model 1775.964600

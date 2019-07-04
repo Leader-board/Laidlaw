@@ -1,0 +1,6 @@
+-inline 2199.548096
+-mldst-motion 984.361450
+-gvn 982.560791
+-elim-avail-extern 984.691040
+-slp-vectorizer 983.162964
+-constmerge 983.598816

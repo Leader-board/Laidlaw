@@ -1,0 +1,85 @@
+27 ssa "unused VAR_DECLs removed" "std::basic_ostream<char>::operator<<" 1
+27 ssa "unused VAR_DECLs removed" "std::basic_ostream<char>::operator<<" 2
+27 ssa "unused VAR_DECLs removed" "std::operator<< <std::char_traits<char> >" 2
+27 ssa "unused VAR_DECLs removed" "__static_initialization_and_destruction_0" 2
+27 ssa "unused VAR_DECLs removed" "std::operator|" 1
+27 ssa "unused VAR_DECLs removed" "std::basic_ios<char>::setstate" 1
+27 ssa "unused VAR_DECLs removed" "std::operator<< <std::char_traits<char> >" 1
+27 ssa "unused VAR_DECLs removed" "mainbase" 1
+27 ssa "unused VAR_DECLs removed" "std::exception::exception" 6
+27 ssa "unused VAR_DECLs removed" "_GLOBAL__sub_I_check" 5
+39 ccp "Copies propagated" "std::basic_ostream<char>::operator<<" 1
+39 ccp "Statements deleted" "std::basic_ostream<char>::operator<<" 1
+56 release_ssa "SSA names released" "std::basic_ostream<char>::operator<<" 1
+56 release_ssa "SSA name holes removed" "std::basic_ostream<char>::operator<<" 1
+39 ccp "Copies propagated" "std::basic_ostream<char>::operator<<" 1
+39 ccp "Statements deleted" "std::basic_ostream<char>::operator<<" 1
+56 release_ssa "SSA names released" "std::basic_ostream<char>::operator<<" 1
+56 release_ssa "SSA name holes removed" "std::basic_ostream<char>::operator<<" 1
+39 ccp "Copies propagated" "std::operator<< <std::char_traits<char> >" 1
+39 ccp "Statements deleted" "std::operator<< <std::char_traits<char> >" 1
+56 release_ssa "SSA names released" "std::operator<< <std::char_traits<char> >" 1
+56 release_ssa "SSA name holes removed" "std::operator<< <std::char_traits<char> >" 1
+44 fre "SCC iterations == 2" "__static_initialization_and_destruction_0" 1
+39 ccp "Copies propagated" "std::basic_ios<char>::setstate" 2
+39 ccp "Statements deleted" "std::basic_ios<char>::setstate" 5
+56 release_ssa "unused VAR_DECLs removed" "std::basic_ios<char>::setstate" 2
+56 release_ssa "SSA names released" "std::basic_ios<char>::setstate" 5
+56 release_ssa "SSA name holes removed" "std::basic_ios<char>::setstate" 5
+36 einline "unused VAR_DECLs removed" "std::operator<< <std::char_traits<char> >" 3
+36 einline "Symbol to SSA rewrite" "std::operator<< <std::char_traits<char> >" 1
+39 ccp "Copies propagated" "std::operator<< <std::char_traits<char> >" 1
+39 ccp "Statements deleted" "std::operator<< <std::char_traits<char> >" 1
+44 fre "SCC iterations == 2" "std::operator<< <std::char_traits<char> >" 1
+56 release_ssa "unused VAR_DECLs removed" "std::operator<< <std::char_traits<char> >" 1
+56 release_ssa "SSA names released" "std::operator<< <std::char_traits<char> >" 5
+56 release_ssa "SSA name holes removed" "std::operator<< <std::char_traits<char> >" 5
+36 einline "unused VAR_DECLs removed" "mainbase" 3
+36 einline "Symbol to SSA rewrite" "mainbase" 1
+39 ccp "Copies propagated" "mainbase" 4
+39 ccp "Statements deleted" "mainbase" 34
+39 ccp "Constants propagated" "mainbase" 13
+44 fre "SCC iterations == 2" "mainbase" 1
+44 fre "SCC iterations == 3" "mainbase" 2
+44 fre "SCC iterations == 4" "mainbase" 2
+44 fre "SCC iterations == 5" "mainbase" 1
+44 fre "Eliminated" "mainbase" 28
+48 cddce "PHI nodes deleted" "mainbase" 3
+48 cddce "Statements deleted" "mainbase" 2
+56 release_ssa "unused VAR_DECLs removed" "mainbase" 10
+56 release_ssa "SSA names released" "mainbase" 98
+56 release_ssa "SSA name holes removed" "mainbase" 98
+36 einline "unused VAR_DECLs removed" "std::exception::exception" 13
+36 einline "Symbol to SSA rewrite" "std::exception::exception" 1
+39 ccp "Statements deleted" "std::exception::exception" 1
+39 ccp "Constants propagated" "std::exception::exception" 1
+56 release_ssa "SSA names released" "std::exception::exception" 1
+56 release_ssa "SSA name holes removed" "std::exception::exception" 1
+39 ccp "Copies propagated" "main" 4
+39 ccp "Statements deleted" "main" 16
+39 ccp "Constants propagated" "main" 4
+44 fre "SCC iterations == 2" "main" 2
+48 cddce "Statements deleted" "main" 2
+56 release_ssa "unused VAR_DECLs removed" "main" 5
+56 release_ssa "SSA names released" "main" 39
+56 release_ssa "SSA name holes removed" "main" 39
+36 einline "unused VAR_DECLs removed" "_GLOBAL__sub_I_check" 9
+36 einline "Symbol to SSA rewrite" "_GLOBAL__sub_I_check" 1
+109 fre "SCC iterations == 3" "mainbase" 2
+109 fre "SCC iterations == 4" "mainbase" 2
+123 ch "Incremental SSA update" "mainbase" 1
+127 dom "Copies propagated" "mainbase" 2
+127 dom "Constants propagated" "mainbase" 1
+127 dom "Redundant expressions eliminated" "mainbase" 3
+127 dom "Jumps threaded" "mainbase" 10
+132 dce "Statements deleted" "mainbase" 4
+149 loopinit "Incremental SSA update" "mainbase" 1
+188 dom "Jumps threaded" "mainbase" 4
+195 cddce "Statements deleted" "mainbase" 3
+272 combine "insn-with-note combine" "mainbase" 5
+272 combine "two-insn combine" "mainbase" 2
+109 fre "SCC iterations == 2" "main" 2
+127 dom "Incremental SSA update" "main" 1
+188 dom "Incremental SSA update" "main" 1
+239 optimized "unused VAR_DECLs removed" "main" 1
+237 resx "Symbol to SSA rewrite" "_GLOBAL__sub_I_check" 1

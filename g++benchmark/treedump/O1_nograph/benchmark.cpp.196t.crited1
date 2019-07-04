@@ -1,0 +1,601 @@
+
+;; Function mainbase (_Z8mainbasev, funcdef_no=1888, decl_uid=44493, cgraph_uid=648, symbol_order=665)
+
+mainbase ()
+{
+  unsigned int ivtmp.57;
+  unsigned int ivtmp.47;
+  bool b_lsm.39;
+  double b_lsm.38;
+  bool a_lsm.37;
+  double a_lsm.36;
+  bool c_lsm.35;
+  double c_lsm.34;
+  bool y_lsm.33;
+  double y_lsm.32;
+  bool x_lsm.31;
+  double x_lsm.30;
+  bool d_lsm.29;
+  double d_lsm.28;
+  bool powcheck_lsm.27;
+  double powcheck_lsm.26;
+  char __c;
+  char __c;
+  char __c;
+  float r;
+  double elapsed_secs;
+  clock_t end;
+  clock_t begin;
+  int p;
+  int q;
+  double k.1_2;
+  double _4;
+  double _5;
+  double _6;
+  double _7;
+  double _8;
+  int _9;
+  double _10;
+  double _12;
+  double _13;
+  double _14;
+  double _15;
+  double _16;
+  long int _17;
+  double _18;
+  double _20;
+  double _21;
+  double _22;
+  float _23;
+  float totalscore.23_24;
+  double _25;
+  double _26;
+  double _27;
+  double _28;
+  float _29;
+  double _30;
+  double _31;
+  double _32;
+  int _36;
+  float _37;
+  float _38;
+  long int _40;
+  double k.1_41;
+  double _50;
+  struct basic_ostream & _85;
+  struct __ostream_type & _89;
+  double _90;
+  struct __ostream_type & _91;
+  unsigned int _114;
+  unsigned int _116;
+  double b.0_117;
+  double k.1_118;
+  double a.2_119;
+  double k.1_133;
+  double k.1_135;
+  int _138;
+  int _139;
+  int _140;
+  int _141;
+  unsigned int _189;
+  int _207;
+  unsigned int _208;
+
+  <bb 2> [local count: 72205]:
+
+  <bb 3> [local count: 360938]:
+  # r_122 = PHI <r_55(D)(2), r_47(68)>
+  # ivtmp.57_220 = PHI <4(2), ivtmp.57_53(68)>
+
+  <bb 4> [local count: 1804255]:
+  # p_121 = PHI <1(3), p_86(67)>
+  # r_123 = PHI <r_122(3), r_47(67)>
+  # ivtmp.47_106 = PHI <ivtmp.57_220(3), ivtmp.47_115(67)>
+  begin_58 = clock ();
+  a = 1.0e+0;
+  b = 1.0e+0;
+  c = 1.0e+0;
+  d = 1.0e+0;
+  if (p_121 == 1)
+    goto <bb 5>; [22.47%]
+  else
+    goto <bb 6>; [77.53%]
+
+  <bb 5> [local count: 405416]:
+  k = 1.0e+2;
+  goto <bb 46>; [100.00%]
+
+  <bb 6> [local count: 1398839]:
+  if (p_121 == 2)
+    goto <bb 7>; [22.47%]
+  else
+    goto <bb 8>; [77.53%]
+
+  <bb 7> [local count: 314319]:
+  k = 2.5e+2;
+  goto <bb 46>; [100.00%]
+
+  <bb 8> [local count: 1084520]:
+  if (p_121 == 3)
+    goto <bb 9>; [22.47%]
+  else
+    goto <bb 10>; [77.53%]
+
+  <bb 9> [local count: 243692]:
+  k = 5.0e+2;
+  goto <bb 46>; [100.00%]
+
+  <bb 10> [local count: 840828]:
+  if (p_121 == 4)
+    goto <bb 11>; [22.47%]
+  else
+    goto <bb 12>; [77.53%]
+
+  <bb 11> [local count: 188934]:
+  k = 1.0e+3;
+  goto <bb 46>; [100.00%]
+
+  <bb 12> [local count: 651894]:
+  if (p_121 == 5)
+    goto <bb 13>; [22.47%]
+  else
+    goto <bb 48>; [77.53%]
+
+  <bb 13> [local count: 146481]:
+  k = 1.5e+3;
+  goto <bb 46>; [100.00%]
+
+  <bb 69> [local count: 306945]:
+
+  <bb 14> [local count: 1605787]:
+  # k.1_135 = PHI <k.1_41(46), k.1_133(69)>
+  x_lsm.30_178 = x;
+  y_lsm.32_180 = y;
+  k.1_2 = k;
+  powcheck_lsm.26_188 = powcheck;
+
+  <bb 15> [local count: 14598064]:
+  # b.0_117 = PHI <1.0e+0(14), _16(53)>
+  # k.1_118 = PHI <k.1_135(14), k.1_2(53)>
+  # powcheck_lsm.26_125 = PHI <powcheck_lsm.26_188(14), powcheck_lsm.26_110(53)>
+  # powcheck_lsm.27_129 = PHI <0(14), powcheck_lsm.27_113(53)>
+  # d_lsm.28_88 = PHI <1.0e+0(14), d_lsm.28_156(53)>
+  # d_lsm.29_157 = PHI <0(14), d_lsm.29_162(53)>
+  # x_lsm.30_163 = PHI <x_lsm.30_178(14), x_lsm.30_164(53)>
+  # x_lsm.31_165 = PHI <0(14), x_lsm.31_166(53)>
+  # y_lsm.32_167 = PHI <y_lsm.32_180(14), y_lsm.32_168(53)>
+  # y_lsm.33_169 = PHI <0(14), y_lsm.33_170(53)>
+  # c_lsm.34_171 = PHI <1.0e+0(14), c_lsm.34_172(53)>
+  # c_lsm.35_173 = PHI <0(14), c_lsm.35_174(53)>
+  if (k.1_118 >= 1.0e+0)
+    goto <bb 16>; [89.00%]
+  else
+    goto <bb 49>; [11.00%]
+
+  <bb 49> [local count: 1605787]:
+  goto <bb 26>; [100.00%]
+
+  <bb 16> [local count: 12992277]:
+  _5 = b.0_117 * b.0_117;
+  _7 = k.1_118 * 1.4199999999999999289457264239899814128875732421875e+0;
+  _8 = ceil (_7);
+
+  <bb 17> [local count: 118111601]:
+  # a.2_119 = PHI <1.0e+0(16), _15(51)>
+  # d_lsm.28_152 = PHI <d_lsm.28_88(16), d_lsm.28_154(51)>
+  # d_lsm.29_158 = PHI <d_lsm.29_157(16), d_lsm.29_160(51)>
+  _4 = a.2_119 * a.2_119;
+  _6 = _4 + _5;
+  goto <bb 19>; [100.00%]
+
+  <bb 18> [local count: 955630224]:
+  # powcheck_lsm.26_128 = PHI <_13(23), _14(24)>
+  # d_lsm.28_153 = PHI <d_lsm.28_155(23), d_lsm.28_154(24)>
+  # d_lsm.29_159 = PHI <d_lsm.29_161(23), d_lsm.29_160(24)>
+
+  <bb 19> [local count: 1073741825]:
+  # powcheck_lsm.26_124 = PHI <powcheck_lsm.26_128(18), b.0_117(17)>
+  # d_lsm.28_154 = PHI <d_lsm.28_153(18), d_lsm.28_152(17)>
+  # d_lsm.29_160 = PHI <d_lsm.29_159(18), d_lsm.29_158(17)>
+  if (_8 >= powcheck_lsm.26_124)
+    goto <bb 20>; [89.00%]
+  else
+    goto <bb 25>; [11.00%]
+
+  <bb 20> [local count: 955630224]:
+  _10 = powcheck_lsm.26_124 * powcheck_lsm.26_124;
+  if (_6 == _10)
+    goto <bb 21>; [50.00%]
+  else
+    goto <bb 24>; [50.00%]
+
+  <bb 21> [local count: 477815112]:
+  if (_6 >= d_lsm.28_154)
+    goto <bb 22>; [50.00%]
+  else
+    goto <bb 50>; [50.00%]
+
+  <bb 50> [local count: 238907556]:
+  goto <bb 23>; [100.00%]
+
+  <bb 22> [local count: 238907556]:
+
+  <bb 23> [local count: 477815112]:
+  # d_lsm.28_155 = PHI <_6(22), d_lsm.28_154(50)>
+  # d_lsm.29_161 = PHI <1(22), d_lsm.29_160(50)>
+  _12 = k.1_118 * 2.0e+0;
+  _13 = _12 + 1.0e+0;
+  goto <bb 18>; [100.00%]
+
+  <bb 24> [local count: 477815112]:
+  _14 = powcheck_lsm.26_124 + 1.0e+0;
+  goto <bb 18>; [100.00%]
+
+  <bb 25> [local count: 118111601]:
+  _15 = a.2_119 + 1.0e+0;
+  if (_15 <= k.1_118)
+    goto <bb 51>; [89.00%]
+  else
+    goto <bb 52>; [11.00%]
+
+  <bb 51> [local count: 105119325]:
+  goto <bb 17>; [100.00%]
+
+  <bb 52> [local count: 12992276]:
+
+  <bb 26> [local count: 14598064]:
+  # powcheck_lsm.26_110 = PHI <powcheck_lsm.26_125(49), powcheck_lsm.26_124(52)>
+  # powcheck_lsm.27_113 = PHI <powcheck_lsm.27_129(49), 1(52)>
+  # d_lsm.28_156 = PHI <d_lsm.28_88(49), d_lsm.28_154(52)>
+  # d_lsm.29_162 = PHI <d_lsm.29_157(49), d_lsm.29_160(52)>
+  # x_lsm.30_164 = PHI <x_lsm.30_163(49), _4(52)>
+  # x_lsm.31_166 = PHI <x_lsm.31_165(49), 1(52)>
+  # y_lsm.32_168 = PHI <y_lsm.32_167(49), _5(52)>
+  # y_lsm.33_170 = PHI <y_lsm.33_169(49), 1(52)>
+  # c_lsm.34_172 = PHI <c_lsm.34_171(49), _6(52)>
+  # c_lsm.35_174 = PHI <c_lsm.35_173(49), 1(52)>
+  _16 = b.0_117 + 1.0e+0;
+  if (k.1_2 >= _16)
+    goto <bb 53>; [89.00%]
+  else
+    goto <bb 27>; [11.00%]
+
+  <bb 53> [local count: 12992277]:
+  goto <bb 15>; [100.00%]
+
+  <bb 27> [local count: 1605787]:
+  if (powcheck_lsm.27_113 != 0)
+    goto <bb 28>; [66.67%]
+  else
+    goto <bb 54>; [33.33%]
+
+  <bb 54> [local count: 535262]:
+  goto <bb 29>; [100.00%]
+
+  <bb 28> [local count: 1070525]:
+  powcheck = powcheck_lsm.26_110;
+
+  <bb 29> [local count: 1070525]:
+  if (d_lsm.29_162 != 0)
+    goto <bb 30>; [66.67%]
+  else
+    goto <bb 55>; [33.33%]
+
+  <bb 55> [local count: 356842]:
+  goto <bb 31>; [100.00%]
+
+  <bb 30> [local count: 713683]:
+  d = d_lsm.28_156;
+
+  <bb 31> [local count: 713683]:
+  if (x_lsm.31_166 != 0)
+    goto <bb 32>; [66.67%]
+  else
+    goto <bb 56>; [33.33%]
+
+  <bb 56> [local count: 237894]:
+  goto <bb 33>; [100.00%]
+
+  <bb 32> [local count: 475789]:
+  x = x_lsm.30_164;
+
+  <bb 33> [local count: 475789]:
+  if (y_lsm.33_170 != 0)
+    goto <bb 34>; [66.67%]
+  else
+    goto <bb 57>; [33.33%]
+
+  <bb 57> [local count: 158596]:
+  goto <bb 35>; [100.00%]
+
+  <bb 34> [local count: 317193]:
+  y = y_lsm.32_168;
+
+  <bb 35> [local count: 317193]:
+  if (c_lsm.35_174 != 0)
+    goto <bb 36>; [66.67%]
+  else
+    goto <bb 58>; [33.33%]
+
+  <bb 58> [local count: 105731]:
+  goto <bb 37>; [100.00%]
+
+  <bb 36> [local count: 211462]:
+  c = c_lsm.34_172;
+
+  <bb 37> [local count: 1605787]:
+  a = 1.0e+0;
+  b = _16;
+  end_79 = clock ();
+  _17 = end_79 - begin_58;
+  _18 = (double) _17;
+  elapsed_secs_80 = _18 / 1.0e+6;
+  _189 = (unsigned int) p_121;
+  _116 = _189 + 4294967295;
+  _207 = (int) _116;
+  if (p_121 == 1)
+    goto <bb 59>; [25.25%]
+  else
+    goto <bb 38>; [74.75%]
+
+  <bb 59> [local count: 405416]:
+  goto <bb 40>; [100.00%]
+
+  <bb 38> [local count: 1200371]:
+  if (p_121 == 2)
+    goto <bb 60>; [33.77%]
+  else
+    goto <bb 61>; [66.23%]
+
+  <bb 60> [local count: 405416]:
+  goto <bb 41>; [100.00%]
+
+  <bb 61> [local count: 794955]:
+
+  <bb 39> [local count: 993423]:
+  # _138 = PHI <_9(47), _207(61)>
+  # elapsed_secs_148 = PHI <elapsed_secs_51(47), elapsed_secs_80(61)>
+  if (p_121 == 3)
+    goto <bb 62>; [40.81%]
+  else
+    goto <bb 63>; [59.19%]
+
+  <bb 62> [local count: 405416]:
+  goto <bb 43>; [100.00%]
+
+  <bb 63> [local count: 588007]:
+
+  <bb 40> [local count: 993423]:
+  # r_45 = PHI <3.0000000260770320892333984375e-3(59), r_123(63)>
+  # _139 = PHI <_207(59), _138(63)>
+  # elapsed_secs_149 = PHI <elapsed_secs_80(59), elapsed_secs_148(63)>
+  if (p_121 == 4)
+    goto <bb 64>; [40.81%]
+  else
+    goto <bb 65>; [59.19%]
+
+  <bb 64> [local count: 405416]:
+  goto <bb 43>; [100.00%]
+
+  <bb 65> [local count: 588007]:
+
+  <bb 41> [local count: 993423]:
+  # r_46 = PHI <3.50000001490116119384765625e-2(60), r_45(65)>
+  # _140 = PHI <_207(60), _139(65)>
+  # elapsed_secs_150 = PHI <elapsed_secs_80(60), elapsed_secs_149(65)>
+  if (p_121 == 5)
+    goto <bb 66>; [40.81%]
+  else
+    goto <bb 42>; [59.19%]
+
+  <bb 66> [local count: 405416]:
+  goto <bb 43>; [100.00%]
+
+  <bb 42> [local count: 588007]:
+
+  <bb 43> [local count: 1804255]:
+  # r_47 = PHI <2.730000019073486328125e-1(62), 2.224999904632568359375e+0(64), r_46(42), 7.535999774932861328125e+0(66)>
+  # _141 = PHI <_138(62), _139(64), _140(42), _140(66)>
+  # elapsed_secs_151 = PHI <elapsed_secs_148(62), elapsed_secs_149(64), elapsed_secs_150(42), elapsed_secs_150(66)>
+  _20 = (double) r_47;
+  _21 = _20 / elapsed_secs_151;
+  _22 = _21 * 2.0e+2;
+  _23 = (float) _22;
+  score[_141] = _23;
+  totalscore.23_24 = totalscore;
+  _25 = (double) totalscore.23_24;
+  _26 = (double) _23;
+  _27 = _26 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _28 = _25 + _27;
+  _29 = (float) _28;
+  totalscore = _29;
+  _30 = stagetime[_141];
+  _31 = elapsed_secs_151 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _32 = _30 + _31;
+  stagetime[_141] = _32;
+  _36 = (int) ivtmp.47_106;
+  _85 = std::basic_ostream<char>::operator<< (&cout, _36);
+  std::__ostream_insert<char, std::char_traits<char> > (_85, " % complete!", 12);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_85, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Time taken for that stage:- ", 28);
+  _89 = std::basic_ostream<char>::_M_insert<double> (&cout, elapsed_secs_151);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_89, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Score obtained for that stage:- ", 32);
+  _37 = score[_141];
+  _38 = _37 * 5.0e+0;
+  _90 = (double) _38;
+  _91 = std::basic_ostream<char>::_M_insert<double> (&cout, _90);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_91, &__c, 1);
+  __c ={v} {CLOBBER};
+  p_86 = p_121 + 1;
+  ivtmp.47_115 = ivtmp.47_106 + 4;
+  if (p_86 == 6)
+    goto <bb 44>; [16.67%]
+  else
+    goto <bb 67>; [83.33%]
+
+  <bb 67> [local count: 1503486]:
+  goto <bb 4>; [100.00%]
+
+  <bb 44> [local count: 360938]:
+  ivtmp.57_53 = ivtmp.57_220 + 20;
+  if (ivtmp.57_53 == 104)
+    goto <bb 45>; [16.67%]
+  else
+    goto <bb 68>; [83.33%]
+
+  <bb 68> [local count: 300770]:
+  goto <bb 3>; [100.00%]
+
+  <bb 45> [local count: 72205]:
+  return;
+
+  <bb 46> [local count: 1298842]:
+  k.1_41 = k;
+  goto <bb 14>; [100.00%]
+
+  <bb 47> [local count: 198468]:
+  end_42 = clock ();
+  _40 = end_42 - begin_58;
+  _50 = (double) _40;
+  elapsed_secs_51 = _50 / 1.0e+6;
+  _208 = (unsigned int) p_121;
+  _114 = _208 + 4294967295;
+  _9 = (int) _114;
+  goto <bb 39>; [100.00%]
+
+  <bb 48> [local count: 505413]:
+  k.1_133 = k;
+  if (k.1_133 >= 1.0e+0)
+    goto <bb 69>; [60.73%]
+  else
+    goto <bb 47>; [39.27%]
+
+}
+
+
+
+;; Function main (main, funcdef_no=1889, decl_uid=44612, cgraph_uid=652, symbol_order=669) (executed once)
+
+main (int argc, char * * argv)
+{
+  long int D.48441;
+  char __c;
+  struct exception e;
+  char * _1;
+  float totalscore.24_2;
+  double _3;
+  char * _4;
+  void * _5;
+  float totalscore.25_6;
+  struct FILE * _16;
+  double _26;
+  struct __ostream_type & _27;
+
+  <bb 2> [local count: 1073741825]:
+  if (argc_9(D) != 3)
+    goto <bb 3>; [0.04%]
+  else
+    goto <bb 4>; [99.96%]
+
+  <bb 3> [local count: 429497]:
+  __builtin_puts (&"Arguments: filename optimisationflag"[0]);
+  exit (-1);
+
+  <bb 4> [local count: 1073312327]:
+  mainbase ();
+  _1 = MEM[(char * *)argv_14(D) + 8B];
+  _16 = fopen (_1, "a");
+
+  <bb 5> [local count: 1073312327]:
+  totalscore.24_2 = totalscore;
+  _3 = (double) totalscore.24_2;
+  _4 = MEM[(char * *)argv_14(D) + 16B];
+  fprintf (_16, "%s %lf\n", _4, _3);
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [count: 0]:
+<L11>:
+  goto <bb 11>; [100.00%]
+
+  <bb 7> [local count: 1073312327]:
+  fclose (_16);
+  goto <bb 17>; [100.00%]
+
+  <bb 8> [count: 0]:
+<L12>:
+  goto <bb 11>; [100.00%]
+
+  <bb 17> [local count: 1073312327]:
+
+  <bb 9> [local count: 1073312327]:
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Your system has scored a total of ", 34);
+  totalscore.25_6 = totalscore;
+  _26 = (double) totalscore.25_6;
+  _27 = std::basic_ostream<char>::_M_insert<double> (&cout, _26);
+  std::__ostream_insert<char, std::char_traits<char> > (_27, " points!", 8);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_27, &__c, 1);
+  __c ={v} {CLOBBER};
+  return 0;
+
+  <bb 10> [count: 0]:
+<L10>:
+
+  <bb 11> [count: 0]:
+<L4>:
+  _36 = __builtin_eh_filter (1);
+  if (_36 == 1)
+    goto <bb 13>; [33.00%]
+  else
+    goto <bb 12>; [67.00%]
+
+  <bb 12> [count: 0]:
+<L9>:
+  resx 1
+
+  <bb 13> [count: 0]:
+<L5>:
+  MEM[(struct  &)&e] ={v} {CLOBBER};
+  e._vptr.exception = &MEM[(void *)&_ZTVSt9exception + 16B];
+  _5 = __builtin_eh_pointer (1);
+  __cxa_begin_catch (_5);
+  std::operator<< <std::char_traits<char> > (&cerr, "File error! \n");
+
+  <bb 14> [count: 0]:
+  std::exception::~exception (&e);
+  __cxa_end_catch ();
+  e ={v} {CLOBBER};
+  goto <bb 9>; [100.00%]
+
+  <bb 15> [count: 0]:
+<L6>:
+  std::exception::~exception (&e);
+  resx 5
+
+  <bb 16> [count: 0]:
+<L7>:
+  __cxa_end_catch ();
+  resx 3
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_check (_GLOBAL__sub_I_check, funcdef_no=2397, decl_uid=48231, cgraph_uid=1157, symbol_order=1366) (executed once)
+
+_GLOBAL__sub_I_check ()
+{
+  <bb 2> [local count: 1073741825]:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+  return;
+
+}
+
+

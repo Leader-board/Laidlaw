@@ -1,0 +1,2 @@
+232 switchlower "Symbol to SSA rewrite" "__static_initialization_and_destruction_0" 1
+237 resx "Symbol to SSA rewrite" "__static_initialization_and_destruction_0" 1

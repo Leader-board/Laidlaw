@@ -1,0 +1,369 @@
+
+;; Function mainbase (_Z8mainbasev, funcdef_no=1888, decl_uid=44493, cgraph_uid=648, symbol_order=665)
+
+Removing basic block 31
+Removing basic block 43
+Removing basic block 44
+Removing basic block 45
+Removing basic block 46
+Removing basic block 47
+Removing basic block 48
+Removing basic block 49
+Removing basic block 50
+Removing basic block 51
+Removing basic block 52
+Removing basic block 53
+Removing basic block 55
+mainbase ()
+{
+  char __c;
+  char __c;
+  char __c;
+  float r;
+  double elapsed_secs;
+  clock_t end;
+  clock_t begin;
+  int p;
+  int q;
+  double k.1_2;
+  double _4;
+  double _5;
+  double _6;
+  double _7;
+  double _8;
+  double powcheck.12_9;
+  double _10;
+  double d.17_11;
+  double _12;
+  double _13;
+  double _14;
+  double _15;
+  double _16;
+  long int _17;
+  double _18;
+  int _19;
+  double _20;
+  double _21;
+  double _22;
+  float _23;
+  float totalscore.23_24;
+  double _25;
+  double _26;
+  double _27;
+  double _28;
+  float _29;
+  double _30;
+  double _31;
+  double _32;
+  int _33;
+  int _34;
+  int _35;
+  int _36;
+  float _37;
+  float _38;
+  long int _40;
+  double k.1_41;
+  double _50;
+  struct basic_ostream & _85;
+  struct __ostream_type & _89;
+  double _90;
+  struct __ostream_type & _91;
+  int _108;
+  double a.2_116;
+  double b.0_117;
+  double k.1_118;
+  double a.2_119;
+  double k.1_133;
+  double k.1_135;
+  int _137;
+  int _138;
+  int _139;
+  int _140;
+  int _141;
+
+  <bb 2> [local count: 72205]:
+
+  <bb 3> [local count: 360938]:
+  # q_120 = PHI <1(2), q_87(39)>
+  # r_122 = PHI <r_55(D)(2), r_48(39)>
+
+  <bb 4> [local count: 1804255]:
+  # p_121 = PHI <1(3), p_86(40)>
+  # r_123 = PHI <r_122(3), r_47(40)>
+  begin_58 = clock ();
+  a = 1.0e+0;
+  b = 1.0e+0;
+  c = 1.0e+0;
+  d = 1.0e+0;
+  if (p_121 == 1)
+    goto <bb 5>; [22.47%]
+  else
+    goto <bb 6>; [77.53%]
+
+  <bb 5> [local count: 405416]:
+  k = 1.0e+2;
+  goto <bb 35>; [100.00%]
+
+  <bb 6> [local count: 1398839]:
+  if (p_121 == 2)
+    goto <bb 7>; [22.47%]
+  else
+    goto <bb 8>; [77.53%]
+
+  <bb 7> [local count: 314319]:
+  k = 2.5e+2;
+  goto <bb 35>; [100.00%]
+
+  <bb 8> [local count: 1084520]:
+  if (p_121 == 3)
+    goto <bb 9>; [22.47%]
+  else
+    goto <bb 10>; [77.53%]
+
+  <bb 9> [local count: 243692]:
+  k = 5.0e+2;
+  goto <bb 35>; [100.00%]
+
+  <bb 10> [local count: 840828]:
+  if (p_121 == 4)
+    goto <bb 11>; [22.47%]
+  else
+    goto <bb 12>; [77.53%]
+
+  <bb 11> [local count: 188934]:
+  k = 1.0e+3;
+  goto <bb 35>; [100.00%]
+
+  <bb 12> [local count: 651894]:
+  if (p_121 == 5)
+    goto <bb 13>; [22.47%]
+  else
+    goto <bb 37>; [77.53%]
+
+  <bb 13> [local count: 146481]:
+  k = 1.5e+3;
+  goto <bb 35>; [100.00%]
+
+  <bb 14> [local count: 1605787]:
+  # k.1_135 = PHI <k.1_41(35), k.1_133(37)>
+
+  <bb 15> [local count: 14598064]:
+  # b.0_117 = PHI <1.0e+0(14), _16(41)>
+  # k.1_118 = PHI <k.1_135(14), k.1_2(41)>
+  a.2_116 = a;
+  if (a.2_116 <= k.1_118)
+    goto <bb 38>; [89.00%]
+  else
+    goto <bb 25>; [11.00%]
+
+  <bb 38> [local count: 12992277]:
+
+  <bb 16> [local count: 118111601]:
+  # a.2_119 = PHI <a.2_116(38), _15(42)>
+  _4 = a.2_119 * a.2_119;
+  x = _4;
+  _5 = b.0_117 * b.0_117;
+  y = _5;
+  _6 = _4 + _5;
+  c = _6;
+  powcheck = b.0_117;
+  goto <bb 18>; [100.00%]
+
+  <bb 17> [local count: 955630224]:
+
+  <bb 18> [local count: 1073741825]:
+  _7 = k.1_118 * 1.4199999999999999289457264239899814128875732421875e+0;
+  _8 = ceil (_7);
+  powcheck.12_9 = powcheck;
+  if (_8 >= powcheck.12_9)
+    goto <bb 19>; [89.00%]
+  else
+    goto <bb 24>; [11.00%]
+
+  <bb 19> [local count: 955630224]:
+  _10 = powcheck.12_9 * powcheck.12_9;
+  if (_6 == _10)
+    goto <bb 20>; [50.00%]
+  else
+    goto <bb 23>; [50.00%]
+
+  <bb 20> [local count: 477815112]:
+  d.17_11 = d;
+  if (_6 >= d.17_11)
+    goto <bb 21>; [50.00%]
+  else
+    goto <bb 22>; [50.00%]
+
+  <bb 21> [local count: 238907556]:
+  d = _6;
+
+  <bb 22> [local count: 477815112]:
+  _12 = k.1_118 * 2.0e+0;
+  _13 = _12 + 1.0e+0;
+  powcheck = _13;
+  goto <bb 17>; [100.00%]
+
+  <bb 23> [local count: 477815112]:
+  _14 = powcheck.12_9 + 1.0e+0;
+  powcheck = _14;
+  goto <bb 17>; [100.00%]
+
+  <bb 24> [local count: 118111601]:
+  _15 = a.2_119 + 1.0e+0;
+  a = _15;
+  if (_15 <= k.1_118)
+    goto <bb 42>; [89.00%]
+  else
+    goto <bb 25>; [11.00%]
+
+  <bb 42> [local count: 105119325]:
+  goto <bb 16>; [100.00%]
+
+  <bb 25> [local count: 14598064]:
+  a = 1.0e+0;
+  _16 = b.0_117 + 1.0e+0;
+  b = _16;
+  k.1_2 = k;
+  if (k.1_2 >= _16)
+    goto <bb 41>; [89.00%]
+  else
+    goto <bb 26>; [11.00%]
+
+  <bb 41> [local count: 12992277]:
+  goto <bb 15>; [100.00%]
+
+  <bb 26> [local count: 1605787]:
+  end_79 = clock ();
+  _17 = end_79 - begin_58;
+  _18 = (double) _17;
+  elapsed_secs_80 = _18 / 1.0e+6;
+  _19 = p_121 + -1;
+  if (p_121 == 1)
+    goto <bb 28>; [25.25%]
+  else
+    goto <bb 27>; [74.75%]
+
+  <bb 27> [local count: 1398839]:
+  # _137 = PHI <_108(36), _19(26)>
+  # elapsed_secs_147 = PHI <elapsed_secs_51(36), elapsed_secs_80(26)>
+  if (p_121 == 2)
+    goto <bb 29>; [28.98%]
+  else
+    goto <bb 28>; [71.02%]
+
+  <bb 28> [local count: 1398839]:
+  # r_44 = PHI <3.0000000260770320892333984375e-3(26), r_123(27)>
+  # _138 = PHI <_19(26), _137(27)>
+  # elapsed_secs_148 = PHI <elapsed_secs_80(26), elapsed_secs_147(27)>
+  if (p_121 == 3)
+    goto <bb 30>; [28.98%]
+  else
+    goto <bb 29>; [71.02%]
+
+  <bb 29> [local count: 1398839]:
+  # r_45 = PHI <3.50000001490116119384765625e-2(27), r_44(28)>
+  # _139 = PHI <_137(27), _138(28)>
+  # elapsed_secs_149 = PHI <elapsed_secs_147(27), elapsed_secs_148(28)>
+  if (p_121 == 4)
+    goto <bb 32>; [28.98%]
+  else
+    goto <bb 30>; [71.02%]
+
+  <bb 30> [local count: 1398839]:
+  # r_46 = PHI <2.730000019073486328125e-1(28), r_45(29)>
+  # _140 = PHI <_138(28), _139(29)>
+  # elapsed_secs_150 = PHI <elapsed_secs_148(28), elapsed_secs_149(29)>
+  if (p_121 == 5)
+    goto <bb 32>; [28.98%]
+  else
+    goto <bb 54>; [71.02%]
+
+  <bb 54> [local count: 993423]:
+
+  <bb 32> [local count: 1804255]:
+  # r_47 = PHI <2.224999904632568359375e+0(29), 7.535999774932861328125e+0(30), r_46(54)>
+  # _141 = PHI <_139(29), _140(30), _140(54)>
+  # elapsed_secs_151 = PHI <elapsed_secs_149(29), elapsed_secs_150(30), elapsed_secs_150(54)>
+  _20 = (double) r_47;
+  _21 = _20 / elapsed_secs_151;
+  _22 = _21 * 2.0e+2;
+  _23 = (float) _22;
+  score[_141] = _23;
+  totalscore.23_24 = totalscore;
+  _25 = (double) totalscore.23_24;
+  _26 = (double) _23;
+  _27 = _26 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _28 = _25 + _27;
+  _29 = (float) _28;
+  totalscore = _29;
+  _30 = stagetime[_141];
+  _31 = elapsed_secs_151 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _32 = _30 + _31;
+  stagetime[_141] = _32;
+  _33 = q_120 + -1;
+  _34 = _33 * 5;
+  _35 = _34 + p_121;
+  _36 = _35 * 4;
+  _85 = std::basic_ostream<char>::operator<< (&cout, _36);
+  std::__ostream_insert<char, std::char_traits<char> > (_85, " % complete!", 12);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_85, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Time taken for that stage:- ", 28);
+  _89 = std::basic_ostream<char>::_M_insert<double> (&cout, elapsed_secs_151);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_89, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Score obtained for that stage:- ", 32);
+  _37 = score[_141];
+  _38 = _37 * 5.0e+0;
+  _90 = (double) _38;
+  _91 = std::basic_ostream<char>::_M_insert<double> (&cout, _90);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_91, &__c, 1);
+  __c ={v} {CLOBBER};
+  p_86 = p_121 + 1;
+  if (p_86 > 5)
+    goto <bb 33>; [16.67%]
+  else
+    goto <bb 40>; [83.33%]
+
+  <bb 40> [local count: 1503486]:
+  goto <bb 4>; [100.00%]
+
+  <bb 33> [local count: 360938]:
+  # r_48 = PHI <r_47(32)>
+  q_87 = q_120 + 1;
+  if (q_87 > 5)
+    goto <bb 34>; [16.67%]
+  else
+    goto <bb 39>; [83.33%]
+
+  <bb 39> [local count: 300770]:
+  goto <bb 3>; [100.00%]
+
+  <bb 34> [local count: 72205]:
+  return;
+
+  <bb 35> [local count: 1298842]:
+  k.1_41 = k;
+  goto <bb 14>; [100.00%]
+
+  <bb 36> [local count: 198468]:
+  end_42 = clock ();
+  _40 = end_42 - begin_58;
+  _50 = (double) _40;
+  elapsed_secs_51 = _50 / 1.0e+6;
+  _108 = p_121 + -1;
+  goto <bb 27>; [100.00%]
+
+  <bb 37> [local count: 505413]:
+  k.1_133 = k;
+  if (k.1_133 >= 1.0e+0)
+    goto <bb 14>; [60.73%]
+  else
+    goto <bb 36>; [39.27%]
+
+}
+
+

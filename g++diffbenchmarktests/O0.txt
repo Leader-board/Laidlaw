@@ -1,0 +1,302 @@
+	jg	.L38					      |		jg	.L37
+	jb	.L35					      |		jb	.L34
+	jb	.L36					      |		jb	.L35
+	jb	.L37					      |		jb	.L36
+.L37:							      |	.L36:
+.L36:							      |	.L35:
+.L35:							      |	.L34:
+.L38:							      |	.L37:
+	je	.L41					      |		je	.L40
+.L41:							      |	.L40:
+.L45:							      |	.L44:
+	jmp	.L49					      |		jmp	.L48
+.L47:							      |	.L46:
+	je	.L44					      |		je	.L43
+.L44:							      |	.L43:
+	jmp	.L45					      |		jmp	.L44
+.L48:							      |	.L47:
+.L49:							      |	.L48:
+	.uleb128 .L47-.LFB1868				      |		.uleb128 .L46-.LFB1868
+	.uleb128 .L48-.LFB1868				      |		.uleb128 .L47-.LFB1868
+	jne	.L52					      |		jne	.L51
+	jne	.L52					      |		jne	.L51
+.L52:							      |	.L51:
+	.section	.rodata.str1.1,"aMS",@progbits,1      |		.section	.rodata
+	.section	.rodata.str1.8,"aMS",@progbits,1      <
+	.section	.rodata.str1.8			      |		.section	.rodata
+	.section	.rodata.str1.1			      <
+	.section	.rodata.str1.8			      <
+	.section	.rodata.str1.1			      <
+	.section	.rodata.cst8,"aM",@progbits,8	      |		.section	.rodata
+	.section	.rodata.cst4,"aM",@progbits,4	      <
+	.section	.rodata.cst8			      <
+	.section	.rodata.cst4			      <
+	subq	$40, %rsp				      |		pushq	%rbp
+	.cfi_def_cfa_offset 48				      |		.cfi_def_cfa_offset 16
+	movsd	%xmm0, 24(%rsp)				      |		.cfi_offset 6, -16
+	movl	%edi, 20(%rsp)				      |		movq	%rsp, %rbp
+	cvtsi2sd	20(%rsp), %xmm1			      |		.cfi_def_cfa_register 6
+	movsd	24(%rsp), %xmm0				      |		subq	$32, %rsp
+							      >		movsd	%xmm0, -8(%rbp)
+							      >		movl	%edi, -12(%rbp)
+							      >		cvtsi2sd	-12(%rbp), %xmm1
+							      >		movsd	-8(%rbp), %xmm0
+	movq	%rax, 8(%rsp)				      |		movq	%rax, -24(%rbp)
+	movsd	8(%rsp), %xmm0				      |		movsd	-24(%rbp), %xmm0
+	addq	$40, %rsp				      |		leave
+	.cfi_def_cfa_offset 8				      |		.cfi_def_cfa 7, 8
+	subq	$104, %rsp				      |		pushq	%rbp
+	.cfi_def_cfa_offset 112				      |		.cfi_def_cfa_offset 16
+	movl	$1, 84(%rsp)				      |		.cfi_offset 6, -16
+							      >		movq	%rsp, %rbp
+							      >		.cfi_def_cfa_register 6
+							      >		subq	$96, %rsp
+							      >		movl	$1, -12(%rbp)
+	cmpl	$5, 84(%rsp)				      |		cmpl	$5, -12(%rbp)
+	movl	$1, 80(%rsp)				      |		movl	$1, -16(%rbp)
+	cmpl	$5, 80(%rsp)				      |		cmpl	$5, -16(%rbp)
+	movq	%rax, 64(%rsp)				      |		movq	%rax, -32(%rbp)
+	movq	$0, 88(%rsp)				      |		movq	$0, -8(%rbp)
+	cmpl	$1, 80(%rsp)				      |		cmpl	$1, -16(%rbp)
+	cmpl	$2, 80(%rsp)				      |		cmpl	$2, -16(%rbp)
+	cmpl	$3, 80(%rsp)				      |		cmpl	$3, -16(%rbp)
+	cmpl	$4, 80(%rsp)				      |		cmpl	$4, -16(%rbp)
+	cmpl	$5, 80(%rsp)				      |		cmpl	$5, -16(%rbp)
+	addq	$1, 88(%rsp)				      |		addq	$1, -8(%rbp)
+	movq	%rax, 56(%rsp)				      |		movq	%rax, -40(%rbp)
+	movq	56(%rsp), %rax				      |		movq	-40(%rbp), %rax
+	subq	64(%rsp), %rax				      |		subq	-32(%rbp), %rax
+	movsd	%xmm0, 48(%rsp)				      |		movsd	%xmm0, -48(%rbp)
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	movsd	48(%rsp), %xmm0				      |		movsd	-48(%rbp), %xmm0
+	movsd	%xmm0, (%rsp,%rax,8)			      |		movsd	%xmm0, -96(%rbp,%rax,8)
+	cmpl	$1, 80(%rsp)				      |		cmpl	$1, -16(%rbp)
+	movss	%xmm0, 76(%rsp)				      |		movss	%xmm0, -20(%rbp)
+	cmpl	$2, 80(%rsp)				      |		cmpl	$2, -16(%rbp)
+	movss	%xmm0, 76(%rsp)				      |		movss	%xmm0, -20(%rbp)
+	cmpl	$3, 80(%rsp)				      |		cmpl	$3, -16(%rbp)
+	movss	%xmm0, 76(%rsp)				      |		movss	%xmm0, -20(%rbp)
+	cmpl	$4, 80(%rsp)				      |		cmpl	$4, -16(%rbp)
+	movss	%xmm0, 76(%rsp)				      |		movss	%xmm0, -20(%rbp)
+	cmpl	$5, 80(%rsp)				      |		cmpl	$5, -16(%rbp)
+	movss	%xmm0, 76(%rsp)				      |		movss	%xmm0, -20(%rbp)
+	cvtss2sd	76(%rsp), %xmm0			      |		cvtss2sd	-20(%rbp), %xmm0
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	movsd	(%rsp,%rax,8), %xmm1			      |		movsd	-96(%rbp,%rax,8), %xmm1
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	movsd	48(%rsp), %xmm2				      |		movsd	-48(%rbp), %xmm2
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	movl	84(%rsp), %eax				      |		movl	-12(%rbp), %eax
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	movsd	(%rsp,%rax,8), %xmm0			      |		movsd	-96(%rbp,%rax,8), %xmm0
+	movl	80(%rsp), %eax				      |		movl	-16(%rbp), %eax
+	addl	$1, 80(%rsp)				      |		addl	$1, -16(%rbp)
+	addl	$1, 84(%rsp)				      |		addl	$1, -12(%rbp)
+	addq	$104, %rsp				      |		leave
+	.cfi_def_cfa_offset 8				      |		.cfi_def_cfa 7, 8
+	movq	%rdi, -8(%rsp)				      |		pushq	%rbp
+	movq	%rsi, -16(%rsp)				      |		.cfi_def_cfa_offset 16
+							      >		.cfi_offset 6, -16
+							      >		movq	%rsp, %rbp
+							      >		.cfi_def_cfa_register 6
+							      >		movq	%rdi, -8(%rbp)
+							      >		movq	%rsi, -16(%rbp)
+	movq	-8(%rsp), %rax				      |		movq	-8(%rbp), %rax
+							      >		popq	%rbp
+							      >		.cfi_def_cfa 7, 8
+	pushq	%rbx					      |		pushq	%rbp
+	.cfi_offset 3, -16				      |		.cfi_offset 6, -16
+	subq	$32, %rsp				      |		movq	%rsp, %rbp
+	.cfi_def_cfa_offset 48				      |		.cfi_def_cfa_register 6
+	movl	%edi, 12(%rsp)				      |		pushq	%rbx
+	movq	%rsi, (%rsp)				      |		subq	$40, %rsp
+	cmpl	$3, 12(%rsp)				      |		.cfi_offset 3, -24
+							      >		movl	%edi, -36(%rbp)
+							      >		movq	%rsi, -48(%rbp)
+							      >		cmpl	$3, -36(%rbp)
+	movq	(%rsp), %rax				      |		movq	-48(%rbp), %rax
+	movq	%rax, 24(%rsp)				      |		movq	%rax, -24(%rbp)
+	movq	(%rsp), %rax				      |		movq	-48(%rbp), %rax
+	movq	24(%rsp), %rax				      |		movq	-24(%rbp), %rax
+	movq	24(%rsp), %rax				      |		movq	-24(%rbp), %rax
+	leaq	16(%rsp), %rax				      |		leaq	-32(%rbp), %rax
+	leaq	16(%rsp), %rax				      |		leaq	-32(%rbp), %rax
+	leaq	16(%rsp), %rax				      |		leaq	-32(%rbp), %rax
+	addq	$32, %rsp				      |		addq	$40, %rsp
+	.cfi_def_cfa_offset 16				      <
+	.cfi_def_cfa_offset 8				      |		popq	%rbp
+							      >		.cfi_def_cfa 7, 8
+	subq	$24, %rsp				      |		pushq	%rbp
+	.cfi_def_cfa_offset 32				      |		.cfi_def_cfa_offset 16
+	movl	%edi, 12(%rsp)				      |		.cfi_offset 6, -16
+	movl	%esi, 8(%rsp)				      |		movq	%rsp, %rbp
+	cmpl	$1, 12(%rsp)				      |		.cfi_def_cfa_register 6
+							      >		subq	$16, %rsp
+							      >		movl	%edi, -4(%rbp)
+							      >		movl	%esi, -8(%rbp)
+							      >		cmpl	$1, -4(%rbp)
+	cmpl	$65535, 8(%rsp)				      |		cmpl	$65535, -8(%rbp)
+	addq	$24, %rsp				      |		leave
+	.cfi_def_cfa_offset 8				      |		.cfi_def_cfa 7, 8
+	subq	$8, %rsp				      |		pushq	%rbp
+							      >		.cfi_offset 6, -16
+							      >		movq	%rsp, %rbp
+							      >		.cfi_def_cfa_register 6
+	addq	$8, %rsp				      |		popq	%rbp
+	.cfi_def_cfa_offset 8				      |		.cfi_def_cfa 7, 8
+.L31:							      |	.L30:
+	jg	.L38					      |		jg	.L37
+.L30:							      |	.L29:
+	jg	.L6					      |		jg	.L5
+	jne	.L7					      |		jne	.L6
+	jmp	.L24					      |		jmp	.L23
+.L7:							      |	.L6:
+	jne	.L9					      |		jne	.L8
+	jmp	.L24					      |		jmp	.L23
+.L9:							      |	.L8:
+	jne	.L10					      |		jne	.L9
+	jmp	.L24					      |		jmp	.L23
+.L10:							      |	.L9:
+	jne	.L11					      |		jne	.L10
+	jmp	.L24					      |		jmp	.L23
+.L11:							      |	.L10:
+	jne	.L24					      |		jne	.L23
+.L24:							      |	.L23:
+	jb	.L35					      |		jb	.L34
+.L23:							      |	.L22:
+	jb	.L36					      |		jb	.L35
+.L22:							      |	.L21:
+	jb	.L37					      |		jb	.L36
+	je	.L18					      |		je	.L17
+	jb	.L19					      |		jb	.L18
+.L19:							      |	.L18:
+	jmp	.L22					      |		jmp	.L21
+.L18:							      |	.L17:
+	jmp	.L22					      |		jmp	.L21
+.L37:							      |	.L36:
+	jmp	.L23					      |		jmp	.L22
+.L36:							      |	.L35:
+	jmp	.L24					      |		jmp	.L23
+.L35:							      |	.L34:
+	jne	.L25					      |		jne	.L24
+.L25:							      |	.L24:
+	jne	.L26					      |		jne	.L25
+.L26:							      |	.L25:
+	jne	.L27					      |		jne	.L26
+.L27:							      |	.L26:
+	jne	.L28					      |		jne	.L27
+.L28:							      |	.L27:
+	jne	.L29					      |		jne	.L28
+.L29:							      |	.L28:
+	jmp	.L30					      |		jmp	.L29
+.L6:							      |	.L5:
+	jmp	.L31					      |		jmp	.L30
+.L38:							      |	.L37:
+	je	.L43					      |		je	.L40
+.L43:							      |	.L40:
+.L47:							      |	.L44:
+	jmp	.L51					      |		jmp	.L48
+.L49:							      |	.L46:
+	je	.L46					      |		je	.L43
+.L46:							      |	.L43:
+	jmp	.L47					      |		jmp	.L44
+.L50:							      |	.L47:
+.L51:							      |	.L48:
+	.uleb128 .L49-.LFB1868				      |		.uleb128 .L46-.LFB1868
+	.uleb128 .L50-.LFB1868				      |		.uleb128 .L47-.LFB1868
+	jne	.L55					      |		jne	.L51
+	jne	.L55					      |		jne	.L51
+.L55:							      |	.L51:
+	subq	$16, %rsp				      |		subq	$32, %rsp
+	nop						      |		movq	%xmm0, %rax
+							      >		movq	%rax, -24(%rbp)
+							      >		movsd	-24(%rbp), %xmm0
+							      >		movsd	b(%rip), %xmm1
+	comisd	b(%rip), %xmm0				      |		comisd	%xmm1, %xmm0
+							      >		movsd	a(%rip), %xmm1
+	comisd	a(%rip), %xmm0				      |		comisd	%xmm1, %xmm0
+							      >		movsd	a(%rip), %xmm1
+	mulsd	a(%rip), %xmm0				      |		mulsd	%xmm1, %xmm0
+							      >		movsd	b(%rip), %xmm1
+	mulsd	b(%rip), %xmm0				      |		mulsd	%xmm1, %xmm0
+	movsd	x(%rip), %xmm0				      |		movsd	x(%rip), %xmm1
+	addsd	y(%rip), %xmm0				      |		movsd	y(%rip), %xmm0
+							      >		addsd	%xmm1, %xmm0
+	comisd	powcheck(%rip), %xmm0			      |		movapd	%xmm0, %xmm1
+							      >		movsd	powcheck(%rip), %xmm0
+							      >		comisd	%xmm0, %xmm1
+	movl	$2, %edi				      <
+							      >		movl	$2, %edi
+	ucomisd	c(%rip), %xmm0				      |		movapd	%xmm0, %xmm1
+							      >		movsd	c(%rip), %xmm0
+							      >		ucomisd	%xmm0, %xmm1
+	ucomisd	c(%rip), %xmm0				      |		ucomisd	%xmm0, %xmm1
+							      >		cvtss2sd	-20(%rbp), %xmm0
+	cvtss2sd	-20(%rbp), %xmm0		      <
+	movl	-16(%rbp), %eax				      <
+	subl	$1, %eax				      <
+							      >		movl	-16(%rbp), %eax
+							      >		subl	$1, %eax
+							      >		movss	totalscore(%rip), %xmm0
+							      >		cvtss2sd	%xmm0, %xmm1
+	cvtss2sd	score(,%rax,4), %xmm1		      |		movss	score(,%rax,4), %xmm0
+							      >		cvtss2sd	%xmm0, %xmm2
+	mulsd	%xmm1, %xmm0				      |		mulsd	%xmm2, %xmm0
+	cvtss2sd	totalscore(%rip), %xmm1		      <
+	addl	%edx, %eax				      |		addl	%eax, %edx
+	movl	-16(%rbp), %edx				      |		movl	-16(%rbp), %eax
+							      >		movl	$_ZTVSt9exception+16, %edx
+	movq	$_ZTVSt9exception+16, (%rax)		      |		movq	%rdx, (%rax)
+							      >		movq	(%rax), %rax
+	movq	(%rax), %rdi				      |		movq	%rax, %rdi
+							      >		movss	totalscore(%rip), %xmm0
+							      >		cvtss2sd	%xmm0, %xmm0
+	leaq	16(%rax), %rdx				      |		addq	$16, %rax
+	cvtss2sd	totalscore(%rip), %xmm0		      |		movq	(%rax), %rdx
+	movq	(%rdx), %rdx				      <
+-fauto-inc-dec
+-fbranch-count-reg
+-fcombine-stack-adjustments
+-fcompare-elim
+-fcprop-registers
+-fdce
+-fdefer-pop
+-fdse
+-fforward-propagate
+-fguess-branch-probability
+-fif-conversion
+-fif-conversion2
+-finline-functions-called-once
+-fipa-profile
+-fipa-pure-const
+-fipa-reference
+-fmerge-constants
+-fmove-loop-invariants
+-fomit-frame-pointer
+-freorder-blocks
+-fshrink-wrap
+-fshrink-wrap-separate
+-fsplit-wide-types
+-fssa-backprop
+-fssa-phiopt
+-ftree-bit-ccp
+-ftree-ccp
+-ftree-ch
+-ftree-coalesce-vars
+-ftree-copy-prop
+-ftree-dce
+-ftree-dominator-opts
+-ftree-dse
+-ftree-forwprop
+-ftree-fre
+-ftree-phiprop
+-ftree-pta
+-ftree-scev-cprop
+-ftree-sink
+-ftree-slsr
+-ftree-sra
+-ftree-ter
+-funit-at-a-time

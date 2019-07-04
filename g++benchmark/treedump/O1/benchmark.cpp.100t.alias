@@ -1,0 +1,1606 @@
+
+;; Function mainbase (_Z8mainbasev, funcdef_no=1888, decl_uid=44493, cgraph_uid=648, symbol_order=665)
+
+Points-to analysis
+
+Constraints:
+
+ANYTHING = &ANYTHING
+ESCAPED = *ESCAPED
+ESCAPED = ESCAPED + UNKNOWN
+*ESCAPED = NONLOCAL
+NONLOCAL = &NONLOCAL
+NONLOCAL = &ESCAPED
+INTEGER = &ANYTHING
+q_39 = &NONLOCAL
+q_39 = q_87
+r_41 = r_55
+r_41 = r_42
+p_40 = p_86
+p_40 = &NONLOCAL
+r_42 = r_47
+r_42 = r_41
+begin_58 = NONLOCAL
+a = NONLOCAL
+a = &NONLOCAL
+ESCAPED = &NONLOCAL
+b = NONLOCAL
+b = &NONLOCAL
+ESCAPED = &NONLOCAL
+c = NONLOCAL
+c = &NONLOCAL
+ESCAPED = &NONLOCAL
+d = NONLOCAL
+d = &NONLOCAL
+ESCAPED = &NONLOCAL
+k = NONLOCAL
+k = &NONLOCAL
+ESCAPED = &NONLOCAL
+k = &NONLOCAL
+ESCAPED = &NONLOCAL
+k = &NONLOCAL
+ESCAPED = &NONLOCAL
+k = &NONLOCAL
+ESCAPED = &NONLOCAL
+k = &NONLOCAL
+ESCAPED = &NONLOCAL
+b.0_1 = b
+k.1_2 = k
+a.2_3 = a
+_4 = a.2_3
+_4 = a.2_3
+x = NONLOCAL
+x = _4
+ESCAPED = _4
+_5 = b.0_1
+_5 = b.0_1
+y = NONLOCAL
+y = _5
+ESCAPED = _5
+_6 = _4
+_6 = _5
+c = _6
+ESCAPED = _6
+powcheck = NONLOCAL
+powcheck = b.0_1
+ESCAPED = b.0_1
+_7 = k.1_2
+_7 = &NONLOCAL
+callarg(34) = _7
+_8 = callarg(34) + UNKNOWN
+_8 = &NONLOCAL
+powcheck.12_9 = powcheck
+_10 = powcheck.12_9
+_10 = powcheck.12_9
+d.17_11 = d
+d = _6
+ESCAPED = _6
+_12 = k.1_2
+_12 = &NONLOCAL
+_13 = _12
+_13 = &NONLOCAL
+powcheck = _13
+ESCAPED = _13
+_14 = powcheck.12_9
+_14 = &NONLOCAL
+powcheck = _14
+ESCAPED = _14
+_15 = a.2_3
+_15 = &NONLOCAL
+a = _15
+ESCAPED = _15
+a = &NONLOCAL
+ESCAPED = &NONLOCAL
+_16 = b.0_1
+_16 = &NONLOCAL
+b = _16
+ESCAPED = _16
+end_79 = NONLOCAL
+_17 = end_79
+_17 = begin_58
+_18 = _17
+elapsed_secs_80 = _18
+elapsed_secs_80 = &NONLOCAL
+_19 = p_40
+_19 = &NONLOCAL
+r_43 = r_42
+r_43 = &NONLOCAL
+r_44 = r_43
+r_44 = &NONLOCAL
+r_45 = r_44
+r_45 = &NONLOCAL
+r_46 = r_45
+r_46 = &NONLOCAL
+r_47 = r_46
+r_47 = &NONLOCAL
+_20 = r_47
+_21 = _20
+_21 = elapsed_secs_80
+_22 = _21
+_22 = &NONLOCAL
+_23 = _22
+score = NONLOCAL
+score = _23
+ESCAPED = _23
+totalscore = NONLOCAL
+totalscore.23_24 = totalscore
+_25 = totalscore.23_24
+_26 = _23
+_27 = _26
+_27 = &NONLOCAL
+_28 = _25
+_28 = _27
+_29 = _28
+totalscore = _29
+ESCAPED = _29
+stagetime = NONLOCAL
+_30 = stagetime
+_31 = elapsed_secs_80
+_31 = &NONLOCAL
+_32 = _30
+_32 = _31
+stagetime = _32
+ESCAPED = _32
+_33 = q_39
+_33 = &NONLOCAL
+_34 = _33
+_34 = &NONLOCAL
+_35 = _34
+_35 = p_40
+_36 = _35
+_36 = &NONLOCAL
+_ZSt4cout = NONLOCAL
+ESCAPED = &_ZSt4cout
+ESCAPED = _36
+_85 = NONLOCAL
+ESCAPED = _85
+ESCAPED = &STRING
+ESCAPED = &NONLOCAL
+__c = &NONLOCAL
+ESCAPED = _85
+ESCAPED = &__c
+ESCAPED = &NONLOCAL
+ESCAPED = &_ZSt4cout
+ESCAPED = &STRING
+ESCAPED = &NONLOCAL
+ESCAPED = &_ZSt4cout
+ESCAPED = elapsed_secs_80
+_89 = NONLOCAL
+__c = &NONLOCAL
+ESCAPED = _89
+ESCAPED = &__c
+ESCAPED = &NONLOCAL
+ESCAPED = &_ZSt4cout
+ESCAPED = &STRING
+ESCAPED = &NONLOCAL
+_37 = score
+_38 = _37
+_38 = &NONLOCAL
+_90 = _38
+ESCAPED = &_ZSt4cout
+ESCAPED = _90
+_91 = NONLOCAL
+__c = &NONLOCAL
+ESCAPED = _91
+ESCAPED = &__c
+ESCAPED = &NONLOCAL
+p_86 = p_40
+p_86 = &NONLOCAL
+q_87 = q_39
+q_87 = &NONLOCAL
+
+Collapsing static cycles and doing variable substitution
+Building predecessor graph
+Detecting pointer and location equivalences
+
+
+// The constraint graph before var-substitution in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING"[label="ANYTHING = { 2 }"];
+"STRING";
+"ESCAPED"[label="ESCAPED = { 3 5 22 24 26 27 }"];
+"NONLOCAL"[label="NONLOCAL = { 4 5 }"];
+"STOREDANYTHING";
+"INTEGER"[label="INTEGER = { 2 }"];
+"clock";
+"c"[label="c = { 5 }"];
+"d"[label="d = { 5 }"];
+"k"[label="k = { 5 }"];
+"x";
+"y";
+"ceil";
+"score";
+"_ZNSolsEi";
+"_ZSt4cout";
+"_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l";
+"__c"[label="__c = { 5 }"];
+"_ZNSo9_M_insertIdEERSoT_";
+"__c"[label="__c = { 5 }"];
+"__c"[label="__c = { 5 }"];
+"q_39"[label="q_39 = { 5 }"];
+"r_55";
+"p_40"[label="p_40 = { 5 }"];
+"r_47"[label="r_47 = { 5 }"];
+"begin_58";
+"b.0_1"[label="b.0_1 = { 5 }"];
+"k.1_2";
+"a.2_3"[label="a.2_3 = { 5 }"];
+"_4";
+"_5";
+"_6";
+"_7"[label="_7 = { 5 }"];
+"callarg(34)";
+"_8"[label="_8 = { 5 }"];
+"_10";
+"d.17_11";
+"_12"[label="_12 = { 5 }"];
+"_13"[label="_13 = { 5 }"];
+"_14"[label="_14 = { 5 }"];
+"end_79";
+"_17";
+"_18";
+"elapsed_secs_80"[label="elapsed_secs_80 = { 5 }"];
+"_19"[label="_19 = { 5 }"];
+"_20";
+"_21";
+"_22"[label="_22 = { 5 }"];
+"_23";
+"_26";
+"_27"[label="_27 = { 5 }"];
+"_29";
+"_31"[label="_31 = { 5 }"];
+"_32";
+"_33"[label="_33 = { 5 }"];
+"_34"[label="_34 = { 5 }"];
+"_35";
+"_36"[label="_36 = { 5 }"];
+"_85";
+"_89";
+"_37";
+"_38"[label="_38 = { 5 }"];
+"_90";
+"_91";
+"*NULL";
+"*ANYTHING";
+"*STRING";
+"*STOREDANYTHING";
+"*INTEGER";
+"*clock";
+"*c";
+"*d";
+"*x";
+"*y";
+"*ceil";
+"*_ZNSolsEi";
+"*_ZSt4cout";
+"*_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l";
+"*__c";
+"*_ZNSo9_M_insertIdEERSoT_";
+"*__c";
+"*__c";
+"*q_39";
+"*r_55";
+"*p_40";
+"*r_47";
+"*_7";
+"*callarg(34)";
+"*_8";
+"*_10";
+"*d.17_11";
+"*_19";
+"*_20";
+"*_33";
+"*_34";
+"*_35";
+"*_36";
+
+  // Edges in the constraint graph:
+"NONLOCAL" -> "ESCAPED";
+"b.0_1" -> "ESCAPED";
+"_4" -> "ESCAPED";
+"_5" -> "ESCAPED";
+"_6" -> "ESCAPED";
+"_13" -> "ESCAPED";
+"_14" -> "ESCAPED";
+"a.2_3" -> "ESCAPED";
+"b.0_1" -> "ESCAPED";
+"elapsed_secs_80" -> "ESCAPED";
+"_23" -> "ESCAPED";
+"_29" -> "ESCAPED";
+"_32" -> "ESCAPED";
+"_36" -> "ESCAPED";
+"_85" -> "ESCAPED";
+"_89" -> "ESCAPED";
+"_90" -> "ESCAPED";
+"_91" -> "ESCAPED";
+"ESCAPED" -> "ESCAPED";
+"NONLOCAL" -> "c";
+"_6" -> "c";
+"NONLOCAL" -> "d";
+"_6" -> "d";
+"NONLOCAL" -> "k";
+"NONLOCAL" -> "x";
+"_4" -> "x";
+"NONLOCAL" -> "y";
+"_5" -> "y";
+"NONLOCAL" -> "score";
+"_23" -> "score";
+"NONLOCAL" -> "_ZSt4cout";
+"q_39" -> "q_39";
+"q_39" -> "q_39";
+"p_40" -> "p_40";
+"p_40" -> "p_40";
+"r_47" -> "r_47";
+"r_55" -> "r_47";
+"r_47" -> "r_47";
+"r_47" -> "r_47";
+"r_47" -> "r_47";
+"r_47" -> "r_47";
+"r_47" -> "r_47";
+"r_47" -> "r_47";
+"NONLOCAL" -> "begin_58";
+"NONLOCAL" -> "b.0_1";
+"b.0_1" -> "b.0_1";
+"b.0_1" -> "b.0_1";
+"b.0_1" -> "b.0_1";
+"k" -> "k.1_2";
+"NONLOCAL" -> "a.2_3";
+"a.2_3" -> "a.2_3";
+"a.2_3" -> "a.2_3";
+"a.2_3" -> "a.2_3";
+"a.2_3" -> "_4";
+"b.0_1" -> "_5";
+"_4" -> "_6";
+"_5" -> "_6";
+"k.1_2" -> "_7";
+"_7" -> "callarg(34)";
+"_14" -> "_10";
+"d" -> "d.17_11";
+"k.1_2" -> "_12";
+"_12" -> "_13";
+"NONLOCAL" -> "_14";
+"_14" -> "_14";
+"b.0_1" -> "_14";
+"_14" -> "_14";
+"_13" -> "_14";
+"_14" -> "_14";
+"NONLOCAL" -> "end_79";
+"begin_58" -> "_17";
+"end_79" -> "_17";
+"_17" -> "_18";
+"_18" -> "elapsed_secs_80";
+"p_40" -> "_19";
+"r_47" -> "_20";
+"elapsed_secs_80" -> "_21";
+"_20" -> "_21";
+"_21" -> "_22";
+"_22" -> "_23";
+"_23" -> "_26";
+"_26" -> "_27";
+"NONLOCAL" -> "_29";
+"_29" -> "_29";
+"_29" -> "_29";
+"_29" -> "_29";
+"_27" -> "_29";
+"_29" -> "_29";
+"_29" -> "_29";
+"elapsed_secs_80" -> "_31";
+"NONLOCAL" -> "_32";
+"_32" -> "_32";
+"_32" -> "_32";
+"_31" -> "_32";
+"_32" -> "_32";
+"q_39" -> "_33";
+"_33" -> "_34";
+"p_40" -> "_35";
+"_34" -> "_35";
+"_35" -> "_36";
+"NONLOCAL" -> "_85";
+"NONLOCAL" -> "_89";
+"score" -> "_37";
+"_37" -> "_38";
+"_38" -> "_90";
+"NONLOCAL" -> "_91";
+}
+
+
+Rewriting constraints and unifying variables
+Uniting pointer but not location equivalent variables
+Finding indirect cycles
+
+
+// The constraint graph before solve-graph in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING";
+"STRING";
+"ESCAPED" [label="\N\nESCAPED = ESCAPED + UNKNOWN\lESCAPED = *ESCAPED\l*ESCAPED = NONLOCAL\l"];
+"STOREDANYTHING";
+"INTEGER";
+"clock";
+"ceil";
+"_ZNSolsEi";
+"_ZSt4cout";
+"_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l";
+"__c";
+"_ZNSo9_M_insertIdEERSoT_";
+"__c";
+"__c";
+"q_39";
+"r_55";
+"begin_58" [label="\N\n_8 = begin_58 + UNKNOWN\l"];
+"_8";
+
+  // Edges in the constraint graph:
+"STOREDANYTHING" -> "ESCAPED";
+"STOREDANYTHING" -> "_ZSt4cout";
+"STOREDANYTHING" -> "__c";
+"STOREDANYTHING" -> "__c";
+"STOREDANYTHING" -> "__c";
+"STOREDANYTHING" -> "_8";
+"q_39" -> "ESCAPED";
+"q_39" -> "begin_58";
+"begin_58" -> "ESCAPED";
+"begin_58" -> "_ZSt4cout";
+}
+
+
+Solving graph
+
+
+// The constraint graph after solve-graph in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING";
+"STRING";
+"ESCAPED" [label="\N\nESCAPED = ESCAPED + UNKNOWN\lESCAPED = *ESCAPED\l*ESCAPED = begin_58\l"];
+"STOREDANYTHING";
+"INTEGER";
+"clock";
+"ceil";
+"_ZNSolsEi";
+"_ZSt4cout";
+"_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l";
+"__c";
+"_ZNSo9_M_insertIdEERSoT_";
+"__c";
+"__c";
+"q_39";
+"r_55";
+"begin_58" [label="\N\n_8 = begin_58 + UNKNOWN\l"];
+"_8";
+
+  // Edges in the constraint graph:
+"STOREDANYTHING" -> "ESCAPED";
+"STOREDANYTHING" -> "_ZSt4cout";
+"STOREDANYTHING" -> "__c";
+"STOREDANYTHING" -> "__c";
+"STOREDANYTHING" -> "__c";
+"STOREDANYTHING" -> "_8";
+"_ZSt4cout" -> "ESCAPED";
+"__c" -> "ESCAPED";
+"__c" -> "ESCAPED";
+"__c" -> "ESCAPED";
+"q_39" -> "ESCAPED";
+"q_39" -> "begin_58";
+"begin_58" -> "ESCAPED";
+"begin_58" -> "_ZSt4cout";
+"begin_58" -> "__c";
+"begin_58" -> "__c";
+"begin_58" -> "__c";
+}
+
+
+
+Points-to sets
+
+ANYTHING = { ANYTHING }
+ESCAPED = { STRING ESCAPED NONLOCAL _ZSt4cout __c __c __c }
+NONLOCAL = { ESCAPED NONLOCAL } same as begin_58
+STOREDANYTHING = { }
+INTEGER = { ANYTHING }
+clock = { }
+a = { ESCAPED NONLOCAL } same as begin_58
+b = { ESCAPED NONLOCAL } same as begin_58
+c = { ESCAPED NONLOCAL } same as begin_58
+d = { ESCAPED NONLOCAL } same as begin_58
+k = { ESCAPED NONLOCAL } same as begin_58
+x = { ESCAPED NONLOCAL } same as begin_58
+y = { ESCAPED NONLOCAL } same as begin_58
+powcheck = { ESCAPED NONLOCAL } same as begin_58
+ceil = { }
+score = { ESCAPED NONLOCAL } same as begin_58
+totalscore = { ESCAPED NONLOCAL } same as begin_58
+stagetime = { ESCAPED NONLOCAL } same as begin_58
+_ZNSolsEi = { }
+_ZSt4cout = { ESCAPED NONLOCAL }
+_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l = { }
+__c = { ESCAPED NONLOCAL }
+_ZNSo9_M_insertIdEERSoT_ = { }
+__c = { ESCAPED NONLOCAL }
+__c = { ESCAPED NONLOCAL }
+q_39 = { NONLOCAL }
+q_87 = { NONLOCAL } same as q_39
+r_41 = { NONLOCAL } same as q_39
+r_55 = { }
+r_42 = { NONLOCAL } same as q_39
+p_40 = { NONLOCAL } same as q_39
+p_86 = { NONLOCAL } same as q_39
+r_47 = { NONLOCAL } same as q_39
+begin_58 = { ESCAPED NONLOCAL }
+b.0_1 = { ESCAPED NONLOCAL } same as begin_58
+k.1_2 = { ESCAPED NONLOCAL } same as begin_58
+a.2_3 = { ESCAPED NONLOCAL } same as begin_58
+_4 = { ESCAPED NONLOCAL } same as begin_58
+_5 = { ESCAPED NONLOCAL } same as begin_58
+_6 = { ESCAPED NONLOCAL } same as begin_58
+_7 = { ESCAPED NONLOCAL } same as begin_58
+callarg(34) = { ESCAPED NONLOCAL } same as begin_58
+_8 = { ESCAPED NONLOCAL }
+powcheck.12_9 = { ESCAPED NONLOCAL } same as begin_58
+_10 = { ESCAPED NONLOCAL } same as begin_58
+d.17_11 = { ESCAPED NONLOCAL } same as begin_58
+_12 = { ESCAPED NONLOCAL } same as begin_58
+_13 = { ESCAPED NONLOCAL } same as begin_58
+_14 = { ESCAPED NONLOCAL } same as begin_58
+_15 = { ESCAPED NONLOCAL } same as begin_58
+_16 = { ESCAPED NONLOCAL } same as begin_58
+end_79 = { ESCAPED NONLOCAL } same as begin_58
+_17 = { ESCAPED NONLOCAL } same as begin_58
+_18 = { ESCAPED NONLOCAL } same as begin_58
+elapsed_secs_80 = { ESCAPED NONLOCAL } same as begin_58
+_19 = { NONLOCAL } same as q_39
+r_43 = { NONLOCAL } same as q_39
+r_44 = { NONLOCAL } same as q_39
+r_45 = { NONLOCAL } same as q_39
+r_46 = { NONLOCAL } same as q_39
+_20 = { NONLOCAL } same as q_39
+_21 = { ESCAPED NONLOCAL } same as begin_58
+_22 = { ESCAPED NONLOCAL } same as begin_58
+_23 = { ESCAPED NONLOCAL } same as begin_58
+totalscore.23_24 = { ESCAPED NONLOCAL } same as begin_58
+_25 = { ESCAPED NONLOCAL } same as begin_58
+_26 = { ESCAPED NONLOCAL } same as begin_58
+_27 = { ESCAPED NONLOCAL } same as begin_58
+_28 = { ESCAPED NONLOCAL } same as begin_58
+_29 = { ESCAPED NONLOCAL } same as begin_58
+_30 = { ESCAPED NONLOCAL } same as begin_58
+_31 = { ESCAPED NONLOCAL } same as begin_58
+_32 = { ESCAPED NONLOCAL } same as begin_58
+_33 = { NONLOCAL } same as q_39
+_34 = { NONLOCAL } same as q_39
+_35 = { NONLOCAL } same as q_39
+_36 = { NONLOCAL } same as q_39
+_85 = { ESCAPED NONLOCAL } same as begin_58
+_89 = { ESCAPED NONLOCAL } same as begin_58
+_37 = { ESCAPED NONLOCAL } same as begin_58
+_38 = { ESCAPED NONLOCAL } same as begin_58
+_90 = { ESCAPED NONLOCAL } same as begin_58
+_91 = { ESCAPED NONLOCAL } same as begin_58
+
+
+Alias information for void mainbase()
+
+Aliased symbols
+
+__c, UID D.48381, char, is addressable
+__c, UID D.48372, char, is addressable
+__c, UID D.48363, char, is addressable
+
+Call clobber information
+
+ESCAPED, points-to non-local, points-to vars: { D.39827 D.48363 D.48372 D.48381 } (nonlocal, escaped, interposable)
+
+Flow-insensitive points-to information
+
+_85, points-to non-local, points-to escaped, points-to NULL, points-to vars: { }
+_89, points-to non-local, points-to escaped, points-to NULL, points-to vars: { }
+_91, points-to non-local, points-to escaped, points-to NULL, points-to vars: { }
+
+mainbase ()
+{
+  char __c;
+  char __c;
+  char __c;
+  float r;
+  double elapsed_secs;
+  clock_t end;
+  clock_t begin;
+  int p;
+  int q;
+  double b.0_1;
+  double k.1_2;
+  double a.2_3;
+  double _4;
+  double _5;
+  double _6;
+  double _7;
+  double _8;
+  double powcheck.12_9;
+  double _10;
+  double d.17_11;
+  double _12;
+  double _13;
+  double _14;
+  double _15;
+  double _16;
+  long int _17;
+  double _18;
+  int _19;
+  double _20;
+  double _21;
+  double _22;
+  float _23;
+  float totalscore.23_24;
+  double _25;
+  double _26;
+  double _27;
+  double _28;
+  float _29;
+  double _30;
+  double _31;
+  double _32;
+  int _33;
+  int _34;
+  int _35;
+  int _36;
+  float _37;
+  float _38;
+  struct basic_ostream & _85;
+  struct __ostream_type & _89;
+  double _90;
+  struct __ostream_type & _91;
+
+  <bb 2> [local count: 72205]:
+
+  <bb 3> [local count: 433143]:
+  # q_39 = PHI <1(2), q_87(39)>
+  # r_41 = PHI <r_55(D)(2), r_42(39)>
+  if (q_39 > 5)
+    goto <bb 40>; [16.67%]
+  else
+    goto <bb 4>; [83.33%]
+
+  <bb 4> [local count: 2165193]:
+  # p_40 = PHI <p_86(38), 1(3)>
+  # r_42 = PHI <r_47(38), r_41(3)>
+  if (p_40 > 5)
+    goto <bb 39>; [16.67%]
+  else
+    goto <bb 5>; [83.33%]
+
+  <bb 5> [local count: 1804255]:
+  begin_58 = clock ();
+  a = 1.0e+0;
+  b = 1.0e+0;
+  c = 1.0e+0;
+  d = 1.0e+0;
+  if (p_40 == 1)
+    goto <bb 6>; [22.47%]
+  else
+    goto <bb 7>; [77.53%]
+
+  <bb 6> [local count: 405416]:
+  k = 1.0e+2;
+  goto <bb 15>; [100.00%]
+
+  <bb 7> [local count: 1398839]:
+  if (p_40 == 2)
+    goto <bb 8>; [22.47%]
+  else
+    goto <bb 9>; [77.53%]
+
+  <bb 8> [local count: 314319]:
+  k = 2.5e+2;
+  goto <bb 15>; [100.00%]
+
+  <bb 9> [local count: 1084520]:
+  if (p_40 == 3)
+    goto <bb 10>; [22.47%]
+  else
+    goto <bb 11>; [77.53%]
+
+  <bb 10> [local count: 243692]:
+  k = 5.0e+2;
+  goto <bb 15>; [100.00%]
+
+  <bb 11> [local count: 840828]:
+  if (p_40 == 4)
+    goto <bb 12>; [22.47%]
+  else
+    goto <bb 13>; [77.53%]
+
+  <bb 12> [local count: 188934]:
+  k = 1.0e+3;
+  goto <bb 15>; [100.00%]
+
+  <bb 13> [local count: 651894]:
+  if (p_40 == 5)
+    goto <bb 14>; [22.47%]
+  else
+    goto <bb 15>; [77.53%]
+
+  <bb 14> [local count: 146481]:
+  k = 1.5e+3;
+
+  <bb 15> [local count: 1804255]:
+
+  <bb 16> [local count: 16402319]:
+  b.0_1 = b;
+  k.1_2 = k;
+  if (b.0_1 <= k.1_2)
+    goto <bb 17>; [89.00%]
+  else
+    goto <bb 28>; [11.00%]
+
+  <bb 17> [local count: 132709664]:
+  a.2_3 = a;
+  if (k.1_2 >= a.2_3)
+    goto <bb 18>; [89.00%]
+  else
+    goto <bb 27>; [11.00%]
+
+  <bb 18> [local count: 118111601]:
+  _4 = a.2_3 * a.2_3;
+  x = _4;
+  _5 = b.0_1 * b.0_1;
+  y = _5;
+  _6 = _4 + _5;
+  c = _6;
+  powcheck = b.0_1;
+  goto <bb 20>; [100.00%]
+
+  <bb 19> [local count: 955630223]:
+
+  <bb 20> [local count: 1073741825]:
+  _7 = k.1_2 * 1.4199999999999999289457264239899814128875732421875e+0;
+  _8 = ceil (_7);
+  powcheck.12_9 = powcheck;
+  if (_8 >= powcheck.12_9)
+    goto <bb 21>; [89.00%]
+  else
+    goto <bb 26>; [11.00%]
+
+  <bb 21> [local count: 955630224]:
+  _10 = powcheck.12_9 * powcheck.12_9;
+  if (_6 == _10)
+    goto <bb 22>; [50.00%]
+  else
+    goto <bb 25>; [50.00%]
+
+  <bb 22> [local count: 477815112]:
+  d.17_11 = d;
+  if (_6 >= d.17_11)
+    goto <bb 23>; [50.00%]
+  else
+    goto <bb 24>; [50.00%]
+
+  <bb 23> [local count: 238907556]:
+  d = _6;
+
+  <bb 24> [local count: 477815112]:
+  _12 = k.1_2 * 2.0e+0;
+  _13 = _12 + 1.0e+0;
+  powcheck = _13;
+  goto <bb 19>; [100.00%]
+
+  <bb 25> [local count: 477815112]:
+  _14 = powcheck.12_9 + 1.0e+0;
+  powcheck = _14;
+  goto <bb 19>; [100.00%]
+
+  <bb 26> [local count: 118111601]:
+  _15 = a.2_3 + 1.0e+0;
+  a = _15;
+  goto <bb 17>; [100.00%]
+
+  <bb 27> [local count: 14598063]:
+  a = 1.0e+0;
+  _16 = b.0_1 + 1.0e+0;
+  b = _16;
+  goto <bb 16>; [100.00%]
+
+  <bb 28> [local count: 1804255]:
+  end_79 = clock ();
+  _17 = end_79 - begin_58;
+  _18 = (double) _17;
+  elapsed_secs_80 = _18 / 1.0e+6;
+  _19 = p_40 + -1;
+  if (p_40 == 1)
+    goto <bb 29>; [22.47%]
+  else
+    goto <bb 30>; [77.53%]
+
+  <bb 29> [local count: 405416]:
+
+  <bb 30> [local count: 1804255]:
+  # r_43 = PHI <r_42(28), 3.0000000260770320892333984375e-3(29)>
+  if (p_40 == 2)
+    goto <bb 31>; [22.47%]
+  else
+    goto <bb 32>; [77.53%]
+
+  <bb 31> [local count: 405416]:
+
+  <bb 32> [local count: 1804255]:
+  # r_44 = PHI <r_43(30), 3.50000001490116119384765625e-2(31)>
+  if (p_40 == 3)
+    goto <bb 33>; [22.47%]
+  else
+    goto <bb 34>; [77.53%]
+
+  <bb 33> [local count: 405416]:
+
+  <bb 34> [local count: 1804255]:
+  # r_45 = PHI <r_44(32), 2.730000019073486328125e-1(33)>
+  if (p_40 == 4)
+    goto <bb 35>; [22.47%]
+  else
+    goto <bb 36>; [77.53%]
+
+  <bb 35> [local count: 405416]:
+
+  <bb 36> [local count: 1804255]:
+  # r_46 = PHI <r_45(34), 2.224999904632568359375e+0(35)>
+  if (p_40 == 5)
+    goto <bb 37>; [22.47%]
+  else
+    goto <bb 38>; [77.53%]
+
+  <bb 37> [local count: 405416]:
+
+  <bb 38> [local count: 1804255]:
+  # r_47 = PHI <r_46(36), 7.535999774932861328125e+0(37)>
+  _20 = (double) r_47;
+  _21 = _20 / elapsed_secs_80;
+  _22 = _21 * 2.0e+2;
+  _23 = (float) _22;
+  score[_19] = _23;
+  totalscore.23_24 = totalscore;
+  _25 = (double) totalscore.23_24;
+  _26 = (double) _23;
+  _27 = _26 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _28 = _25 + _27;
+  _29 = (float) _28;
+  totalscore = _29;
+  _30 = stagetime[_19];
+  _31 = elapsed_secs_80 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _32 = _30 + _31;
+  stagetime[_19] = _32;
+  _33 = q_39 + -1;
+  _34 = _33 * 5;
+  _35 = _34 + p_40;
+  _36 = _35 * 4;
+  _85 = std::basic_ostream<char>::operator<< (&cout, _36);
+  std::__ostream_insert<char, std::char_traits<char> > (_85, " % complete!", 12);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_85, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Time taken for that stage:- ", 28);
+  _89 = std::basic_ostream<char>::_M_insert<double> (&cout, elapsed_secs_80);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_89, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Score obtained for that stage:- ", 32);
+  _37 = score[_19];
+  _38 = _37 * 5.0e+0;
+  _90 = (double) _38;
+  _91 = std::basic_ostream<char>::_M_insert<double> (&cout, _90);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_91, &__c, 1);
+  __c ={v} {CLOBBER};
+  p_86 = p_40 + 1;
+  goto <bb 4>; [100.00%]
+
+  <bb 39> [local count: 360938]:
+  q_87 = q_39 + 1;
+  goto <bb 3>; [100.00%]
+
+  <bb 40> [local count: 72205]:
+  return;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1889, decl_uid=44612, cgraph_uid=652, symbol_order=669) (executed once)
+
+Points-to analysis
+
+Constraints:
+
+ANYTHING = &ANYTHING
+ESCAPED = *ESCAPED
+ESCAPED = ESCAPED + UNKNOWN
+*ESCAPED = NONLOCAL
+NONLOCAL = &NONLOCAL
+NONLOCAL = &ESCAPED
+INTEGER = &ANYTHING
+argc = &NONLOCAL
+argv = &NONLOCAL
+ESCAPED = &STRING
+ESCAPED = &NONLOCAL
+_1 = *argv
+ESCAPED = _1
+ESCAPED = &STRING
+_16 = NONLOCAL
+totalscore = NONLOCAL
+totalscore.24_2 = totalscore
+_3 = totalscore.24_2
+_4 = *argv
+ESCAPED = _16
+ESCAPED = &STRING
+ESCAPED = _4
+ESCAPED = _3
+ESCAPED = _16
+_ZSt4cout = NONLOCAL
+ESCAPED = &_ZSt4cout
+ESCAPED = &STRING
+ESCAPED = &NONLOCAL
+totalscore.25_6 = totalscore
+_26 = totalscore.25_6
+ESCAPED = &_ZSt4cout
+ESCAPED = _26
+_27 = NONLOCAL
+ESCAPED = _27
+ESCAPED = &STRING
+ESCAPED = &NONLOCAL
+__c = &NONLOCAL
+ESCAPED = _27
+ESCAPED = &__c
+ESCAPED = &NONLOCAL
+ESCAPED = &NULL
+CALLUSED(30) = CALLUSED(30) + UNKNOWN
+CALLUSED(30) = *CALLUSED(30) + UNKNOWN
+CALLUSED(30) = &NONLOCAL
+_36 = CALLUSED(30)
+_36 = NONLOCAL
+_ZTVSt9exception = NONLOCAL
+e = &_ZTVSt9exception
+CALLUSED(36) = CALLUSED(36) + UNKNOWN
+CALLUSED(36) = *CALLUSED(36) + UNKNOWN
+CALLUSED(36) = &NONLOCAL
+_5 = CALLUSED(36)
+_5 = NONLOCAL
+ESCAPED = _5
+_ZSt4cerr = NONLOCAL
+ESCAPED = &_ZSt4cerr
+ESCAPED = &STRING
+ESCAPED = &e
+ESCAPED = &e
+
+Collapsing static cycles and doing variable substitution
+Building predecessor graph
+Detecting pointer and location equivalences
+
+
+// The constraint graph before var-substitution in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING"[label="ANYTHING = { 2 }"];
+"STRING";
+"ESCAPED"[label="ESCAPED = { 1 3 5 18 20 22 27 }"];
+"NONLOCAL"[label="NONLOCAL = { 4 5 }"];
+"STOREDANYTHING";
+"INTEGER"[label="INTEGER = { 2 }"];
+"argc"[label="argc = { 5 }"];
+"argv"[label="argv = { 5 }"];
+"puts";
+"exit";
+"_Z8mainbasev";
+"fopen";
+"totalscore";
+"fprintf";
+"fclose";
+"_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l";
+"_ZSt4cout";
+"_ZNSo9_M_insertIdEERSoT_";
+"__c"[label="__c = { 5 }"];
+"__builtin_eh_filter";
+"e"[label="e = { 23 }"];
+"_ZTVSt9exception";
+"__builtin_eh_pointer";
+"__cxa_begin_catch";
+"_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc";
+"_ZSt4cerr";
+"_ZNSt9exceptionD1Ev";
+"__cxa_end_catch";
+"_1";
+"_16";
+"totalscore.24_2";
+"_3";
+"_4";
+"totalscore.25_6";
+"_26";
+"_27";
+"CALLUSED(30)"[label="CALLUSED(30) = { 5 }"];
+"CALLCLOBBERED(31)";
+"_36";
+"CALLUSED(36)"[label="CALLUSED(36) = { 5 }"];
+"CALLCLOBBERED(37)";
+"_5";
+"*NULL";
+"*ANYTHING";
+"*STRING";
+"*STOREDANYTHING";
+"*INTEGER";
+"*argc";
+"*argv";
+"*puts";
+"*exit";
+"*_Z8mainbasev";
+"*fopen";
+"*fprintf";
+"*fclose";
+"*_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l";
+"*_ZSt4cout";
+"*_ZNSo9_M_insertIdEERSoT_";
+"*__c";
+"*__builtin_eh_filter";
+"*e";
+"*_ZTVSt9exception";
+"*__builtin_eh_pointer";
+"*__cxa_begin_catch";
+"*_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc";
+"*_ZSt4cerr";
+"*_ZNSt9exceptionD1Ev";
+"*__cxa_end_catch";
+"*_1";
+"*_4";
+"*CALLUSED(30)";
+"*CALLCLOBBERED(31)";
+"*_36";
+"*CALLUSED(36)";
+"*CALLCLOBBERED(37)";
+
+  // Edges in the constraint graph:
+"NONLOCAL" -> "ESCAPED";
+"_1" -> "ESCAPED";
+"_16" -> "ESCAPED";
+"_3" -> "ESCAPED";
+"_4" -> "ESCAPED";
+"_26" -> "ESCAPED";
+"_27" -> "ESCAPED";
+"_5" -> "ESCAPED";
+"ESCAPED" -> "ESCAPED";
+"NONLOCAL" -> "totalscore";
+"NONLOCAL" -> "_ZSt4cout";
+"NONLOCAL" -> "_ZTVSt9exception";
+"NONLOCAL" -> "_ZSt4cerr";
+"*argv" -> "_1";
+"NONLOCAL" -> "_16";
+"totalscore" -> "totalscore.24_2";
+"totalscore.24_2" -> "_3";
+"*argv" -> "_4";
+"totalscore" -> "totalscore.25_6";
+"totalscore.25_6" -> "_26";
+"NONLOCAL" -> "_27";
+"NONLOCAL" -> "_36";
+"CALLUSED(30)" -> "_36";
+"NONLOCAL" -> "_5";
+"CALLUSED(36)" -> "_5";
+}
+
+
+Rewriting constraints and unifying variables
+Uniting pointer but not location equivalent variables
+Finding indirect cycles
+
+
+// The constraint graph before solve-graph in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING";
+"STRING";
+"ESCAPED" [label="\N\nESCAPED = ESCAPED + UNKNOWN\lESCAPED = *ESCAPED\l*ESCAPED = NONLOCAL\l"];
+"STOREDANYTHING";
+"INTEGER";
+"argc" [label="\N\n_1 = *argc\l"];
+"puts";
+"exit";
+"_Z8mainbasev";
+"fopen";
+"fprintf";
+"fclose";
+"_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l";
+"_ZSt4cout";
+"_ZNSo9_M_insertIdEERSoT_";
+"__c";
+"__builtin_eh_filter";
+"e";
+"_ZTVSt9exception";
+"__builtin_eh_pointer";
+"__cxa_begin_catch";
+"_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc";
+"_ZSt4cerr";
+"_ZNSt9exceptionD1Ev";
+"__cxa_end_catch";
+"_1";
+"_16";
+"CALLUSED(30)" [label="\N\nCALLUSED(30) = CALLUSED(30) + UNKNOWN\lCALLUSED(30) = *CALLUSED(30) + UNKNOWN\l"];
+"CALLCLOBBERED(31)";
+"_36";
+"CALLUSED(36)" [label="\N\nCALLUSED(36) = CALLUSED(36) + UNKNOWN\lCALLUSED(36) = *CALLUSED(36) + UNKNOWN\l"];
+"CALLCLOBBERED(37)";
+"_5";
+
+  // Edges in the constraint graph:
+"STOREDANYTHING" -> "ESCAPED";
+"STOREDANYTHING" -> "_ZSt4cout";
+"STOREDANYTHING" -> "__c";
+"STOREDANYTHING" -> "e";
+"STOREDANYTHING" -> "_ZTVSt9exception";
+"STOREDANYTHING" -> "_ZSt4cerr";
+"STOREDANYTHING" -> "CALLUSED(30)";
+"STOREDANYTHING" -> "CALLUSED(36)";
+"_1" -> "ESCAPED";
+"_16" -> "ESCAPED";
+"_16" -> "_ZSt4cout";
+"_16" -> "_ZTVSt9exception";
+"_16" -> "_ZSt4cerr";
+"_16" -> "_36";
+"_16" -> "_5";
+"CALLUSED(30)" -> "_36";
+"CALLUSED(36)" -> "_5";
+"_5" -> "ESCAPED";
+}
+
+
+Solving graph
+
+
+// The constraint graph after solve-graph in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING";
+"STRING";
+"ESCAPED" [label="\N\nESCAPED = ESCAPED + UNKNOWN\lESCAPED = *ESCAPED\l*ESCAPED = _16\l"];
+"STOREDANYTHING";
+"INTEGER";
+"argc" [label="\N\n_1 = *argc\l"];
+"puts";
+"exit";
+"_Z8mainbasev";
+"fopen";
+"fprintf";
+"fclose";
+"_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l";
+"_ZSt4cout";
+"_ZNSo9_M_insertIdEERSoT_";
+"__c";
+"__builtin_eh_filter";
+"e";
+"_ZTVSt9exception";
+"__builtin_eh_pointer";
+"__cxa_begin_catch";
+"_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc";
+"_ZSt4cerr";
+"_ZNSt9exceptionD1Ev";
+"__cxa_end_catch";
+"_1";
+"_16";
+"CALLUSED(30)" [label="\N\nCALLUSED(30) = CALLUSED(30) + UNKNOWN\lCALLUSED(30) = *CALLUSED(30) + UNKNOWN\l"];
+"CALLCLOBBERED(31)";
+"_36";
+"CALLUSED(36)" [label="\N\nCALLUSED(36) = CALLUSED(36) + UNKNOWN\lCALLUSED(36) = *CALLUSED(36) + UNKNOWN\l"];
+"CALLCLOBBERED(37)";
+"_5";
+
+  // Edges in the constraint graph:
+"STOREDANYTHING" -> "ESCAPED";
+"STOREDANYTHING" -> "_ZSt4cout";
+"STOREDANYTHING" -> "__c";
+"STOREDANYTHING" -> "e";
+"STOREDANYTHING" -> "_ZTVSt9exception";
+"STOREDANYTHING" -> "_ZSt4cerr";
+"STOREDANYTHING" -> "CALLUSED(30)";
+"STOREDANYTHING" -> "CALLUSED(36)";
+"_ZSt4cout" -> "ESCAPED";
+"__c" -> "ESCAPED";
+"e" -> "ESCAPED";
+"_ZTVSt9exception" -> "ESCAPED";
+"_ZSt4cerr" -> "ESCAPED";
+"_1" -> "ESCAPED";
+"_16" -> "ESCAPED";
+"_16" -> "_ZSt4cout";
+"_16" -> "__c";
+"_16" -> "e";
+"_16" -> "_ZTVSt9exception";
+"_16" -> "_ZSt4cerr";
+"_16" -> "_1";
+"_16" -> "CALLUSED(30)";
+"_16" -> "_36";
+"_16" -> "CALLUSED(36)";
+"_16" -> "_5";
+"CALLUSED(30)" -> "_36";
+"CALLUSED(36)" -> "_5";
+"_5" -> "ESCAPED";
+}
+
+
+
+Points-to sets
+
+ANYTHING = { ANYTHING }
+ESCAPED = { NULL STRING ESCAPED NONLOCAL _ZSt4cout __c e _ZTVSt9exception _ZSt4cerr }
+NONLOCAL = { ESCAPED NONLOCAL } same as _16
+STOREDANYTHING = { }
+INTEGER = { ANYTHING }
+argc = { NONLOCAL }
+argv = { NONLOCAL } same as argc
+puts = { }
+exit = { }
+_Z8mainbasev = { }
+fopen = { }
+totalscore = { ESCAPED NONLOCAL } same as _16
+fprintf = { }
+fclose = { }
+_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l = { }
+_ZSt4cout = { ESCAPED NONLOCAL }
+_ZNSo9_M_insertIdEERSoT_ = { }
+__c = { ESCAPED NONLOCAL }
+__builtin_eh_filter = { }
+e = { ESCAPED NONLOCAL _ZTVSt9exception }
+_ZTVSt9exception = { ESCAPED NONLOCAL }
+__builtin_eh_pointer = { }
+__cxa_begin_catch = { }
+_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc = { }
+_ZSt4cerr = { ESCAPED NONLOCAL }
+_ZNSt9exceptionD1Ev = { }
+__cxa_end_catch = { }
+_1 = { ESCAPED NONLOCAL }
+_16 = { ESCAPED NONLOCAL }
+totalscore.24_2 = { ESCAPED NONLOCAL } same as _16
+_3 = { ESCAPED NONLOCAL } same as _16
+_4 = { ESCAPED NONLOCAL } same as _1
+totalscore.25_6 = { ESCAPED NONLOCAL } same as _16
+_26 = { ESCAPED NONLOCAL } same as _16
+_27 = { ESCAPED NONLOCAL } same as _16
+CALLUSED(30) = { ESCAPED NONLOCAL }
+CALLCLOBBERED(31) = { }
+_36 = { ESCAPED NONLOCAL }
+CALLUSED(36) = { ESCAPED NONLOCAL }
+CALLCLOBBERED(37) = { }
+_5 = { ESCAPED NONLOCAL }
+
+
+Alias information for int main(int, char**)
+
+Aliased symbols
+
+__c, UID D.48386, char, is addressable
+e, UID D.44615, struct exception, is addressable
+
+Call clobber information
+
+ESCAPED, points-to non-local, points-to NULL, points-to vars: { D.3125 D.39827 D.39828 D.44615 D.48386 } (nonlocal, escaped, interposable)
+
+Flow-insensitive points-to information
+
+_1, points-to non-local, points-to escaped, points-to NULL, points-to vars: { }
+_4, points-to non-local, points-to escaped, points-to NULL, points-to vars: { }
+_5, points-to non-local, points-to escaped, points-to NULL, points-to vars: { }
+argv_14(D), points-to non-local, points-to NULL, points-to vars: { }
+_16, points-to non-local, points-to escaped, points-to NULL, points-to vars: { }
+_27, points-to non-local, points-to escaped, points-to NULL, points-to vars: { }
+
+main (int argc, char * * argv)
+{
+  long int D.48441;
+  char __c;
+  struct exception e;
+  char * _1;
+  float totalscore.24_2;
+  double _3;
+  char * _4;
+  void * _5;
+  float totalscore.25_6;
+  struct FILE * _16;
+  double _26;
+  struct __ostream_type & _27;
+
+  <bb 2> [local count: 1073741825]:
+  if (argc_9(D) != 3)
+    goto <bb 3>; [0.04%]
+  else
+    goto <bb 4>; [99.96%]
+
+  <bb 3> [local count: 429497]:
+  __builtin_puts (&"Arguments: filename optimisationflag"[0]);
+  exit (-1);
+
+  <bb 4> [local count: 1073312327]:
+  mainbase ();
+  _1 = MEM[(char * *)argv_14(D) + 8B];
+  _16 = fopen (_1, "a");
+
+  <bb 5> [local count: 1073312327]:
+  totalscore.24_2 = totalscore;
+  _3 = (double) totalscore.24_2;
+  _4 = MEM[(char * *)argv_14(D) + 16B];
+  fprintf (_16, "%s %lf\n", _4, _3);
+
+  <bb 6> [local count: 1073312327]:
+  fclose (_16);
+
+  <bb 7> [local count: 1073312327]:
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Your system has scored a total of ", 34);
+  totalscore.25_6 = totalscore;
+  _26 = (double) totalscore.25_6;
+  _27 = std::basic_ostream<char>::_M_insert<double> (&cout, _26);
+  std::__ostream_insert<char, std::char_traits<char> > (_27, " points!", 8);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_27, &__c, 1);
+  __c ={v} {CLOBBER};
+  return 0;
+
+  <bb 8> [count: 0]:
+<L4>:
+  _36 = __builtin_eh_filter (1);
+  switch (_36) <default: <L9> [67.00%], case 1: <L5> [33.00%]>
+
+  <bb 9> [count: 0]:
+<L9>:
+  resx 1
+
+  <bb 10> [count: 0]:
+<L5>:
+  MEM[(struct  &)&e] ={v} {CLOBBER};
+  e._vptr.exception = &MEM[(void *)&_ZTVSt9exception + 16B];
+  _5 = __builtin_eh_pointer (1);
+  __cxa_begin_catch (_5);
+  std::operator<< <std::char_traits<char> > (&cerr, "File error! \n");
+
+  <bb 11> [count: 0]:
+  std::exception::~exception (&e);
+  __cxa_end_catch ();
+  e ={v} {CLOBBER};
+  goto <bb 7>; [100.00%]
+
+  <bb 12> [count: 0]:
+<L6>:
+  std::exception::~exception (&e);
+  resx 5
+
+  <bb 13> [count: 0]:
+<L7>:
+  __cxa_end_catch ();
+  resx 3
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_check (_GLOBAL__sub_I_check, funcdef_no=2397, decl_uid=48231, cgraph_uid=1157, symbol_order=1366) (executed once)
+
+Points-to analysis
+
+Constraints:
+
+ANYTHING = &ANYTHING
+ESCAPED = *ESCAPED
+ESCAPED = ESCAPED + UNKNOWN
+*ESCAPED = NONLOCAL
+NONLOCAL = &NONLOCAL
+NONLOCAL = &ESCAPED
+INTEGER = &ANYTHING
+_ZStL8__ioinit = NONLOCAL
+ESCAPED = &_ZStL8__ioinit
+ESCAPED = &_ZNSt8ios_base4InitD1Ev
+ESCAPED = &_ZStL8__ioinit
+__dso_handle = NONLOCAL
+ESCAPED = &__dso_handle
+
+Collapsing static cycles and doing variable substitution
+Building predecessor graph
+Detecting pointer and location equivalences
+
+
+// The constraint graph before var-substitution in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING"[label="ANYTHING = { 2 }"];
+"STRING";
+"ESCAPED"[label="ESCAPED = { 9 11 12 }"];
+"NONLOCAL"[label="NONLOCAL = { 4 5 }"];
+"STOREDANYTHING";
+"INTEGER"[label="INTEGER = { 2 }"];
+"_ZNSt8ios_base4InitC1Ev";
+"_ZStL8__ioinit";
+"__cxa_atexit";
+"_ZNSt8ios_base4InitD1Ev";
+"__dso_handle";
+"*NULL";
+"*ANYTHING";
+"*STRING";
+"*ESCAPED";
+"*NONLOCAL";
+"*STOREDANYTHING";
+"*INTEGER";
+"*_ZNSt8ios_base4InitC1Ev";
+"*_ZStL8__ioinit";
+"*__cxa_atexit";
+"*_ZNSt8ios_base4InitD1Ev";
+"*__dso_handle";
+
+  // Edges in the constraint graph:
+"*ESCAPED" -> "ESCAPED";
+"NONLOCAL" -> "_ZStL8__ioinit";
+"NONLOCAL" -> "__dso_handle";
+"NONLOCAL" -> "*ESCAPED";
+}
+
+
+Rewriting constraints and unifying variables
+Uniting pointer but not location equivalent variables
+Finding indirect cycles
+
+
+// The constraint graph before solve-graph in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING";
+"STRING";
+"ESCAPED" [label="\N\nESCAPED = ESCAPED + UNKNOWN\lESCAPED = *ESCAPED\l*ESCAPED = NONLOCAL\l"];
+"NONLOCAL";
+"STOREDANYTHING";
+"INTEGER";
+"_ZNSt8ios_base4InitC1Ev";
+"_ZStL8__ioinit";
+"__cxa_atexit";
+"_ZNSt8ios_base4InitD1Ev";
+"__dso_handle";
+
+  // Edges in the constraint graph:
+"NONLOCAL" -> "_ZStL8__ioinit";
+"NONLOCAL" -> "__dso_handle";
+"STOREDANYTHING" -> "ESCAPED";
+"STOREDANYTHING" -> "_ZStL8__ioinit";
+"STOREDANYTHING" -> "_ZNSt8ios_base4InitD1Ev";
+"STOREDANYTHING" -> "__dso_handle";
+}
+
+
+Solving graph
+
+
+// The constraint graph after solve-graph in dot format:
+strict digraph {
+  node [
+    shape = box
+  ]
+  edge [
+    fontsize = "12"
+  ]
+
+  // List of nodes and complex constraints in the constraint graph:
+"NULL";
+"ANYTHING";
+"STRING";
+"ESCAPED" [label="\N\nESCAPED = ESCAPED + UNKNOWN\lESCAPED = *ESCAPED\l*ESCAPED = NONLOCAL\l"];
+"NONLOCAL";
+"STOREDANYTHING";
+"INTEGER";
+"_ZNSt8ios_base4InitC1Ev";
+"_ZStL8__ioinit";
+"__cxa_atexit";
+"_ZNSt8ios_base4InitD1Ev";
+"__dso_handle";
+
+  // Edges in the constraint graph:
+"NONLOCAL" -> "ESCAPED";
+"NONLOCAL" -> "_ZStL8__ioinit";
+"NONLOCAL" -> "_ZNSt8ios_base4InitD1Ev";
+"NONLOCAL" -> "__dso_handle";
+"STOREDANYTHING" -> "ESCAPED";
+"STOREDANYTHING" -> "_ZStL8__ioinit";
+"STOREDANYTHING" -> "_ZNSt8ios_base4InitD1Ev";
+"STOREDANYTHING" -> "__dso_handle";
+"_ZStL8__ioinit" -> "ESCAPED";
+"_ZNSt8ios_base4InitD1Ev" -> "ESCAPED";
+"__dso_handle" -> "ESCAPED";
+}
+
+
+
+Points-to sets
+
+ANYTHING = { ANYTHING }
+ESCAPED = { ESCAPED NONLOCAL _ZStL8__ioinit _ZNSt8ios_base4InitD1Ev __dso_handle }
+NONLOCAL = { ESCAPED NONLOCAL }
+STOREDANYTHING = { }
+INTEGER = { ANYTHING }
+_ZNSt8ios_base4InitC1Ev = { }
+_ZStL8__ioinit = { ESCAPED NONLOCAL }
+__cxa_atexit = { }
+_ZNSt8ios_base4InitD1Ev = { ESCAPED NONLOCAL }
+__dso_handle = { ESCAPED NONLOCAL }
+
+
+Alias information for (static initializers for benchmark.cpp)
+
+Aliased symbols
+
+
+Call clobber information
+
+ESCAPED, points-to non-local, points-to vars: { D.39834 D.48228 } (nonlocal, escaped, interposable)
+
+Flow-insensitive points-to information
+
+
+_GLOBAL__sub_I_check ()
+{
+  <bb 2> [local count: 1073741825]:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+  return;
+
+}
+
+

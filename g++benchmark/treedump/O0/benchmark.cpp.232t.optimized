@@ -1,0 +1,562 @@
+
+;; Function mainbase (_Z8mainbasev, funcdef_no=1866, decl_uid=44408, cgraph_uid=626, symbol_order=643)
+
+mainbase ()
+{
+  struct __ostream_type & D.48194;
+  struct basic_ostream & D.48193;
+  struct __ostream_type & D.48192;
+  struct basic_ostream & D.48191;
+  struct basic_ostream & D.48190;
+  struct basic_ostream & D.48189;
+  float r;
+  double elapsed_secs;
+  clock_t end;
+  clock_t begin;
+  int p;
+  int q;
+  double timetake[5];
+  long int count;
+  double b.0_1;
+  double k.1_2;
+  double a.2_3;
+  double k.3_4;
+  double a.4_5;
+  double a.5_6;
+  double _7;
+  double b.6_8;
+  double b.7_9;
+  double _10;
+  double x.8_11;
+  double y.9_12;
+  double _13;
+  double b.10_14;
+  double k.11_15;
+  double _16;
+  double _17;
+  double powcheck.12_18;
+  double powcheck.13_19;
+  double powcheck.14_20;
+  double _21;
+  double c.15_22;
+  double c.16_23;
+  double d.17_24;
+  double c.18_25;
+  double k.19_26;
+  double _27;
+  double _28;
+  double powcheck.20_29;
+  double _30;
+  double a.21_31;
+  double _32;
+  double b.22_33;
+  double _34;
+  long int _35;
+  double _36;
+  int _37;
+  double _38;
+  int _39;
+  double _40;
+  double _41;
+  double _42;
+  int _43;
+  float _44;
+  float totalscore.23_45;
+  double _46;
+  int _47;
+  float _48;
+  double _49;
+  double _50;
+  double _51;
+  float _52;
+  int _53;
+  double _54;
+  double _55;
+  int _56;
+  double _57;
+  int _58;
+  int _59;
+  int _60;
+  int _61;
+  struct basic_ostream & _62;
+  struct basic_ostream & _63;
+  struct basic_ostream & _64;
+  int _65;
+  double _66;
+  struct __ostream_type & _67;
+  struct basic_ostream & _68;
+  int _69;
+  float _70;
+  float _71;
+  struct __ostream_type & _72;
+  struct basic_ostream & _134;
+  struct basic_ostream & _136;
+  struct basic_ostream & _139;
+  struct __ostream_type & _141;
+  struct basic_ostream & _144;
+  struct __ostream_type & _146;
+
+  <bb 2> :
+  q_94 = 1;
+
+  <bb 3> :
+  # q_77 = PHI <q_94(2), q_150(40)>
+  # r_79 = PHI <r_95(D)(2), r_80(40)>
+  if (q_77 > 5)
+    goto <bb 41>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  p_97 = 1;
+
+  <bb 5> :
+  # p_78 = PHI <p_97(4), p_148(39)>
+  # r_80 = PHI <r_79(4), r_85(39)>
+  if (p_78 > 5)
+    goto <bb 40>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  begin_99 = clock ();
+  a = 1.0e+0;
+  b = 1.0e+0;
+  c = 1.0e+0;
+  d = 1.0e+0;
+  count_104 = 0;
+  if (p_78 == 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  k = 1.0e+2;
+  goto <bb 16>; [INV]
+
+  <bb 8> :
+  if (p_78 == 2)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  k = 2.5e+2;
+  goto <bb 16>; [INV]
+
+  <bb 10> :
+  if (p_78 == 3)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  k = 5.0e+2;
+  goto <bb 16>; [INV]
+
+  <bb 12> :
+  if (p_78 == 4)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  k = 1.0e+3;
+  goto <bb 16>; [INV]
+
+  <bb 14> :
+  if (p_78 == 5)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  k = 1.5e+3;
+
+  <bb 16> :
+  # count_152 = PHI <count_104(7), count_104(9), count_104(11), count_104(13), count_104(14), count_104(15)>
+
+  <bb 17> :
+  # count_73 = PHI <count_152(16), count_74(28)>
+  b.0_1 = b;
+  k.1_2 = k;
+  if (b.0_1 <= k.1_2)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 18> :
+  # count_74 = PHI <count_73(17), count_75(27)>
+  a.2_3 = a;
+  k.3_4 = k;
+  if (a.2_3 <= k.3_4)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 28>; [INV]
+
+  <bb 19> :
+  a.4_5 = a;
+  a.5_6 = a;
+  _7 = a.4_5 * a.5_6;
+  x = _7;
+  b.6_8 = b;
+  b.7_9 = b;
+  _10 = b.6_8 * b.7_9;
+  y = _10;
+  x.8_11 = x;
+  y.9_12 = y;
+  _13 = x.8_11 + y.9_12;
+  c = _13;
+  b.10_14 = b;
+  powcheck = b.10_14;
+
+  <bb 20> :
+  # count_75 = PHI <count_74(19), count_76(26)>
+  k.11_15 = k;
+  _16 = k.11_15 * 1.4199999999999999289457264239899814128875732421875e+0;
+  _17 = ceil (_16);
+  powcheck.12_18 = powcheck;
+  if (_17 >= powcheck.12_18)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 21> :
+  powcheck.13_19 = powcheck;
+  powcheck.14_20 = powcheck;
+  _21 = powcheck.13_19 * powcheck.14_20;
+  c.15_22 = c;
+  if (_21 == c.15_22)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 22> :
+  c.16_23 = c;
+  d.17_24 = d;
+  if (c.16_23 >= d.17_24)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  c.18_25 = c;
+  d = c.18_25;
+
+  <bb 24> :
+  count_115 = count_75 + 1;
+  k.19_26 = k;
+  _27 = k.19_26 * 2.0e+0;
+  _28 = _27 + 1.0e+0;
+  powcheck = _28;
+  goto <bb 26>; [INV]
+
+  <bb 25> :
+  powcheck.20_29 = powcheck;
+  _30 = powcheck.20_29 + 1.0e+0;
+  powcheck = _30;
+
+  <bb 26> :
+  # count_76 = PHI <count_115(24), count_75(25)>
+  goto <bb 20>; [INV]
+
+  <bb 27> :
+  a.21_31 = a;
+  _32 = a.21_31 + 1.0e+0;
+  a = _32;
+  goto <bb 18>; [INV]
+
+  <bb 28> :
+  a = 1.0e+0;
+  b.22_33 = b;
+  _34 = b.22_33 + 1.0e+0;
+  b = _34;
+  goto <bb 17>; [INV]
+
+  <bb 29> :
+  end_122 = clock ();
+  _35 = end_122 - begin_99;
+  _36 = (double) _35;
+  elapsed_secs_123 = _36 / 1.0e+6;
+  _37 = p_78 + -1;
+  timetake[_37] = elapsed_secs_123;
+  if (p_78 == 1)
+    goto <bb 30>; [INV]
+  else
+    goto <bb 31>; [INV]
+
+  <bb 30> :
+  r_125 = 3.0000000260770320892333984375e-3;
+
+  <bb 31> :
+  # r_81 = PHI <r_80(29), r_125(30)>
+  if (p_78 == 2)
+    goto <bb 32>; [INV]
+  else
+    goto <bb 33>; [INV]
+
+  <bb 32> :
+  r_126 = 3.50000001490116119384765625e-2;
+
+  <bb 33> :
+  # r_82 = PHI <r_81(31), r_126(32)>
+  if (p_78 == 3)
+    goto <bb 34>; [INV]
+  else
+    goto <bb 35>; [INV]
+
+  <bb 34> :
+  r_127 = 2.730000019073486328125e-1;
+
+  <bb 35> :
+  # r_83 = PHI <r_82(33), r_127(34)>
+  if (p_78 == 4)
+    goto <bb 36>; [INV]
+  else
+    goto <bb 37>; [INV]
+
+  <bb 36> :
+  r_128 = 2.224999904632568359375e+0;
+
+  <bb 37> :
+  # r_84 = PHI <r_83(35), r_128(36)>
+  if (p_78 == 5)
+    goto <bb 38>; [INV]
+  else
+    goto <bb 39>; [INV]
+
+  <bb 38> :
+  r_129 = 7.535999774932861328125e+0;
+
+  <bb 39> :
+  # r_85 = PHI <r_84(37), r_129(38)>
+  _38 = (double) r_85;
+  _39 = p_78 + -1;
+  _40 = timetake[_39];
+  _41 = _38 / _40;
+  _42 = _41 * 2.0e+2;
+  _43 = p_78 + -1;
+  _44 = (float) _42;
+  score[_43] = _44;
+  totalscore.23_45 = totalscore;
+  _46 = (double) totalscore.23_45;
+  _47 = p_78 + -1;
+  _48 = score[_47];
+  _49 = (double) _48;
+  _50 = _49 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _51 = _46 + _50;
+  _52 = (float) _51;
+  totalscore = _52;
+  _53 = p_78 + -1;
+  _54 = stagetime[_53];
+  _55 = elapsed_secs_123 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _56 = p_78 + -1;
+  _57 = _54 + _55;
+  stagetime[_56] = _57;
+  _58 = q_77 + -1;
+  _59 = _58 * 5;
+  _60 = p_78 + _59;
+  _61 = _60 * 4;
+  _134 = std::basic_ostream<char>::operator<< (&cout, _61);
+  _62 = _134;
+  _136 = std::operator<< <std::char_traits<char> > (_62, " % complete!");
+  _63 = _136;
+  std::operator<< <std::char_traits<char> > (_63, 10);
+  _139 = std::operator<< <std::char_traits<char> > (&cout, "Time taken for that stage:- ");
+  _64 = _139;
+  _65 = p_78 + -1;
+  _66 = timetake[_65];
+  _141 = std::basic_ostream<char>::operator<< (_64, _66);
+  _67 = _141;
+  std::operator<< <std::char_traits<char> > (_67, 10);
+  _144 = std::operator<< <std::char_traits<char> > (&cout, "Score obtained for that stage:- ");
+  _68 = _144;
+  _69 = p_78 + -1;
+  _70 = score[_69];
+  _71 = _70 * 5.0e+0;
+  _146 = std::basic_ostream<char>::operator<< (_68, _71);
+  _72 = _146;
+  std::operator<< <std::char_traits<char> > (_72, 10);
+  p_148 = p_78 + 1;
+  goto <bb 5>; [INV]
+
+  <bb 40> :
+  q_150 = q_77 + 1;
+  goto <bb 3>; [INV]
+
+  <bb 41> :
+  timetake ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function std::exception::exception (_ZNSt9exceptionC2ERKS_, funcdef_no=1869, decl_uid=3156, cgraph_uid=628, symbol_order=645)
+
+std::exception::exception (struct exception * const this, const struct exception & D.3158)
+{
+  int (*) () * _1;
+
+  <bb 2> :
+  MEM[(struct  &)this_3(D)] ={v} {CLOBBER};
+  _1 = &_ZTVSt9exception + 16;
+  this_3(D)->_vptr.exception = _1;
+  return;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1867, decl_uid=44527, cgraph_uid=630, symbol_order=647)
+
+Merging blocks 13 and 14
+main (int argc, char * * argv)
+{
+  void * D.48228;
+  void * D.48227;
+  long int D.48226;
+  struct basic_ostream & D.48210;
+  struct __ostream_type & D.48209;
+  struct basic_ostream & D.48208;
+  struct FILE * D.48201;
+  struct exception e;
+  struct FILE * F;
+  int D.48199;
+  char * * _1;
+  char * _2;
+  float totalscore.24_3;
+  double _4;
+  char * * _5;
+  char * _6;
+  void * _7;
+  void * _8;
+  void * _9;
+  struct basic_ostream & _10;
+  float totalscore.25_11;
+  struct __ostream_type & _12;
+  struct basic_ostream & _13;
+  struct FILE * _23;
+  struct basic_ostream & _28;
+  struct __ostream_type & _30;
+  struct basic_ostream & _32;
+  int _34;
+
+  <bb 2> :
+  if (argc_16(D) != 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  __builtin_puts (&"Arguments: filename optimisationflag"[0]);
+  exit (-1);
+
+  <bb 4> :
+  mainbase ();
+  _1 = argv_21(D) + 8;
+  _2 = *_1;
+  _23 = fopen (_2, "a");
+
+  <bb 5> :
+  F_24 = _23;
+  totalscore.24_3 = totalscore;
+  _4 = (double) totalscore.24_3;
+  _5 = argv_21(D) + 16;
+  _6 = *_5;
+  fprintf (F_24, "%s %lf\n", _6, _4);
+
+  <bb 6> :
+  fclose (F_24);
+
+  <bb 7> :
+  _28 = std::operator<< <std::char_traits<char> > (&cout, "Your system has scored a total of ");
+  _10 = _28;
+  totalscore.25_11 = totalscore;
+  _30 = std::basic_ostream<char>::operator<< (_10, totalscore.25_11);
+  _12 = _30;
+  _32 = std::operator<< <std::char_traits<char> > (_12, " points!");
+  _13 = _32;
+  std::operator<< <std::char_traits<char> > (_13, 10);
+  _34 = 0;
+
+  <bb 8> :
+<L3>:
+  return _34;
+
+  <bb 9> :
+<L4>:
+  _44 = __builtin_eh_filter (1);
+  if (_44 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  _43 = __builtin_eh_pointer (1);
+  __builtin_unwind_resume (_43);
+
+  <bb 11> :
+  _7 = __builtin_eh_pointer (1);
+  _8 = __cxa_get_exception_ptr (_7);
+  std::exception::exception (&e, _8);
+  _9 = __builtin_eh_pointer (1);
+  __cxa_begin_catch (_9);
+  std::operator<< <std::char_traits<char> > (&cerr, "File error! \n");
+
+  <bb 12> :
+  std::exception::~exception (&e);
+  __cxa_end_catch ();
+  e ={v} {CLOBBER};
+  goto <bb 7>; [INV]
+
+  <bb 13> :
+<L6>:
+  std::exception::~exception (&e);
+  __builtin_eh_copy_values (3, 5);
+  __cxa_end_catch ();
+  _45 = __builtin_eh_pointer (3);
+  __builtin_unwind_resume (_45);
+
+}
+
+
+
+;; Function __static_initialization_and_destruction_0 (_Z41__static_initialization_and_destruction_0ii, funcdef_no=2375, decl_uid=48133, cgraph_uid=1135, symbol_order=1202)
+
+__static_initialization_and_destruction_0 (int __initialize_p, int __priority)
+{
+  <bb 2> :
+  if (__initialize_p_2(D) == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  if (__priority_4(D) == 65535)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_check (_GLOBAL__sub_I_check, funcdef_no=2376, decl_uid=48141, cgraph_uid=1136, symbol_order=1345)
+
+_GLOBAL__sub_I_check ()
+{
+  <bb 2> :
+  __static_initialization_and_destruction_0 (1, 65535);
+  return;
+
+}
+
+

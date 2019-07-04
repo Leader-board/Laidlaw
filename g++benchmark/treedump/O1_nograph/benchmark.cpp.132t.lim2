@@ -1,0 +1,755 @@
+
+;; Function mainbase (_Z8mainbasev, funcdef_no=1888, decl_uid=44493, cgraph_uid=648, symbol_order=665)
+
+Created preheader block for loop 4
+;; 6 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 38 16 17 18 19 20 21 22 23 24 42 25 41 26 27 28 29 30 31 32 40 33 39 34 35 36 37
+;;
+;; Loop 1
+;;  header 3, latch 39
+;;  depth 1, outer 0
+;;  nodes: 3 39 33 32 30 31 29 28 27 26 36 37 12 10 8 6 4 40 25 24 15 14 41 35 11 13 9 7 5 18 17 16 38 42 22 23 19 20 21
+;;
+;; Loop 2
+;;  header 4, latch 40
+;;  depth 2, outer 1
+;;  nodes: 4 40 32 30 31 29 28 27 26 36 37 12 10 8 6 25 24 15 14 41 35 11 13 9 7 5 18 17 16 38 42 22 23 19 20 21
+;;
+;; Loop 3
+;;  header 15, latch 41
+;;  depth 3, outer 2
+;;  nodes: 15 41 25 24 18 17 16 38 42 22 23 19 20 21
+;;
+;; Loop 4
+;;  header 16, latch 42
+;;  depth 4, outer 3
+;;  nodes: 16 42 24 18 17 22 23 19 20 21
+;;
+;; Loop 5
+;;  header 18, latch 17
+;;  depth 5, outer 4
+;;  nodes: 18 17 22 23 19 20 21
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 35 }
+;; 6 succs { 7 8 }
+;; 7 succs { 35 }
+;; 8 succs { 9 10 }
+;; 9 succs { 35 }
+;; 10 succs { 11 12 }
+;; 11 succs { 35 }
+;; 12 succs { 13 37 }
+;; 13 succs { 35 }
+;; 14 succs { 15 }
+;; 15 succs { 38 25 }
+;; 38 succs { 16 }
+;; 16 succs { 18 }
+;; 17 succs { 18 }
+;; 18 succs { 19 24 }
+;; 19 succs { 20 23 }
+;; 20 succs { 21 22 }
+;; 21 succs { 22 }
+;; 22 succs { 17 }
+;; 23 succs { 17 }
+;; 24 succs { 42 25 }
+;; 42 succs { 16 }
+;; 25 succs { 41 26 }
+;; 41 succs { 15 }
+;; 26 succs { 28 27 }
+;; 27 succs { 29 28 }
+;; 28 succs { 30 29 }
+;; 29 succs { 32 30 }
+;; 30 succs { 31 32 }
+;; 31 succs { 32 }
+;; 32 succs { 33 40 }
+;; 40 succs { 4 }
+;; 33 succs { 34 39 }
+;; 39 succs { 3 }
+;; 34 succs { 1 }
+;; 35 succs { 14 }
+;; 36 succs { 27 }
+;; 37 succs { 14 36 }
+
+Symbols to be put in SSA form
+{ D.48337 D.48402 D.48403 D.48404 D.48405 D.48406 D.48407 D.48408 D.48409 D.48410 D.48411 D.48412 D.48413 D.48414 D.48415 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 58
+Number of blocks to update: 57 ( 98%)
+
+
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+r_217 -> { r_47 }
+powcheck_lsm.26_218 -> { powcheck_lsm.26_110 }
+powcheck_lsm.27_219 -> { powcheck_lsm.27_113 }
+powcheck_lsm.27_220 -> { powcheck_lsm.27_114 }
+powcheck_lsm.26_221 -> { powcheck_lsm.26_124 }
+d_lsm.28_222 -> { d_lsm.28_154 }
+d_lsm.28_223 -> { d_lsm.28_156 }
+d_lsm.29_224 -> { d_lsm.29_160 }
+d_lsm.29_225 -> { d_lsm.29_162 }
+x_lsm.30_226 -> { x_lsm.30_164 }
+x_lsm.31_227 -> { x_lsm.31_166 }
+y_lsm.32_228 -> { y_lsm.32_168 }
+y_lsm.33_229 -> { y_lsm.33_170 }
+c_lsm.34_230 -> { c_lsm.34_172 }
+c_lsm.35_231 -> { c_lsm.35_174 }
+a_lsm.36_232 -> { a_lsm.36_190 }
+a_lsm.37_233 -> { a_lsm.37_191 }
+b_lsm.38_234 -> { b_lsm.38_192 }
+b_lsm.39_235 -> { b_lsm.39_193 }
+Incremental SSA update started at block: 3
+Number of blocks in CFG: 58
+Number of blocks to update: 32 ( 55%)
+
+
+mainbase ()
+{
+  bool b_lsm.39;
+  double b_lsm.38;
+  bool a_lsm.37;
+  double a_lsm.36;
+  bool c_lsm.35;
+  double c_lsm.34;
+  bool y_lsm.33;
+  double y_lsm.32;
+  bool x_lsm.31;
+  double x_lsm.30;
+  bool d_lsm.29;
+  double d_lsm.28;
+  bool powcheck_lsm.27;
+  double powcheck_lsm.26;
+  char __c;
+  char __c;
+  char __c;
+  float r;
+  double elapsed_secs;
+  clock_t end;
+  clock_t begin;
+  int p;
+  int q;
+  unsigned int _1;
+  double k.1_2;
+  unsigned int _3;
+  double _4;
+  double _5;
+  double _6;
+  double _7;
+  double _8;
+  double powcheck.12_9;
+  double _10;
+  double d.17_11;
+  double _12;
+  double _13;
+  double _14;
+  double _15;
+  double _16;
+  long int _17;
+  double _18;
+  int _19;
+  double _20;
+  double _21;
+  double _22;
+  float _23;
+  float totalscore.23_24;
+  double _25;
+  double _26;
+  double _27;
+  double _28;
+  float _29;
+  double _30;
+  double _31;
+  double _32;
+  int _33;
+  int _34;
+  int _35;
+  int _36;
+  float _37;
+  float _38;
+  long int _40;
+  double k.1_41;
+  unsigned int _48;
+  double _50;
+  struct basic_ostream & _85;
+  struct __ostream_type & _89;
+  double _90;
+  struct __ostream_type & _91;
+  int _108;
+  double a.2_116;
+  double b.0_117;
+  double k.1_118;
+  double a.2_119;
+  double k.1_133;
+  double k.1_135;
+  int _137;
+  int _138;
+  int _139;
+  int _140;
+  int _141;
+
+  <bb 2> [local count: 72205]:
+
+  <bb 3> [local count: 360938]:
+  # q_120 = PHI <1(2), q_87(39)>
+  # r_122 = PHI <r_55(D)(2), r_217(39)>
+  _48 = (unsigned int) q_120;
+  _1 = _48 + 4294967295;
+  _33 = (int) _1;
+  _3 = _1 * 5;
+  _34 = (int) _3;
+
+  <bb 4> [local count: 1804255]:
+  # p_121 = PHI <1(3), p_86(40)>
+  # r_123 = PHI <r_122(3), r_47(40)>
+  begin_58 = clock ();
+  a = 1.0e+0;
+  b = 1.0e+0;
+  c = 1.0e+0;
+  d = 1.0e+0;
+  if (p_121 == 1)
+    goto <bb 5>; [22.47%]
+  else
+    goto <bb 6>; [77.53%]
+
+  <bb 5> [local count: 405416]:
+  k = 1.0e+2;
+  goto <bb 35>; [100.00%]
+
+  <bb 6> [local count: 1398839]:
+  if (p_121 == 2)
+    goto <bb 7>; [22.47%]
+  else
+    goto <bb 8>; [77.53%]
+
+  <bb 7> [local count: 314319]:
+  k = 2.5e+2;
+  goto <bb 35>; [100.00%]
+
+  <bb 8> [local count: 1084520]:
+  if (p_121 == 3)
+    goto <bb 9>; [22.47%]
+  else
+    goto <bb 10>; [77.53%]
+
+  <bb 9> [local count: 243692]:
+  k = 5.0e+2;
+  goto <bb 35>; [100.00%]
+
+  <bb 10> [local count: 840828]:
+  if (p_121 == 4)
+    goto <bb 11>; [22.47%]
+  else
+    goto <bb 12>; [77.53%]
+
+  <bb 11> [local count: 188934]:
+  k = 1.0e+3;
+  goto <bb 35>; [100.00%]
+
+  <bb 12> [local count: 651894]:
+  if (p_121 == 5)
+    goto <bb 13>; [22.47%]
+  else
+    goto <bb 37>; [77.53%]
+
+  <bb 13> [local count: 146481]:
+  k = 1.5e+3;
+  goto <bb 35>; [100.00%]
+
+  <bb 14> [local count: 1605787]:
+  # k.1_135 = PHI <k.1_133(37), k.1_41(35)>
+  a_lsm.36_176 = a;
+  a_lsm.37_177 = 0;
+  x_lsm.30_178 = x;
+  x_lsm.31_179 = 0;
+  y_lsm.32_180 = y;
+  y_lsm.33_181 = 0;
+  c_lsm.34_182 = c;
+  c_lsm.35_183 = 0;
+  b_lsm.38_184 = b;
+  b_lsm.39_185 = 0;
+  k.1_2 = k;
+  d_lsm.28_186 = d;
+  d_lsm.29_187 = 0;
+  powcheck_lsm.26_188 = powcheck;
+  powcheck_lsm.27_189 = 0;
+
+  <bb 15> [local count: 14598064]:
+  # b.0_117 = PHI <1.0e+0(14), _16(41)>
+  # k.1_118 = PHI <k.1_135(14), k.1_2(41)>
+  # powcheck_lsm.26_125 = PHI <powcheck_lsm.26_188(14), powcheck_lsm.26_110(41)>
+  # powcheck_lsm.27_129 = PHI <powcheck_lsm.27_189(14), powcheck_lsm.27_113(41)>
+  # d_lsm.28_88 = PHI <d_lsm.28_186(14), d_lsm.28_156(41)>
+  # d_lsm.29_157 = PHI <d_lsm.29_187(14), d_lsm.29_162(41)>
+  # x_lsm.30_163 = PHI <x_lsm.30_178(14), x_lsm.30_164(41)>
+  # x_lsm.31_165 = PHI <x_lsm.31_179(14), x_lsm.31_166(41)>
+  # y_lsm.32_167 = PHI <y_lsm.32_180(14), y_lsm.32_168(41)>
+  # y_lsm.33_169 = PHI <y_lsm.33_181(14), y_lsm.33_170(41)>
+  # c_lsm.34_171 = PHI <c_lsm.34_182(14), c_lsm.34_172(41)>
+  # c_lsm.35_173 = PHI <c_lsm.35_183(14), c_lsm.35_174(41)>
+  # a_lsm.36_175 = PHI <a_lsm.36_176(14), a_lsm.36_190(41)>
+  a.2_116 = a_lsm.36_175;
+  if (a.2_116 <= k.1_118)
+    goto <bb 38>; [89.00%]
+  else
+    goto <bb 25>; [11.00%]
+
+  <bb 38> [local count: 12992277]:
+  _5 = b.0_117 * b.0_117;
+
+  <bb 16> [local count: 118111601]:
+  # a.2_119 = PHI <a.2_116(38), _15(42)>
+  # d_lsm.28_152 = PHI <d_lsm.28_88(38), d_lsm.28_222(42)>
+  # d_lsm.29_158 = PHI <d_lsm.29_157(38), d_lsm.29_224(42)>
+  _4 = a.2_119 * a.2_119;
+  x_lsm.30_201 = _4;
+  x_lsm.31_202 = 1;
+  y_lsm.32_203 = _5;
+  y_lsm.33_204 = 1;
+  _6 = _4 + _5;
+  c_lsm.34_205 = _6;
+  c_lsm.35_206 = 1;
+  powcheck_lsm.26_207 = b.0_117;
+  powcheck_lsm.27_208 = 1;
+  _7 = k.1_118 * 1.4199999999999999289457264239899814128875732421875e+0;
+  _8 = ceil (_7);
+  goto <bb 18>; [100.00%]
+
+  <bb 17> [local count: 955630224]:
+  # powcheck_lsm.26_128 = PHI <powcheck_lsm.26_211(22), powcheck_lsm.26_213(23)>
+  # powcheck_lsm.27_134 = PHI <powcheck_lsm.27_212(22), powcheck_lsm.27_214(23)>
+  # d_lsm.28_153 = PHI <d_lsm.28_155(22), d_lsm.28_154(23)>
+  # d_lsm.29_159 = PHI <d_lsm.29_161(22), d_lsm.29_160(23)>
+
+  <bb 18> [local count: 1073741825]:
+  # powcheck_lsm.26_124 = PHI <powcheck_lsm.26_128(17), powcheck_lsm.26_207(16)>
+  # powcheck_lsm.27_114 = PHI <powcheck_lsm.27_134(17), powcheck_lsm.27_208(16)>
+  # d_lsm.28_154 = PHI <d_lsm.28_153(17), d_lsm.28_152(16)>
+  # d_lsm.29_160 = PHI <d_lsm.29_159(17), d_lsm.29_158(16)>
+  powcheck.12_9 = powcheck_lsm.26_124;
+  if (_8 >= powcheck.12_9)
+    goto <bb 19>; [89.00%]
+  else
+    goto <bb 24>; [11.00%]
+
+  <bb 19> [local count: 955630224]:
+  _10 = powcheck.12_9 * powcheck.12_9;
+  if (_6 == _10)
+    goto <bb 20>; [50.00%]
+  else
+    goto <bb 23>; [50.00%]
+
+  <bb 20> [local count: 477815112]:
+  d.17_11 = d_lsm.28_154;
+  if (_6 >= d.17_11)
+    goto <bb 21>; [50.00%]
+  else
+    goto <bb 22>; [50.00%]
+
+  <bb 21> [local count: 238907556]:
+  d_lsm.28_209 = _6;
+  d_lsm.29_210 = 1;
+
+  <bb 22> [local count: 477815112]:
+  # d_lsm.28_155 = PHI <d_lsm.28_154(20), d_lsm.28_209(21)>
+  # d_lsm.29_161 = PHI <d_lsm.29_160(20), d_lsm.29_210(21)>
+  _12 = k.1_118 * 2.0e+0;
+  _13 = _12 + 1.0e+0;
+  powcheck_lsm.26_211 = _13;
+  powcheck_lsm.27_212 = 1;
+  goto <bb 17>; [100.00%]
+
+  <bb 23> [local count: 477815112]:
+  _14 = powcheck.12_9 + 1.0e+0;
+  powcheck_lsm.26_213 = _14;
+  powcheck_lsm.27_214 = 1;
+  goto <bb 17>; [100.00%]
+
+  <bb 24> [local count: 118111601]:
+  # powcheck_lsm.27_220 = PHI <powcheck_lsm.27_114(18)>
+  # powcheck_lsm.26_221 = PHI <powcheck_lsm.26_124(18)>
+  # d_lsm.28_222 = PHI <d_lsm.28_154(18)>
+  # d_lsm.29_224 = PHI <d_lsm.29_160(18)>
+  _15 = a.2_119 + 1.0e+0;
+  a_lsm.36_215 = _15;
+  a_lsm.37_216 = 1;
+  if (_15 <= k.1_118)
+    goto <bb 42>; [89.00%]
+  else
+    goto <bb 25>; [11.00%]
+
+  <bb 42> [local count: 105119325]:
+  goto <bb 16>; [100.00%]
+
+  <bb 25> [local count: 14598064]:
+  # powcheck_lsm.26_110 = PHI <powcheck_lsm.26_221(24), powcheck_lsm.26_125(15)>
+  # powcheck_lsm.27_113 = PHI <powcheck_lsm.27_220(24), powcheck_lsm.27_129(15)>
+  # d_lsm.28_156 = PHI <d_lsm.28_222(24), d_lsm.28_88(15)>
+  # d_lsm.29_162 = PHI <d_lsm.29_224(24), d_lsm.29_157(15)>
+  # x_lsm.30_164 = PHI <x_lsm.30_201(24), x_lsm.30_163(15)>
+  # x_lsm.31_166 = PHI <x_lsm.31_202(24), x_lsm.31_165(15)>
+  # y_lsm.32_168 = PHI <y_lsm.32_203(24), y_lsm.32_167(15)>
+  # y_lsm.33_170 = PHI <y_lsm.33_204(24), y_lsm.33_169(15)>
+  # c_lsm.34_172 = PHI <c_lsm.34_205(24), c_lsm.34_171(15)>
+  # c_lsm.35_174 = PHI <c_lsm.35_206(24), c_lsm.35_173(15)>
+  a_lsm.36_190 = 1.0e+0;
+  a_lsm.37_191 = 1;
+  _16 = b.0_117 + 1.0e+0;
+  b_lsm.38_192 = _16;
+  b_lsm.39_193 = 1;
+  if (k.1_2 >= _16)
+    goto <bb 41>; [89.00%]
+  else
+    goto <bb 26>; [11.00%]
+
+  <bb 41> [local count: 12992277]:
+  goto <bb 15>; [100.00%]
+
+  <bb 26> [local count: 1605787]:
+  # powcheck_lsm.26_218 = PHI <powcheck_lsm.26_110(25)>
+  # powcheck_lsm.27_219 = PHI <powcheck_lsm.27_113(25)>
+  # d_lsm.28_223 = PHI <d_lsm.28_156(25)>
+  # d_lsm.29_225 = PHI <d_lsm.29_162(25)>
+  # x_lsm.30_226 = PHI <x_lsm.30_164(25)>
+  # x_lsm.31_227 = PHI <x_lsm.31_166(25)>
+  # y_lsm.32_228 = PHI <y_lsm.32_168(25)>
+  # y_lsm.33_229 = PHI <y_lsm.33_170(25)>
+  # c_lsm.34_230 = PHI <c_lsm.34_172(25)>
+  # c_lsm.35_231 = PHI <c_lsm.35_174(25)>
+  # a_lsm.36_232 = PHI <a_lsm.36_190(25)>
+  # a_lsm.37_233 = PHI <a_lsm.37_191(25)>
+  # b_lsm.38_234 = PHI <b_lsm.38_192(25)>
+  # b_lsm.39_235 = PHI <b_lsm.39_193(25)>
+
+  <bb 44> [local count: 1605787]:
+  if (powcheck_lsm.27_219 != 0)
+    goto <bb 45>; [66.67%]
+  else
+    goto <bb 46>; [33.33%]
+
+  <bb 45> [local count: 1070525]:
+  powcheck = powcheck_lsm.26_218;
+
+  <bb 46> [local count: 1070525]:
+  if (d_lsm.29_225 != 0)
+    goto <bb 47>; [66.67%]
+  else
+    goto <bb 48>; [33.33%]
+
+  <bb 47> [local count: 713683]:
+  d = d_lsm.28_223;
+
+  <bb 48> [local count: 713683]:
+  if (x_lsm.31_227 != 0)
+    goto <bb 49>; [66.67%]
+  else
+    goto <bb 50>; [33.33%]
+
+  <bb 49> [local count: 475789]:
+  x = x_lsm.30_226;
+
+  <bb 50> [local count: 475789]:
+  if (y_lsm.33_229 != 0)
+    goto <bb 51>; [66.67%]
+  else
+    goto <bb 52>; [33.33%]
+
+  <bb 51> [local count: 317193]:
+  y = y_lsm.32_228;
+
+  <bb 52> [local count: 317193]:
+  if (c_lsm.35_231 != 0)
+    goto <bb 53>; [66.67%]
+  else
+    goto <bb 54>; [33.33%]
+
+  <bb 53> [local count: 211462]:
+  c = c_lsm.34_230;
+
+  <bb 54> [local count: 211462]:
+  if (a_lsm.37_233 != 0)
+    goto <bb 55>; [100.00%]
+  else
+    goto <bb 56>; [0.00%]
+
+  <bb 55> [local count: 211462]:
+  a = a_lsm.36_232;
+
+  <bb 56> [local count: 211462]:
+  if (b_lsm.39_235 != 0)
+    goto <bb 57>; [100.00%]
+  else
+    goto <bb 43>; [0.00%]
+
+  <bb 57> [local count: 211462]:
+  b = b_lsm.38_234;
+
+  <bb 43> [local count: 1605787]:
+  end_79 = clock ();
+  _17 = end_79 - begin_58;
+  _18 = (double) _17;
+  elapsed_secs_80 = _18 / 1.0e+6;
+  _19 = p_121 + -1;
+  if (p_121 == 1)
+    goto <bb 28>; [25.25%]
+  else
+    goto <bb 27>; [74.75%]
+
+  <bb 27> [local count: 1398839]:
+  # _137 = PHI <_19(43), _108(36)>
+  # elapsed_secs_147 = PHI <elapsed_secs_80(43), elapsed_secs_51(36)>
+  if (p_121 == 2)
+    goto <bb 29>; [28.98%]
+  else
+    goto <bb 28>; [71.02%]
+
+  <bb 28> [local count: 1398839]:
+  # r_44 = PHI <r_123(27), 3.0000000260770320892333984375e-3(43)>
+  # _138 = PHI <_137(27), _19(43)>
+  # elapsed_secs_148 = PHI <elapsed_secs_147(27), elapsed_secs_80(43)>
+  if (p_121 == 3)
+    goto <bb 30>; [28.98%]
+  else
+    goto <bb 29>; [71.02%]
+
+  <bb 29> [local count: 1398839]:
+  # r_45 = PHI <r_44(28), 3.50000001490116119384765625e-2(27)>
+  # _139 = PHI <_138(28), _137(27)>
+  # elapsed_secs_149 = PHI <elapsed_secs_148(28), elapsed_secs_147(27)>
+  if (p_121 == 4)
+    goto <bb 32>; [28.98%]
+  else
+    goto <bb 30>; [71.02%]
+
+  <bb 30> [local count: 1398839]:
+  # r_46 = PHI <r_45(29), 2.730000019073486328125e-1(28)>
+  # _140 = PHI <_139(29), _138(28)>
+  # elapsed_secs_150 = PHI <elapsed_secs_149(29), elapsed_secs_148(28)>
+  if (p_121 == 5)
+    goto <bb 31>; [28.98%]
+  else
+    goto <bb 32>; [71.02%]
+
+  <bb 31> [local count: 405416]:
+
+  <bb 32> [local count: 1804255]:
+  # r_47 = PHI <r_46(30), 7.535999774932861328125e+0(31), 2.224999904632568359375e+0(29)>
+  # _141 = PHI <_140(30), _140(31), _139(29)>
+  # elapsed_secs_151 = PHI <elapsed_secs_150(30), elapsed_secs_150(31), elapsed_secs_149(29)>
+  _20 = (double) r_47;
+  _21 = _20 / elapsed_secs_151;
+  _22 = _21 * 2.0e+2;
+  _23 = (float) _22;
+  score[_141] = _23;
+  totalscore.23_24 = totalscore;
+  _25 = (double) totalscore.23_24;
+  _26 = (double) _23;
+  _27 = _26 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _28 = _25 + _27;
+  _29 = (float) _28;
+  totalscore = _29;
+  _30 = stagetime[_141];
+  _31 = elapsed_secs_151 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _32 = _30 + _31;
+  stagetime[_141] = _32;
+  _35 = _34 + p_121;
+  _36 = _35 * 4;
+  _85 = std::basic_ostream<char>::operator<< (&cout, _36);
+  std::__ostream_insert<char, std::char_traits<char> > (_85, " % complete!", 12);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_85, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Time taken for that stage:- ", 28);
+  _89 = std::basic_ostream<char>::_M_insert<double> (&cout, elapsed_secs_151);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_89, &__c, 1);
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Score obtained for that stage:- ", 32);
+  _37 = score[_141];
+  _38 = _37 * 5.0e+0;
+  _90 = (double) _38;
+  _91 = std::basic_ostream<char>::_M_insert<double> (&cout, _90);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_91, &__c, 1);
+  __c ={v} {CLOBBER};
+  p_86 = p_121 + 1;
+  if (p_86 > 5)
+    goto <bb 33>; [16.67%]
+  else
+    goto <bb 40>; [83.33%]
+
+  <bb 40> [local count: 1503486]:
+  goto <bb 4>; [100.00%]
+
+  <bb 33> [local count: 360938]:
+  # r_217 = PHI <r_47(32)>
+  q_87 = q_120 + 1;
+  if (q_87 > 5)
+    goto <bb 34>; [16.67%]
+  else
+    goto <bb 39>; [83.33%]
+
+  <bb 39> [local count: 300770]:
+  goto <bb 3>; [100.00%]
+
+  <bb 34> [local count: 72205]:
+  return;
+
+  <bb 35> [local count: 1298842]:
+  k.1_41 = k;
+  goto <bb 14>; [100.00%]
+
+  <bb 36> [local count: 198468]:
+  end_42 = clock ();
+  _40 = end_42 - begin_58;
+  _50 = (double) _40;
+  elapsed_secs_51 = _50 / 1.0e+6;
+  _108 = p_121 + -1;
+  goto <bb 27>; [100.00%]
+
+  <bb 37> [local count: 505413]:
+  k.1_133 = k;
+  if (k.1_133 >= 1.0e+0)
+    goto <bb 14>; [60.73%]
+  else
+    goto <bb 36>; [39.27%]
+
+}
+
+
+
+;; Function main (main, funcdef_no=1889, decl_uid=44612, cgraph_uid=652, symbol_order=669) (executed once)
+
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13
+;; 2 succs { 3 4 }
+;; 3 succs { }
+;; 4 succs { 8 5 }
+;; 5 succs { 8 6 }
+;; 6 succs { 8 7 }
+;; 7 succs { 1 }
+;; 8 succs { 10 9 }
+;; 9 succs { }
+;; 10 succs { 12 11 }
+;; 11 succs { 7 }
+;; 12 succs { 13 }
+;; 13 succs { }
+main (int argc, char * * argv)
+{
+  long int D.48441;
+  char __c;
+  struct exception e;
+  char * _1;
+  float totalscore.24_2;
+  double _3;
+  char * _4;
+  void * _5;
+  float totalscore.25_6;
+  struct FILE * _16;
+  double _26;
+  struct __ostream_type & _27;
+
+  <bb 2> [local count: 1073741825]:
+  if (argc_9(D) != 3)
+    goto <bb 3>; [0.04%]
+  else
+    goto <bb 4>; [99.96%]
+
+  <bb 3> [local count: 429497]:
+  __builtin_puts (&"Arguments: filename optimisationflag"[0]);
+  exit (-1);
+
+  <bb 4> [local count: 1073312327]:
+  mainbase ();
+  _1 = MEM[(char * *)argv_14(D) + 8B];
+  _16 = fopen (_1, "a");
+
+  <bb 5> [local count: 1073312327]:
+  totalscore.24_2 = totalscore;
+  _3 = (double) totalscore.24_2;
+  _4 = MEM[(char * *)argv_14(D) + 16B];
+  fprintf (_16, "%s %lf\n", _4, _3);
+
+  <bb 6> [local count: 1073312327]:
+  fclose (_16);
+
+  <bb 7> [local count: 1073312327]:
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Your system has scored a total of ", 34);
+  totalscore.25_6 = totalscore;
+  _26 = (double) totalscore.25_6;
+  _27 = std::basic_ostream<char>::_M_insert<double> (&cout, _26);
+  std::__ostream_insert<char, std::char_traits<char> > (_27, " points!", 8);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_27, &__c, 1);
+  __c ={v} {CLOBBER};
+  return 0;
+
+  <bb 8> [count: 0]:
+<L4>:
+  _36 = __builtin_eh_filter (1);
+  if (_36 == 1)
+    goto <bb 10>; [33.00%]
+  else
+    goto <bb 9>; [67.00%]
+
+  <bb 9> [count: 0]:
+<L9>:
+  resx 1
+
+  <bb 10> [count: 0]:
+<L5>:
+  MEM[(struct  &)&e] ={v} {CLOBBER};
+  e._vptr.exception = &MEM[(void *)&_ZTVSt9exception + 16B];
+  _5 = __builtin_eh_pointer (1);
+  __cxa_begin_catch (_5);
+  std::operator<< <std::char_traits<char> > (&cerr, "File error! \n");
+
+  <bb 11> [count: 0]:
+  std::exception::~exception (&e);
+  __cxa_end_catch ();
+  e ={v} {CLOBBER};
+  goto <bb 7>; [100.00%]
+
+  <bb 12> [count: 0]:
+<L6>:
+  std::exception::~exception (&e);
+  resx 5
+
+  <bb 13> [count: 0]:
+<L7>:
+  __cxa_end_catch ();
+  resx 3
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_check (_GLOBAL__sub_I_check, funcdef_no=2397, decl_uid=48231, cgraph_uid=1157, symbol_order=1366) (executed once)
+
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+_GLOBAL__sub_I_check ()
+{
+  <bb 2> [local count: 1073741825]:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+  return;
+
+}
+
+

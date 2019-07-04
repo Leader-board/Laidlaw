@@ -1,0 +1,193 @@
+OptimisationFactor                Factor     Solve      Total     MFLOPS       Unit      Cray-Ratio
+-faggressive-loop-optimizations   0.589385    0.00193   0.591315    1130.81  0.00176864    10.5592
+   -fasynchronous-unwind-tables   0.588759   0.001771    0.59053    1132.32  0.00176629    10.5452
+                 -fauto-inc-dec   0.588726   0.001769   0.590495    1132.38  0.00176619    10.5446
+             -fbranch-count-reg   0.590543   0.001808   0.592351    1128.84  0.00177174    10.5777
+   -fchkp-check-incomplete-type    0.58909   0.001769   0.590859    1131.69  0.00176728    10.5511
+              -fchkp-check-read    0.58998   0.001773   0.591753    1129.98  0.00176995     10.567
+             -fchkp-check-write   0.588538   0.001776   0.590314    1132.73  0.00176564    10.5413
+        -fchkp-instrument-calls   0.592402   0.001774   0.594176    1125.37  0.0017772    10.6103
+           -fchkp-narrow-bounds   0.589149    0.00177   0.590919    1131.57  0.00176745    10.5521
+                -fchkp-optimize   0.589207   0.001784   0.590991    1131.43  0.00176767    10.5534
+            -fchkp-store-bounds   0.589718   0.001776   0.591494    1130.47  0.00176917    10.5624
+       -fchkp-use-static-bounds   0.588769   0.001769   0.590538     1132.3  0.00176632    10.5453
+ -fchkp-use-static-const-bounds   0.589853   0.001803   0.591656    1130.16  0.00176966    10.5653
+            -fchkp-use-wrappers    0.60752   0.001779   0.609299    1097.44  0.00182243    10.8803
+    -fcombine-stack-adjustments   0.593701   0.001785   0.595486    1122.89  0.00178111    10.6337
+                       -fcommon   0.593758   0.001778   0.595536     1122.8  0.00178126    10.6346
+                 -fcompare-elim   0.593587    0.00179   0.595377     1123.1  0.00178079    10.6317
+              -fcprop-registers   0.593096   0.001785   0.594881    1124.03  0.00177931    10.6229
+                    -fdefer-pop   0.595338   0.001782    0.59712    1119.82   0.001786    10.6629
+   -fdelete-null-pointer-checks    0.60843   0.001932   0.610362    1095.52  0.00182561    10.8993
+               -fdwarf2-cfi-asm   0.594062   0.001798    0.59586    1122.19  0.00178223    10.6404
+               -fearly-inlining   0.592655   0.001785    0.59444    1124.87  0.00177799     10.615
+ -feliminate-unused-debug-types   0.592561   0.001778   0.594339    1125.06  0.00177768    10.6132
+                   -fexceptions   0.593395   0.001787   0.595182    1123.47  0.00178021    10.6283
+            -fforward-propagate    0.59396   0.001907   0.595867    1122.17  0.00178225    10.6405
+       -ffp-int-builtin-inexact   0.606883   0.001782   0.608665    1098.58  0.00182053     10.869
+                 -ffunction-cse   0.594566   0.001784    0.59635    1121.27  0.0017837    10.6491
+                      -fgcse-lm   0.593118   0.001803   0.594921    1123.96  0.00177942    10.6236
+                  -fgnu-runtime  cc1plus: warning: command line option ‘-fgnu-runtime’ is valid for LTO/ObjC/ObjC++ but not for C++
+ 0.593846    0.00178   0.595626    1122.63  0.00178153    10.6362
+                   -fgnu-unique     0.5918   0.001909   0.593709    1126.25  0.0017758    10.6019
+     -fguess-branch-probability   0.596802   0.001804   0.598606    1117.04  0.00179045    10.6894
+                        -fident   0.606875   0.001788   0.608663    1098.58  0.00182053     10.869
+                -fif-conversion   0.593007    0.00178   0.594787    1124.21  0.00177902    10.6212
+               -fif-conversion2   0.593292   0.001807   0.595099    1123.62  0.00177996    10.6268
+                       -finline   0.593235   0.001783   0.595018    1123.78  0.00177971    10.6253
+               -finline-atomics     0.5926   0.001789   0.594389    1124.96  0.00177783    10.6141
+ -finline-functions-called-once   0.592463   0.001814   0.594277    1125.18  0.0017775    10.6121
+                  -fipa-profile   0.605021   0.001825   0.606846    1101.87  0.00181509    10.8365
+               -fipa-pure-const   0.594079   0.001795   0.595874    1122.16  0.00178228    10.6406
+                -fipa-reference   0.591754   0.001792   0.593546    1126.56  0.00177531     10.599
+           -fira-hoist-pressure   0.592885    0.00193   0.594815    1124.16  0.00177911    10.6217
+         -fira-share-save-slots   0.591289   0.001804   0.593093    1127.42  0.00177396    10.5909
+        -fira-share-spill-slots   0.592616   0.001817   0.594433    1124.88  0.00177797    10.6149
+                       -fivopts    0.59412   0.002233   0.596353    1121.26  0.00178371    10.6492
+           -fkeep-static-consts   0.592573   0.001825   0.594398    1124.95  0.00177786    10.6143
+           -fleading-underscore  /usr/bin/ld: /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+/usr/bin/ld: /tmp/ccjxP7k1.o: in function `_main':
+linpackm.cpp:(.text+0x44): undefined reference to `__Znam'
+/usr/bin/ld: linpackm.cpp:(.text+0x52): undefined reference to `__Znam'
+/usr/bin/ld: linpackm.cpp:(.text+0x60): undefined reference to `__Znam'
+/usr/bin/ld: linpackm.cpp:(.text+0x6e): undefined reference to `__Znam'
+/usr/bin/ld: linpackm.cpp:(.text+0x7c): undefined reference to `__Znam'
+/usr/bin/ld: linpackm.cpp:(.text+0x222): undefined reference to `__ZSt4cout'
+/usr/bin/ld: linpackm.cpp:(.text+0x227): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x231): undefined reference to `__ZSt4cout'
+/usr/bin/ld: linpackm.cpp:(.text+0x236): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x240): undefined reference to `__ZSt4cout'
+/usr/bin/ld: linpackm.cpp:(.text+0x245): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x24f): undefined reference to `__ZSt4cout'
+/usr/bin/ld: linpackm.cpp:(.text+0x254): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x30d): undefined reference to `__ZdaPv'
+/usr/bin/ld: linpackm.cpp:(.text+0x672): undefined reference to `__ZSt4cout'
+/usr/bin/ld: linpackm.cpp:(.text+0x677): undefined reference to `__ZStlsIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_St5_Setw'
+/usr/bin/ld: linpackm.cpp:(.text+0x687): undefined reference to `__ZNSolsEd'
+/usr/bin/ld: linpackm.cpp:(.text+0x694): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x6ab): undefined reference to `__ZStlsIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_St5_Setw'
+/usr/bin/ld: linpackm.cpp:(.text+0x6bb): undefined reference to `__ZNSolsEd'
+/usr/bin/ld: linpackm.cpp:(.text+0x6c8): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x6df): undefined reference to `__ZStlsIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_St5_Setw'
+/usr/bin/ld: linpackm.cpp:(.text+0x6ef): undefined reference to `__ZNSolsEd'
+/usr/bin/ld: linpackm.cpp:(.text+0x6fc): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x713): undefined reference to `__ZStlsIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_St5_Setw'
+/usr/bin/ld: linpackm.cpp:(.text+0x723): undefined reference to `__ZNSolsEd'
+/usr/bin/ld: linpackm.cpp:(.text+0x730): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x747): undefined reference to `__ZStlsIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_St5_Setw'
+/usr/bin/ld: linpackm.cpp:(.text+0x757): undefined reference to `__ZNSolsEd'
+/usr/bin/ld: linpackm.cpp:(.text+0x764): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x77b): undefined reference to `__ZStlsIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_St5_Setw'
+/usr/bin/ld: linpackm.cpp:(.text+0x78b): undefined reference to `__ZNSolsEd'
+/usr/bin/ld: linpackm.cpp:(.text+0x798): undefined reference to `__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc'
+/usr/bin/ld: linpackm.cpp:(.text+0x7ab): undefined reference to `__ZdaPv'
+/usr/bin/ld: linpackm.cpp:(.text+0x7be): undefined reference to `__ZdaPv'
+/usr/bin/ld: linpackm.cpp:(.text+0x7d1): undefined reference to `__ZdaPv'
+/usr/bin/ld: linpackm.cpp:(.text+0x7e4): undefined reference to `__ZdaPv'
+/usr/bin/ld: linpackm.cpp:(.text+0x7f7): undefined reference to `__ZdaPv'
+/usr/bin/ld: /tmp/ccjxP7k1.o:linpackm.cpp:(.text+0x80a): more undefined references to `__ZdaPv' follow
+/usr/bin/ld: /tmp/ccjxP7k1.o: in function `__Z8cpu_timev':
+linpackm.cpp:(.text+0x82b): undefined reference to `_clock'
+/usr/bin/ld: /tmp/ccjxP7k1.o: in function `__Z9r4mat_genii':
+linpackm.cpp:(.text+0x1c20): undefined reference to `__Znam'
+/usr/bin/ld: linpackm.cpp:(.text+0x1c32): undefined reference to `___cxa_throw_bad_array_new_length'
+/usr/bin/ld: /tmp/ccjxP7k1.o: in function `__Z9timestampv':
+linpackm.cpp:(.text+0x1cb2): undefined reference to `_time'
+/usr/bin/ld: linpackm.cpp:(.text+0x1cc2): undefined reference to `_localtime'
+/usr/bin/ld: linpackm.cpp:(.text+0x1ce1): undefined reference to `_strftime'
+/usr/bin/ld: /tmp/ccjxP7k1.o: in function `__Z41__static_initialization_and_destruction_0ii':
+linpackm.cpp:(.text+0x1d0f): undefined reference to `__ZNSt8ios_base4InitC1Ev'
+/usr/bin/ld: linpackm.cpp:(.text+0x1d14): undefined reference to `___dso_handle'
+/usr/bin/ld: linpackm.cpp:(.text+0x1d1e): undefined reference to `__ZNSt8ios_base4InitD1Ev'
+/usr/bin/ld: linpackm.cpp:(.text+0x1d23): undefined reference to `___cxa_atexit'
+/usr/bin/ld: lin: hidden symbol `___dso_handle' isn't defined
+/usr/bin/ld: final link failed: bad value
+collect2: error: ld returned 1 exit status
+sh: ./lin: No such file or directory
+rm: cannot remove 'lin': No such file or directory
+                 -flifetime-dse   0.593206   0.001784    0.59499    1123.83  0.00177963    10.6248
+         -flto-odr-type-merging   0.595363   0.001786   0.597149    1119.77  0.00178609    10.6634
+                   -fmath-errno   0.593659   0.001786   0.595445    1122.97  0.00178099    10.6329
+              -fmerge-constants   0.593563   0.001786   0.595349    1123.15  0.0017807    10.6312
+          -fmerge-debug-strings   0.603838   0.001806   0.605644    1104.06  0.0018115    10.8151
+         -fmove-loop-invariants   0.594297   0.001792   0.596089    1121.76  0.00178292    10.6444
+           -fomit-frame-pointer   0.590429   0.001771     0.5922    1129.12  0.00177129     10.575
+                     -fpeephole   0.592411   0.001787   0.594198    1125.33  0.00177726    10.6107
+                          -fplt   0.591698   0.001798   0.593496    1126.66  0.00177516    10.5981
+         -fprefetch-loop-arrays   0.593531   0.001801   0.595332    1123.18  0.00178065    10.6309
+            -freg-struct-return   0.601172   0.002275   0.603447    1108.08  0.00180493    10.7758
+               -freorder-blocks    0.59205   0.001794   0.593844       1126  0.0017762    10.6044
+-fsched-critical-path-heuristic   0.591284   0.001799   0.593083    1127.44  0.00177393    10.5908
+    -fsched-dep-count-heuristic    0.59263   0.001806   0.594436    1124.88  0.00177797    10.6149
+        -fsched-group-heuristic    0.59111     0.0018    0.59291    1127.77  0.00177341    10.5877
+             -fsched-interblock   0.593125    0.00188   0.595005     1123.8  0.00177968    10.6251
+    -fsched-last-insn-heuristic   0.592023   0.001828   0.593851    1125.98  0.00177622    10.6045
+         -fsched-rank-heuristic   0.593626   0.001831   0.595457    1122.95  0.00178103    10.6332
+                   -fsched-spec    0.59497   0.001904   0.596874    1120.28  0.00178527    10.6585
+    -fsched-spec-insn-heuristic   0.592937   0.001959   0.594896    1124.01  0.00177935    10.6231
+      -fsched-stalled-insns-dep   0.589365    0.00266   0.592025    1129.46  0.00177076    10.5719
+              -fschedule-fusion   0.587854   0.001769   0.589623    1134.06  0.00176358     10.529
+       -fsemantic-interposition   0.588592   0.001772   0.590364    1132.63  0.00176579    10.5422
+                  -fshow-column   0.588502   0.001769   0.590271    1132.81  0.00176552    10.5406
+                  -fshrink-wrap   0.588562   0.001766   0.590328     1132.7  0.00176569    10.5416
+         -fshrink-wrap-separate   0.590144   0.001769   0.591913    1129.67  0.00177043    10.5699
+                 -fsigned-zeros   0.589451   0.001773   0.591224    1130.99  0.00176837    10.5576
+        -fsplit-ivs-in-unroller   0.590692   0.001907   0.592599    1128.36  0.00177248    10.5821
+             -fsplit-wide-types   0.588322   0.001763   0.590085    1133.17  0.00176496    10.5372
+                 -fssa-backprop   0.588893   0.001773   0.590666    1132.06  0.0017667    10.5476
+                   -fssa-phiopt   0.587864   0.001772   0.589636    1134.03  0.00176362    10.5292
+                   -fstdarg-opt   0.589429   0.001772   0.591201    1131.03  0.0017683    10.5572
+    -fstrict-volatile-bitfields   0.589171   0.001771   0.590942    1131.53  0.00176752    10.5525
+                -fsync-libcalls     0.5893   0.001763   0.591063     1131.3  0.00176789    10.5547
+             -ftoplevel-reorder   0.583527   0.001908   0.585435    1142.17  0.00175105    10.4542
+                -ftrapping-math   0.603868   0.001771   0.605639    1104.07  0.00181148     10.815
+                 -ftree-bit-ccp   0.589162   0.001771   0.590933    1131.54  0.0017675    10.5524
+        -ftree-builtin-call-dce   0.588163   0.001898   0.590061    1133.22  0.00176489    10.5368
+                     -ftree-ccp   0.591023   0.001792   0.592815    1127.95  0.00177313     10.586
+                      -ftree-ch   0.589132   0.001783   0.590915    1131.58  0.00176744    10.5521
+           -ftree-coalesce-vars   0.585442   0.001773   0.587215    1138.71  0.00175638     10.486
+               -ftree-copy-prop    0.60468   0.001783   0.606463    1102.57  0.00181395    10.8297
+                  -ftree-cselim   0.589063   0.001784   0.590847    1131.71  0.00176724    10.5508
+                     -ftree-dce   0.589239   0.001774   0.591013    1131.39  0.00176774    10.5538
+          -ftree-dominator-opts   0.593228   0.001809   0.595037    1123.74  0.00177977    10.6257
+                     -ftree-dse   0.595806   0.001779   0.597585    1118.95  0.00178739    10.6712
+                -ftree-forwprop   0.594116   0.001778   0.595894    1122.12  0.00178233     10.641
+                     -ftree-fre   0.608272   0.001786   0.610058    1096.07  0.0018247    10.8939
+         -ftree-loop-if-convert   0.593585   0.001777   0.595362    1123.13  0.00178074    10.6315
+                 -ftree-loop-im    0.59443   0.001785   0.596215    1121.52  0.0017833    10.6467
+            -ftree-loop-ivcanon   0.593869   0.001783   0.595652    1122.58  0.00178161    10.6366
+           -ftree-loop-optimize   0.592354    0.00178   0.594134    1125.45  0.00177707    10.6095
+     -ftree-parallelize-loops=4   0.594317   0.001782   0.596099    1121.74  0.00178295    10.6446
+                 -ftree-phiprop   0.608413   0.001801   0.610214    1095.79  0.00182517    10.8967
+                     -ftree-pta   0.594206   0.001815   0.596021    1121.88  0.00178271    10.6432
+                 -ftree-reassoc   0.596309    0.00179   0.598099    1117.99  0.00178893    10.6803
+              -ftree-scev-cprop   0.594295   0.001791   0.596086    1121.76  0.00178291    10.6444
+                    -ftree-sink    0.59419   0.001806   0.595996    1121.93  0.00178264    10.6428
+                    -ftree-slsr   0.592536   0.001774    0.59431    1125.11  0.0017776    10.6127
+                     -ftree-sra   0.604494   0.001826    0.60632    1102.83  0.00181352    10.8271
+                     -ftree-ter   0.588808   0.001771   0.590579    1132.22  0.00176644    10.5461
+               -funit-at-a-time   0.592416   0.001785   0.594201    1125.32  0.00177727    10.6107
+                -funwind-tables   0.591648   0.001787   0.593435    1126.77  0.00177498    10.5971
+                  -fverbose-asm   0.591604   0.001793   0.593397    1126.85  0.00177487    10.5964
+      -fzero-initialized-in-bss   0.591808   0.001861   0.593669    1126.33  0.00177568    10.6012
+           -m128bit-long-double   0.595001   0.002065   0.597066    1119.92  0.00178584    10.6619
+                           -m64   0.592793   0.001794   0.594587    1124.59  0.00177843    10.6176
+                        -m80387   0.593443   0.001803   0.595246    1123.35  0.0017804    10.6294
+              -malign-stringops   0.591836   0.001815   0.593651    1126.36  0.00177563    10.6009
+  -mavx256-split-unaligned-load   0.592896    0.00182   0.594716    1124.35  0.00177881    10.6199
+ -mavx256-split-unaligned-store   0.591745   0.001865    0.59361    1126.44  0.0017755    10.6002
+               -mfancy-math-387   0.592299   0.002019   0.594318     1125.1  0.00177762    10.6128
+                -mfp-ret-in-387   0.592134   0.001903   0.594037    1125.63  0.00177678    10.6078
+                         -mfxsr   0.591067   0.001858   0.592925    1127.74  0.00177345    10.5879
+                        -mglibc   0.590536   0.002126   0.592662    1128.24  0.00177267    10.5832
+                      -mieee-fp   0.588673   0.001779   0.590452    1132.47  0.00176606    10.5438
+               -mlong-double-80   0.587232   0.001837   0.589069    1135.12  0.00176192    10.5191
+                          -mmmx   0.590551    0.00177   0.592321    1128.89  0.00177165    10.5772
+                      -mno-sse4   0.590608   0.001817   0.592425    1128.69  0.00177196     10.579
+                    -mpush-args   0.590475   0.001776   0.592251    1129.03  0.00177144    10.5759
+                     -mred-zone   0.589209   0.001769   0.590978    1131.46  0.00176763    10.5532
+                          -msse   0.588502    0.00177   0.590272    1132.81  0.00176552    10.5406
+                         -msse2   0.589406   0.001776   0.591182    1131.07  0.00176824    10.5568
+                          -mstv   0.588224   0.001765   0.589989    1133.35  0.00176467    10.5355
+          -mtls-direct-seg-refs   0.596164   0.001775   0.597939    1118.29  0.00178845    10.6775

@@ -1,0 +1,1 @@
+Same as the parent, but with the power operator still present (i.e, it is based on the older benchmark code).

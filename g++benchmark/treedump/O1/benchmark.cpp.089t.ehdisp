@@ -1,0 +1,97 @@
+
+;; Function main (main, funcdef_no=1889, decl_uid=44612, cgraph_uid=652, symbol_order=669) (executed once)
+
+
+Symbols to be put in SSA form
+{ D.48339 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 14
+Number of blocks to update: 13 ( 93%)
+
+
+main (int argc, char * * argv)
+{
+  long int D.48441;
+  char __c;
+  struct exception e;
+  char * _1;
+  float totalscore.24_2;
+  double _3;
+  char * _4;
+  void * _5;
+  float totalscore.25_6;
+  struct FILE * _16;
+  double _26;
+  struct __ostream_type & _27;
+
+  <bb 2> [local count: 1073741825]:
+  if (argc_9(D) != 3)
+    goto <bb 3>; [0.04%]
+  else
+    goto <bb 4>; [99.96%]
+
+  <bb 3> [local count: 429497]:
+  __builtin_puts (&"Arguments: filename optimisationflag"[0]);
+  exit (-1);
+
+  <bb 4> [local count: 1073312327]:
+  mainbase ();
+  _1 = MEM[(char * *)argv_14(D) + 8B];
+  _16 = fopen (_1, "a");
+
+  <bb 5> [local count: 1073312327]:
+  totalscore.24_2 = totalscore;
+  _3 = (double) totalscore.24_2;
+  _4 = MEM[(char * *)argv_14(D) + 16B];
+  fprintf (_16, "%s %lf\n", _4, _3);
+
+  <bb 6> [local count: 1073312327]:
+  fclose (_16);
+
+  <bb 7> [local count: 1073312327]:
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Your system has scored a total of ", 34);
+  totalscore.25_6 = totalscore;
+  _26 = (double) totalscore.25_6;
+  _27 = std::basic_ostream<char>::_M_insert<double> (&cout, _26);
+  std::__ostream_insert<char, std::char_traits<char> > (_27, " points!", 8);
+  __c = 10;
+  std::__ostream_insert<char, std::char_traits<char> > (_27, &__c, 1);
+  __c ={v} {CLOBBER};
+  return 0;
+
+  <bb 8> [count: 0]:
+<L4>:
+  _36 = __builtin_eh_filter (1);
+  switch (_36) <default: <L9> [67.00%], case 1: <L5> [33.00%]>
+
+  <bb 9> [count: 0]:
+<L9>:
+  resx 1
+
+  <bb 10> [count: 0]:
+<L5>:
+  MEM[(struct  &)&e] ={v} {CLOBBER};
+  e._vptr.exception = &MEM[(void *)&_ZTVSt9exception + 16B];
+  _5 = __builtin_eh_pointer (1);
+  __cxa_begin_catch (_5);
+  std::operator<< <std::char_traits<char> > (&cerr, "File error! \n");
+
+  <bb 11> [count: 0]:
+  std::exception::~exception (&e);
+  __cxa_end_catch ();
+  e ={v} {CLOBBER};
+  goto <bb 7>; [100.00%]
+
+  <bb 12> [count: 0]:
+<L6>:
+  std::exception::~exception (&e);
+  resx 5
+
+  <bb 13> [count: 0]:
+<L7>:
+  __cxa_end_catch ();
+  resx 3
+
+}
+
+

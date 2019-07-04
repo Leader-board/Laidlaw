@@ -1,0 +1,713 @@
+
+;; Function std::basic_ios<char>::rdstate (_ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv, funcdef_no=2293, decl_uid=32199, cgraph_uid=1053, symbol_order=1070)
+
+std::basic_ios<char>::rdstate (const struct basic_ios * const this)
+{
+  iostate _3;
+
+  <bb 2> :
+  _3 = this_2(D)->D.32317._M_streambuf_state;
+  return _3;
+
+}
+
+
+
+;; Function std::basic_ostream<char>::operator<< (_ZNSolsEd, funcdef_no=2148, decl_uid=33054, cgraph_uid=908, symbol_order=925)
+
+std::basic_ostream<char>::operator<< (struct basic_ostream * const this, double __f)
+{
+  struct __ostream_type & _5;
+
+  <bb 2> :
+  _5 = std::basic_ostream<char>::_M_insert<double> (this_2(D), __f_3(D));
+  return _5;
+
+}
+
+
+
+;; Function std::basic_ostream<char>::operator<< (_ZNSolsEf, funcdef_no=2149, decl_uid=33057, cgraph_uid=909, symbol_order=926)
+
+std::basic_ostream<char>::operator<< (struct basic_ostream * const this, float __f)
+{
+  double _1;
+  struct __ostream_type & _6;
+
+  <bb 2> :
+  _1 = (double) __f_2(D);
+  _6 = std::basic_ostream<char>::_M_insert<double> (this_4(D), _1);
+  return _6;
+
+}
+
+
+
+;; Function std::operator<< <std::char_traits<char> > (_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c, funcdef_no=2147, decl_uid=33238, cgraph_uid=907, symbol_order=924)
+
+std::operator<< <std::char_traits<char> > (struct basic_ostream & __out, char __c)
+{
+  struct basic_ostream & _4;
+
+  <bb 2> :
+  _4 = std::__ostream_insert<char, std::char_traits<char> > (__out_2(D), &__c, 1);
+  return _4;
+
+}
+
+
+
+;; Function __static_initialization_and_destruction_0 (_Z41__static_initialization_and_destruction_0ii, funcdef_no=2396, decl_uid=48223, cgraph_uid=1156, symbol_order=1223)
+
+__static_initialization_and_destruction_0 (int __initialize_p, int __priority)
+{
+  <bb 2> :
+  if (__initialize_p_2(D) == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  if (__priority_4(D) == 65535)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function std::char_traits<char>::length (_ZNSt11char_traitsIcE6lengthEPKc, funcdef_no=397, decl_uid=11285, cgraph_uid=73, symbol_order=74)
+
+std::char_traits<char>::length (const char_type * __s)
+{
+  size_t _3;
+
+  <bb 2> :
+  _3 = __builtin_strlen (__s_2(D));
+  return _3;
+
+}
+
+
+
+;; Function std::operator| (_ZStorSt12_Ios_IostateS_, funcdef_no=1147, decl_uid=26730, cgraph_uid=387, symbol_order=389)
+
+std::operator| (_Ios_Iostate __a, _Ios_Iostate __b)
+{
+  _Ios_Iostate _3;
+
+  <bb 2> :
+  _3 = __a_1(D) | __b_2(D);
+  return _3;
+
+}
+
+
+
+;; Function std::basic_ios<char>::setstate (_ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate, funcdef_no=2258, decl_uid=32204, cgraph_uid=1018, symbol_order=1035)
+
+std::basic_ios<char>::setstate (struct basic_ios * const this, iostate __state)
+{
+  iostate D.48352;
+  _Ios_Iostate D.48350;
+  _Ios_Iostate _5;
+  _Ios_Iostate _8;
+
+  <bb 2> :
+  _5 = MEM[(const struct basic_ios *)this_4(D)].D.32317._M_streambuf_state;
+  _8 = _5 | __state_7(D);
+  std::basic_ios<char>::clear (this_4(D), _8);
+  return;
+
+}
+
+
+
+;; Function std::operator<< <std::char_traits<char> > (_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc, funcdef_no=2146, decl_uid=33268, cgraph_uid=906, symbol_order=923)
+
+std::operator<< <std::char_traits<char> > (struct basic_ostream & __out, const char * __s)
+{
+  size_t D.48357;
+  int (*) () * _1;
+  int (*) () * _2;
+  long int _3;
+  sizetype _4;
+  struct basic_ios * _5;
+  long unsigned int _6;
+  long int _7;
+  _Ios_Iostate _13;
+  _Ios_Iostate _16;
+  long unsigned int _17;
+
+  <bb 2> :
+  if (__s_9(D) == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = __out_11(D)->_vptr.basic_ostream;
+  _2 = _1 + 18446744073709551592;
+  _3 = MEM[(long int *)_2];
+  _4 = (sizetype) _3;
+  _5 = __out_11(D) + _4;
+  _13 = MEM[(const struct basic_ios *)_5].D.32317._M_streambuf_state;
+  _16 = _13 | 1;
+  std::basic_ios<char>::clear (_5, _16);
+  goto <bb 5>; [100.00%]
+
+  <bb 4> :
+  _17 = __builtin_strlen (__s_9(D));
+  _19 = _17;
+  _6 = _19;
+  _7 = (long int) _6;
+  std::__ostream_insert<char, std::char_traits<char> > (__out_11(D), __s_9(D), _7);
+
+  <bb 5> :
+  return __out_11(D);
+
+}
+
+
+
+;; Function mainbase (_Z8mainbasev, funcdef_no=1888, decl_uid=44493, cgraph_uid=648, symbol_order=665)
+
+Removing basic block 4
+mainbase ()
+{
+  struct basic_ostream & D.48382;
+  char __c;
+  struct __ostream_type & D.48379;
+  struct basic_ostream & D.48376;
+  struct basic_ostream & D.48373;
+  char __c;
+  struct __ostream_type & D.48370;
+  struct basic_ostream & D.48367;
+  struct basic_ostream & D.48364;
+  char __c;
+  struct basic_ostream & D.48361;
+  float r;
+  double elapsed_secs;
+  clock_t end;
+  clock_t begin;
+  int p;
+  int q;
+  double timetake[5];
+  long int count;
+  double b.0_1;
+  double k.1_2;
+  double a.2_3;
+  double k.3_4;
+  double a.4_5;
+  double a.5_6;
+  double _7;
+  double b.6_8;
+  double b.7_9;
+  double _10;
+  double x.8_11;
+  double y.9_12;
+  double _13;
+  double b.10_14;
+  double k.11_15;
+  double _16;
+  double _17;
+  double powcheck.12_18;
+  double powcheck.13_19;
+  double powcheck.14_20;
+  double _21;
+  double c.15_22;
+  double c.16_23;
+  double d.17_24;
+  double c.18_25;
+  double k.19_26;
+  double _27;
+  double _28;
+  double powcheck.20_29;
+  double _30;
+  double a.21_31;
+  double _32;
+  double b.22_33;
+  double _34;
+  long int _35;
+  double _36;
+  int _37;
+  double _38;
+  int _39;
+  double _40;
+  double _41;
+  double _42;
+  int _43;
+  float _44;
+  float totalscore.23_45;
+  double _46;
+  int _47;
+  float _48;
+  double _49;
+  double _50;
+  double _51;
+  float _52;
+  int _53;
+  double _54;
+  double _55;
+  int _56;
+  double _57;
+  int _58;
+  int _59;
+  int _60;
+  int _61;
+  int _65;
+  double _66;
+  int _69;
+  float _70;
+  float _71;
+  struct basic_ostream & _132;
+  struct basic_ostream & _160;
+  struct __ostream_type & _169;
+  struct basic_ostream & _170;
+  double _179;
+  struct __ostream_type & _180;
+  struct basic_ostream & _181;
+
+  <bb 2> :
+
+  <bb 3> :
+  # q_76 = PHI <1(2), q_148(47)>
+  # r_78 = PHI <r_93(D)(2), r_79(47)>
+  if (q_76 > 5)
+    goto <bb 48>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # p_77 = PHI <1(3), p_146(46)>
+  # r_79 = PHI <r_78(3), r_84(46)>
+  if (p_77 > 5)
+    goto <bb 47>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  begin_97 = clock ();
+  a = 1.0e+0;
+  b = 1.0e+0;
+  c = 1.0e+0;
+  d = 1.0e+0;
+  if (p_77 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  k = 1.0e+2;
+  goto <bb 15>; [INV]
+
+  <bb 7> :
+  if (p_77 == 2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  k = 2.5e+2;
+  goto <bb 15>; [INV]
+
+  <bb 9> :
+  if (p_77 == 3)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  k = 5.0e+2;
+  goto <bb 15>; [INV]
+
+  <bb 11> :
+  if (p_77 == 4)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  k = 1.0e+3;
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+  if (p_77 == 5)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  k = 1.5e+3;
+
+  <bb 15> :
+
+  <bb 16> :
+  # count_73 = PHI <0(15), count_74(26)>
+  b.0_1 = b;
+  k.1_2 = k;
+  if (b.0_1 <= k.1_2)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 17> :
+  # count_74 = PHI <count_73(16), count_75(25)>
+  a.2_3 = a;
+  k.3_4 = k;
+  if (a.2_3 <= k.3_4)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 18> :
+  a.4_5 = a;
+  a.5_6 = a;
+  _7 = a.4_5 * a.5_6;
+  x = _7;
+  b.6_8 = b;
+  b.7_9 = b;
+  _10 = b.6_8 * b.7_9;
+  y = _10;
+  x.8_11 = x;
+  y.9_12 = y;
+  _13 = x.8_11 + y.9_12;
+  c = _13;
+  b.10_14 = b;
+  powcheck = b.10_14;
+
+  <bb 19> :
+  # count_75 = PHI <count_74(18), count_75(24), count_113(23)>
+  k.11_15 = k;
+  _16 = k.11_15 * 1.4199999999999999289457264239899814128875732421875e+0;
+  _17 = ceil (_16);
+  powcheck.12_18 = powcheck;
+  if (_17 >= powcheck.12_18)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 20> :
+  powcheck.13_19 = powcheck;
+  powcheck.14_20 = powcheck;
+  _21 = powcheck.13_19 * powcheck.14_20;
+  c.15_22 = c;
+  if (_21 == c.15_22)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 21> :
+  c.16_23 = c;
+  d.17_24 = d;
+  if (c.16_23 >= d.17_24)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  c.18_25 = c;
+  d = c.18_25;
+
+  <bb 23> :
+  count_113 = count_75 + 1;
+  k.19_26 = k;
+  _27 = k.19_26 * 2.0e+0;
+  _28 = _27 + 1.0e+0;
+  powcheck = _28;
+  goto <bb 19>; [INV]
+
+  <bb 24> :
+  powcheck.20_29 = powcheck;
+  _30 = powcheck.20_29 + 1.0e+0;
+  powcheck = _30;
+  goto <bb 19>; [INV]
+
+  <bb 25> :
+  a.21_31 = a;
+  _32 = a.21_31 + 1.0e+0;
+  a = _32;
+  goto <bb 17>; [INV]
+
+  <bb 26> :
+  a = 1.0e+0;
+  b.22_33 = b;
+  _34 = b.22_33 + 1.0e+0;
+  b = _34;
+  goto <bb 16>; [INV]
+
+  <bb 27> :
+  end_120 = clock ();
+  _35 = end_120 - begin_97;
+  _36 = (double) _35;
+  elapsed_secs_121 = _36 / 1.0e+6;
+  _37 = p_77 + -1;
+  timetake[_37] = elapsed_secs_121;
+  if (p_77 == 1)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 28> :
+
+  <bb 29> :
+  # r_80 = PHI <r_79(27), 3.0000000260770320892333984375e-3(28)>
+  if (p_77 == 2)
+    goto <bb 30>; [INV]
+  else
+    goto <bb 31>; [INV]
+
+  <bb 30> :
+
+  <bb 31> :
+  # r_81 = PHI <r_80(29), 3.50000001490116119384765625e-2(30)>
+  if (p_77 == 3)
+    goto <bb 32>; [INV]
+  else
+    goto <bb 33>; [INV]
+
+  <bb 32> :
+
+  <bb 33> :
+  # r_82 = PHI <r_81(31), 2.730000019073486328125e-1(32)>
+  if (p_77 == 4)
+    goto <bb 34>; [INV]
+  else
+    goto <bb 35>; [INV]
+
+  <bb 34> :
+
+  <bb 35> :
+  # r_83 = PHI <r_82(33), 2.224999904632568359375e+0(34)>
+  if (p_77 == 5)
+    goto <bb 36>; [INV]
+  else
+    goto <bb 37>; [INV]
+
+  <bb 36> :
+
+  <bb 37> :
+  # r_84 = PHI <r_83(35), 7.535999774932861328125e+0(36)>
+  _38 = (double) r_84;
+  _39 = p_77 + -1;
+  _40 = timetake[_39];
+  _41 = _38 / _40;
+  _42 = _41 * 2.0e+2;
+  _43 = p_77 + -1;
+  _44 = (float) _42;
+  score[_43] = _44;
+  totalscore.23_45 = totalscore;
+  _46 = (double) totalscore.23_45;
+  _47 = p_77 + -1;
+  _48 = score[_47];
+  _49 = (double) _48;
+  _50 = _49 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _51 = _46 + _50;
+  _52 = (float) _51;
+  totalscore = _52;
+  _53 = p_77 + -1;
+  _54 = stagetime[_53];
+  _55 = elapsed_secs_121 * 2.00000000000000011102230246251565404236316680908203125e-1;
+  _56 = p_77 + -1;
+  _57 = _54 + _55;
+  stagetime[_56] = _57;
+  _58 = q_76 + -1;
+  _59 = _58 * 5;
+  _60 = p_77 + _59;
+  _61 = _60 * 4;
+  _132 = std::basic_ostream<char>::operator<< (&cout, _61);
+
+  <bb 38> :
+  std::__ostream_insert<char, std::char_traits<char> > (_132, " % complete!", 12);
+
+  <bb 39> :
+  __c = 10;
+  _160 = std::__ostream_insert<char, std::char_traits<char> > (_132, &__c, 1);
+
+  <bb 40> :
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Time taken for that stage:- ", 28);
+
+  <bb 41> :
+  _65 = p_77 + -1;
+  _66 = timetake[_65];
+  _169 = std::basic_ostream<char>::_M_insert<double> (&cout, _66);
+
+  <bb 42> :
+  __c = 10;
+  _170 = std::__ostream_insert<char, std::char_traits<char> > (_169, &__c, 1);
+
+  <bb 43> :
+  __c ={v} {CLOBBER};
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Score obtained for that stage:- ", 32);
+
+  <bb 44> :
+  _69 = p_77 + -1;
+  _70 = score[_69];
+  _71 = _70 * 5.0e+0;
+  _179 = (double) _71;
+  _180 = std::basic_ostream<char>::_M_insert<double> (&cout, _179);
+
+  <bb 45> :
+  __c = 10;
+  _181 = std::__ostream_insert<char, std::char_traits<char> > (_180, &__c, 1);
+
+  <bb 46> :
+  __c ={v} {CLOBBER};
+  p_146 = p_77 + 1;
+  goto <bb 4>; [INV]
+
+  <bb 47> :
+  q_148 = q_76 + 1;
+  goto <bb 3>; [INV]
+
+  <bb 48> :
+  timetake ={v} {CLOBBER};
+  return;
+
+  <bb 49> :
+<L51>:
+  timetake ={v} {CLOBBER};
+  resx 1
+
+}
+
+
+
+;; Function std::exception::exception (_ZNSt9exceptionC2ERKS_, funcdef_no=1891, decl_uid=3171, cgraph_uid=650, symbol_order=667)
+
+std::exception::exception (struct exception * const this, const struct exception & D.3173)
+{
+  <bb 2> :
+  MEM[(struct  &)this_3(D)] ={v} {CLOBBER};
+  this_3(D)->_vptr.exception = &MEM[(void *)&_ZTVSt9exception + 16B];
+  return;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1889, decl_uid=44612, cgraph_uid=652, symbol_order=669)
+
+main (int argc, char * * argv)
+{
+  struct basic_ostream & D.48396;
+  struct __ostream_type & D.48393;
+  struct basic_ostream & D.48390;
+  struct basic_ostream & D.48387;
+  char __c;
+  struct exception e;
+  struct FILE * F;
+  char * * _1;
+  char * _2;
+  float totalscore.24_3;
+  double _4;
+  char * * _5;
+  char * _6;
+  void * _7;
+  void * _8;
+  void * _9;
+  float totalscore.25_11;
+  struct FILE * _23;
+  struct basic_ostream & _44;
+  double _53;
+  struct __ostream_type & _54;
+
+  <bb 2> :
+  if (argc_16(D) != 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  __builtin_puts (&"Arguments: filename optimisationflag"[0]);
+  exit (-1);
+
+  <bb 4> :
+  mainbase ();
+  _1 = argv_21(D) + 8;
+  _2 = *_1;
+  _23 = fopen (_2, "a");
+
+  <bb 5> :
+  totalscore.24_3 = totalscore;
+  _4 = (double) totalscore.24_3;
+  _5 = argv_21(D) + 16;
+  _6 = *_5;
+  fprintf (_23, "%s %lf\n", _6, _4);
+
+  <bb 6> :
+  fclose (_23);
+
+  <bb 7> :
+  std::__ostream_insert<char, std::char_traits<char> > (&cout, "Your system has scored a total of ", 34);
+  totalscore.25_11 = totalscore;
+  _53 = (double) totalscore.25_11;
+  _54 = std::basic_ostream<char>::_M_insert<double> (&cout, _53);
+  std::__ostream_insert<char, std::char_traits<char> > (_54, " points!", 8);
+  __c = 10;
+  _44 = std::__ostream_insert<char, std::char_traits<char> > (_54, &__c, 1);
+  __c ={v} {CLOBBER};
+  return 0;
+
+  <bb 8> :
+<L4>:
+  eh_dispatch 1
+
+  <bb 9> :
+  resx 1
+
+  <bb 10> :
+<L5>:
+  _7 = __builtin_eh_pointer (1);
+  _8 = __cxa_get_exception_ptr (_7);
+  MEM[(struct  &)&e] ={v} {CLOBBER};
+  e._vptr.exception = &MEM[(void *)&_ZTVSt9exception + 16B];
+  _9 = __builtin_eh_pointer (1);
+  __cxa_begin_catch (_9);
+  std::operator<< <std::char_traits<char> > (&cerr, "File error! \n");
+
+  <bb 11> :
+  std::exception::~exception (&e);
+  __cxa_end_catch ();
+  e ={v} {CLOBBER};
+  goto <bb 7>; [INV]
+
+  <bb 12> :
+<L6>:
+  std::exception::~exception (&e);
+  resx 5
+
+  <bb 13> :
+<L7>:
+  __cxa_end_catch ();
+  resx 3
+
+  <bb 14> :
+<L8>:
+  e ={v} {CLOBBER};
+  resx 2
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_check (_GLOBAL__sub_I_check, funcdef_no=2397, decl_uid=48231, cgraph_uid=1157, symbol_order=1366)
+
+_GLOBAL__sub_I_check ()
+{
+  <bb 2> :
+  __static_initialization_and_destruction_0 (1, 65535);
+  return;
+
+}
+
+
